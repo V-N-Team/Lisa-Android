@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/padding_medium_smaller"
+    app:cardCornerRadius="12dp">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lottojr_left_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/margin_medium" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lottojr_middle_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.26" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lottojr_middle_end_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.53" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lottojr_right_start_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.59" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lottojr_right_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.74" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lottojr_left_cross_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.76" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lottojr_right_cross_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.91" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_small"
+        app:layout_constraintStart_toStartOf="@id/lottojr_left_guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_sun" />
+
+    <TextView
+        android:id="@+id/day_title_lottojr_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/jackpot"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toEndOf="@id/lottojr_middle_end_guideline"
+        app:layout_constraintStart_toStartOf="@id/lottojr_middle_guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/day_title_lottojr_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/_2nd_prize"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toEndOf="@id/lottojr_middle_end_guideline"
+        app:layout_constraintStart_toStartOf="@id/lottojr_middle_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/day_title_lottojr_1" />
+
+    <TextView
+        android:id="@+id/day_title_lottojr_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/_3rd_prize"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toEndOf="@id/lottojr_middle_end_guideline"
+        app:layout_constraintStart_toStartOf="@id/lottojr_middle_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/day_title_lottojr_2" />
+
+    <TextView
+        android:id="@+id/day_title_lottojr_4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/_4th_prize"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toEndOf="@id/lottojr_middle_end_guideline"
+        app:layout_constraintStart_toStartOf="@id/lottojr_middle_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/day_title_lottojr_3" />
+
+    <TextView
+        android:id="@+id/day_value_lottojr_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_smaller"
+        android:layout_marginRight="@dimen/margin_smaller"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="end"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toEndOf="@id/lottojr_right_cross_guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/day_value_lottojr_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_smaller"
+        android:layout_marginRight="@dimen/margin_smaller"
+        android:layout_marginTop="@dimen/margin_small"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="end"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toStartOf="@id/day_cross_1"
+        app:layout_constraintTop_toBottomOf="@+id/day_title_lottojr_1" />
+
+    <ImageView
+        android:id="@+id/day_cross_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_smaller"
+        app:layout_constraintBottom_toBottomOf="@+id/day_value_lottojr_2"
+        app:layout_constraintEnd_toEndOf="@id/lottojr_right_cross_guideline"
+        app:layout_constraintTop_toTopOf="@+id/day_value_lottojr_2"
+        app:srcCompat="@drawable/ic_green_cross" />
+
+    <TextView
+        android:id="@+id/day_value_lottojr_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_smaller"
+        android:layout_marginEnd="@dimen/margin_smaller"
+        android:layout_marginTop="@dimen/margin_small"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="end"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toStartOf="@id/day_value_lottojr_3_cross1"
+        app:layout_constraintTop_toBottomOf="@+id/day_title_lottojr_2" />
+
+    <ImageView
+        android:id="@+id/day_value_lottojr_3_cross1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_smaller_2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/day_value_lottojr_3"
+        app:layout_constraintEnd_toStartOf="@id/day_value_lottojr_3_cross2"
+        app:layout_constraintTop_toTopOf="@+id/day_value_lottojr_3"
+        app:srcCompat="@drawable/ic_green_cross" />
+
+    <ImageView
+        android:id="@+id/day_value_lottojr_3_cross2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_smaller"
+        app:layout_constraintBottom_toBottomOf="@+id/day_value_lottojr_3_cross1"
+        app:layout_constraintEnd_toEndOf="@id/lottojr_right_cross_guideline"
+        app:layout_constraintTop_toTopOf="@+id/day_value_lottojr_3_cross1"
+        app:srcCompat="@drawable/ic_green_cross" />
+
+    <TextView
+        android:id="@+id/day_value_lottojr_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_smaller"
+        android:layout_marginRight="@dimen/margin_smaller"
+        android:layout_marginTop="@dimen/margin_small"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="end"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toStartOf="@id/day_value_lottojr_4_cross1"
+        app:layout_constraintTop_toBottomOf="@+id/day_title_lottojr_3" />
+
+    <ImageView
+        android:id="@+id/day_value_lottojr_4_cross1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_smaller_2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/day_value_lottojr_4"
+        app:layout_constraintEnd_toStartOf="@id/day_value_lottojr_4_cross2"
+        app:layout_constraintTop_toTopOf="@+id/day_value_lottojr_4"
+        app:srcCompat="@drawable/ic_green_cross" />
+
+    <ImageView
+        android:id="@+id/day_value_lottojr_4_cross2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_smaller_2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/day_value_lottojr_4_cross1"
+        app:layout_constraintEnd_toStartOf="@id/day_value_lottojr_4_cross3"
+        app:layout_constraintTop_toTopOf="@+id/day_value_lottojr_4_cross1"
+        app:srcCompat="@drawable/ic_green_cross" />
+
+    <ImageView
+        android:id="@+id/day_value_lottojr_4_cross3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_smaller"
+        app:layout_constraintBottom_toBottomOf="@+id/day_value_lottojr_4_cross2"
+        app:layout_constraintEnd_toEndOf="@id/lottojr_right_cross_guideline"
+        app:layout_constraintTop_toTopOf="@+id/day_value_lottojr_4_cross2"
+        app:srcCompat="@drawable/ic_green_cross" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/evening_values_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="evening_image_jr, evening_title_lottojr_1, evening_title_lottojr_2, evening_title_lottojr_3, evening_title_lottojr_4,
+        evening_value_lottojr_2_cross1, evening_value_lottojr_3_cross1, evening_value_lottojr_3_cross2,
+        evening_value_lottojr_4_cross1, evening_value_lottojr_4_cross2, evening_value_lottojr_4_cross3" />
+
+    <ImageView
+        android:id="@+id/evening_image_jr"
+        android:layout_width="28dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_small"
+        app:tint="@color/eveningColor"
+        app:layout_constraintStart_toStartOf="@id/lottojr_left_guideline"
+        app:layout_constraintTop_toTopOf="@+id/evening_title_lottojr_1"
+        app:srcCompat="@drawable/ic_evening_draw" />
+
+    <TextView
+        android:id="@+id/evening_title_lottojr_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium_large"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/jackpot"
+        android:textColor="@color/darkGrey"
+
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toEndOf="@id/lottojr_middle_end_guideline"
+        app:layout_constraintStart_toStartOf="@id/lottojr_middle_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/day_title_lottojr_4" />
+
+    <TextView
+        android:id="@+id/evening_title_lottojr_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/_2nd_prize"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toEndOf="@id/lottojr_middle_end_guideline"
+        app:layout_constraintStart_toStartOf="@id/lottojr_middle_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/evening_title_lottojr_1" />
+
+    <TextView
+        android:id="@+id/evening_title_lottojr_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/_3rd_prize"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toEndOf="@id/lottojr_middle_end_guideline"
+        app:layout_constraintStart_toStartOf="@id/lottojr_middle_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/evening_title_lottojr_2" />
+
+    <TextView
+        android:id="@+id/evening_title_lottojr_4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/_4th_prize"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toEndOf="@id/lottojr_middle_end_guideline"
+        app:layout_constraintStart_toStartOf="@id/lottojr_middle_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/evening_title_lottojr_3" />
+
+    <TextView
+        android:id="@+id/evening_value_lottojr_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_smaller"
+        android:layout_marginRight="@dimen/margin_smaller"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="end"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toEndOf="@id/lottojr_right_cross_guideline"
+        app:layout_constraintTop_toTopOf="@+id/evening_title_lottojr_1" />
+
+    <TextView
+        android:id="@+id/evening_value_lottojr_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_smaller"
+        android:layout_marginEnd="@dimen/margin_smaller"
+        android:layout_marginTop="@dimen/margin_small"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="end"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toStartOf="@id/evening_value_lottojr_2_cross1"
+        app:layout_constraintTop_toBottomOf="@+id/evening_title_lottojr_1" />
+
+    <ImageView
+        android:id="@+id/evening_value_lottojr_2_cross1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_smaller"
+        app:layout_constraintBottom_toBottomOf="@+id/evening_value_lottojr_2"
+        app:layout_constraintEnd_toEndOf="@id/lottojr_right_cross_guideline"
+        app:layout_constraintTop_toTopOf="@+id/evening_value_lottojr_2"
+        app:srcCompat="@drawable/ic_green_cross" />
+
+    <TextView
+        android:id="@+id/evening_value_lottojr_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_smaller"
+        android:layout_marginRight="@dimen/margin_smaller"
+        android:layout_marginTop="@dimen/margin_small"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="end"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toStartOf="@id/evening_value_lottojr_3_cross1"
+        app:layout_constraintTop_toBottomOf="@+id/evening_title_lottojr_2" />
+
+    <ImageView
+        android:id="@+id/evening_value_lottojr_3_cross1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_smaller_2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/evening_value_lottojr_3"
+        app:layout_constraintEnd_toStartOf="@id/evening_value_lottojr_3_cross2"
+        app:layout_constraintTop_toTopOf="@+id/evening_value_lottojr_3"
+        app:srcCompat="@drawable/ic_green_cross" />
+
+    <ImageView
+        android:id="@+id/evening_value_lottojr_3_cross2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_smaller"
+        app:layout_constraintBottom_toBottomOf="@+id/evening_value_lottojr_3_cross1"
+        app:layout_constraintEnd_toEndOf="@id/lottojr_right_cross_guideline"
+        app:layout_constraintTop_toTopOf="@+id/evening_value_lottojr_3_cross1"
+        app:srcCompat="@drawable/ic_green_cross" />
+
+    <TextView
+        android:id="@+id/evening_value_lottojr_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_smaller"
+        android:layout_marginRight="@dimen/margin_smaller"
+        android:layout_marginTop="@dimen/margin_small"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="end"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toStartOf="@id/evening_value_lottojr_4_cross1"
+        app:layout_constraintTop_toBottomOf="@+id/evening_title_lottojr_3" />
+
+    <ImageView
+        android:id="@+id/evening_value_lottojr_4_cross1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_smaller_2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/evening_value_lottojr_4"
+        app:layout_constraintEnd_toStartOf="@id/evening_value_lottojr_4_cross2"
+        app:layout_constraintTop_toTopOf="@+id/evening_value_lottojr_4"
+        app:srcCompat="@drawable/ic_green_cross" />
+
+    <ImageView
+        android:id="@+id/evening_value_lottojr_4_cross2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_smaller_2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/evening_value_lottojr_4_cross1"
+        app:layout_constraintEnd_toStartOf="@id/evening_value_lottojr_4_cross3"
+        app:layout_constraintTop_toTopOf="@+id/evening_value_lottojr_4_cross1"
+        app:srcCompat="@drawable/ic_green_cross" />
+
+    <ImageView
+        android:id="@+id/evening_value_lottojr_4_cross3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_smaller"
+        app:layout_constraintBottom_toBottomOf="@+id/evening_value_lottojr_4_cross2"
+        app:layout_constraintEnd_toEndOf="@id/lottojr_right_cross_guideline"
+        app:layout_constraintTop_toTopOf="@+id/evening_value_lottojr_4_cross2"
+        app:srcCompat="@drawable/ic_green_cross" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/night_values_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="night_image_jr, night_title_lottojr_1, night_title_lottojr_2, night_title_lottojr_3, night_title_lottojr_4,
+        night_value_lottojr_2_cross1, night_value_lottojr_3_cross1, night_value_lottojr_3_cross2,
+        night_value_lottojr_4_cross1, night_value_lottojr_4_cross2, night_value_lottojr_4_cross3" />
+
+    <ImageView
+        android:id="@+id/night_image_jr"
+        android:layout_width="28dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_small"
+        app:layout_constraintStart_toStartOf="@id/lottojr_left_guideline"
+        app:layout_constraintTop_toTopOf="@+id/night_title_lottojr_1"
+        app:srcCompat="@drawable/ic_moon" />
+
+    <TextView
+        android:id="@+id/night_title_lottojr_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium_large"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/jackpot"
+        android:textColor="@color/darkGrey"
+
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toEndOf="@id/lottojr_middle_end_guideline"
+        app:layout_constraintStart_toStartOf="@id/lottojr_middle_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/evening_title_lottojr_4" />
+
+    <TextView
+        android:id="@+id/night_title_lottojr_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/_2nd_prize"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toEndOf="@id/lottojr_middle_end_guideline"
+        app:layout_constraintStart_toStartOf="@id/lottojr_middle_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/night_title_lottojr_1" />
+
+    <TextView
+        android:id="@+id/night_title_lottojr_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/_3rd_prize"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toEndOf="@id/lottojr_middle_end_guideline"
+        app:layout_constraintStart_toStartOf="@id/lottojr_middle_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/night_title_lottojr_2" />
+
+    <TextView
+        android:id="@+id/night_title_lottojr_4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/_4th_prize"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toEndOf="@id/lottojr_middle_end_guideline"
+        app:layout_constraintStart_toStartOf="@id/lottojr_middle_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/night_title_lottojr_3" />
+
+    <TextView
+        android:id="@+id/night_value_lottojr_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_smaller"
+        android:layout_marginRight="@dimen/margin_smaller"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="end"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toEndOf="@id/lottojr_right_cross_guideline"
+        app:layout_constraintTop_toTopOf="@+id/night_title_lottojr_1" />
+
+    <TextView
+        android:id="@+id/night_value_lottojr_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_smaller"
+        android:layout_marginEnd="@dimen/margin_smaller"
+        android:layout_marginTop="@dimen/margin_small"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="end"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toStartOf="@id/night_value_lottojr_2_cross1"
+        app:layout_constraintTop_toBottomOf="@+id/night_title_lottojr_1" />
+
+    <ImageView
+        android:id="@+id/night_value_lottojr_2_cross1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_smaller"
+        app:layout_constraintBottom_toBottomOf="@+id/night_value_lottojr_2"
+        app:layout_constraintEnd_toEndOf="@id/lottojr_right_cross_guideline"
+        app:layout_constraintTop_toTopOf="@+id/night_value_lottojr_2"
+        app:srcCompat="@drawable/ic_green_cross" />
+
+    <TextView
+        android:id="@+id/night_value_lottojr_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_smaller"
+        android:layout_marginRight="@dimen/margin_smaller"
+        android:layout_marginTop="@dimen/margin_small"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="end"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toStartOf="@id/night_value_lottojr_3_cross1"
+        app:layout_constraintTop_toBottomOf="@+id/night_title_lottojr_2" />
+
+    <ImageView
+        android:id="@+id/night_value_lottojr_3_cross1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_smaller_2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/night_value_lottojr_3"
+        app:layout_constraintEnd_toStartOf="@id/night_value_lottojr_3_cross2"
+        app:layout_constraintTop_toTopOf="@+id/night_value_lottojr_3"
+        app:srcCompat="@drawable/ic_green_cross" />
+
+    <ImageView
+        android:id="@+id/night_value_lottojr_3_cross2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_smaller"
+        app:layout_constraintBottom_toBottomOf="@+id/night_value_lottojr_3_cross1"
+        app:layout_constraintEnd_toEndOf="@id/lottojr_right_cross_guideline"
+        app:layout_constraintTop_toTopOf="@+id/night_value_lottojr_3_cross1"
+        app:srcCompat="@drawable/ic_green_cross" />
+
+    <TextView
+        android:id="@+id/night_value_lottojr_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_smaller"
+        android:layout_marginRight="@dimen/margin_smaller"
+        android:layout_marginTop="@dimen/margin_small"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="end"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toStartOf="@id/night_value_lottojr_4_cross1"
+        app:layout_constraintTop_toBottomOf="@+id/night_title_lottojr_3" />
+
+    <ImageView
+        android:id="@+id/night_value_lottojr_4_cross1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_smaller_2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/night_value_lottojr_4"
+        app:layout_constraintEnd_toStartOf="@id/night_value_lottojr_4_cross2"
+        app:layout_constraintTop_toTopOf="@+id/night_value_lottojr_4"
+        app:srcCompat="@drawable/ic_green_cross" />
+
+    <ImageView
+        android:id="@+id/night_value_lottojr_4_cross2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_smaller_2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/night_value_lottojr_4_cross1"
+        app:layout_constraintEnd_toStartOf="@id/night_value_lottojr_4_cross3"
+        app:layout_constraintTop_toTopOf="@+id/night_value_lottojr_4_cross1"
+        app:srcCompat="@drawable/ic_green_cross" />
+
+    <ImageView
+        android:id="@+id/night_value_lottojr_4_cross3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_smaller"
+        app:layout_constraintBottom_toBottomOf="@+id/night_value_lottojr_4_cross2"
+        app:layout_constraintEnd_toEndOf="@id/lottojr_right_cross_guideline"
+        app:layout_constraintTop_toTopOf="@+id/night_value_lottojr_4_cross2"
+        app:srcCompat="@drawable/ic_green_cross" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

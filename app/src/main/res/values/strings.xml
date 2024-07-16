@@ -1,0 +1,536 @@
+<resources>
+    <string name="tchala_url" translatable="false">https://lisa.ht/tchala/</string>
+    <string name="faq_url" translatable="false">https://lisa.ht/faq/</string>
+    <string name="tсhala" translatable="false">Tсhala</string>
+    <string name="lotto5jr_offline" translatable="false">*720*1#</string>
+    <string name="lotto5_5g_caps" translatable="false">LOTTO5P5</string>
+    <string name="lotto5_offline" translatable="false">*885*1#</string>
+    <string name="lotto5_caps" translatable="false">LOTTO5</string>
+    <string name="lotto4_offline" translatable="false">*884*1#</string>
+    <string name="lotto4_caps" translatable="false">LOTTO4</string>
+    <string name="lotto3_offline" translatable="false">*883*1#</string>
+    <string name="lotto3_caps" translatable="false">LOTTO3</string>
+    <string name="maryaj_offline" translatable="false">*882*2#</string>
+    <string name="maryaj_caps" translatable="false">MARYAJ</string>
+    <string name="bolet_caps" translatable="false">BOLET</string>
+    <string name="bolet_offline" translatable="false">*882*1#</string>
+    <string name="boloto_caps" translatable="false">BOLOTO</string>
+    <string name="boloto_offline" translatable="false">*881*1#</string>
+    <string name="_g" translatable="false">G</string>
+    <string name="lotto5jr" translatable="false">lotto5P5</string>
+    <string name="xx" translatable="false">XX</string>
+    <string name="g_" translatable="false">g</string>
+    <string name="G" translatable="false">%s%s G</string>
+    <string name="lorem_ipsum_" translatable="false">Lorem ipsum</string>
+    <string name="dolor_sit_amet" translatable="false">Dolor sit amet</string>
+    <string name="consectetur_adipiscing" translatable="false">Consectetur adipiscing</string>
+    <string name="non_quis_vivera" translatable="false">Non quis vivera</string>
+    <string name="lotto4" translatable="false">lotto4</string>
+    <string name="boloto" translatable="false">boloto</string>
+    <string name="lotto5_5g" translatable="false">lotto5P5</string>
+    <string name="lotto5" translatable="false">lotto5</string>
+    <string name="lotto5_royal" translatable="false">royal5</string>
+    <string name="borlet" translatable="false">bolet</string>
+    <string name="maryage" translatable="false">maryaj</string>
+    <string name="mariage" translatable="false">mariage</string>
+    <string name="lotto3" translatable="false">lotto3</string>
+
+    <string name="app_name" translatable="false">Lisa Lotto</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="continue_in_french" translatable="false">Continue in French</string>
+    <string name="continue_in_kreyol" translatable="false">Continue in Kreyol</string>
+    <string name="lorem_ipsum" translatable="false">noon_draw</string>
+    <string name="_509plus" translatable="false">+509</string>
+    <string name="_dash" translatable="false">-</string>
+    <string name="french" translatable="false">Français</string>
+    <string name="kreyol" translatable="false">Kreyòl</string>
+    <string name="english" translatable="false">English</string>
+    <string name="lorem_ipsum_dolor" translatable="false">Lorem ipsum dolor</string>
+    <string name="sit_amet_consectetur_adipiscing_elit" translatable="false">Sit amet, consectetur adipiscing elit.</string>
+    <string name="zero" translatable="false">00</string>
+    <string name="eMoney" translatable="false">eMoney</string>
+    <string name="april_16_2020" translatable="false">April 16, 2020</string>
+    <string name="colon" translatable="false">:</string>
+    <string name="_5_000_00_htg" translatable="false">5,000.00</string>
+    <string name="_200_000_00_htg" translatable="false">200,000.00 G</string>
+    <string name="_50x_20x_10x" translatable="false">50X 20X 10X</string>
+    <string name="_1_000x" translatable="false">1,000X</string>
+    <string name="_500x" translatable="false">500X</string>
+    <string name="_5_000x" translatable="false">5,000X</string>
+    <string name="_25_000x" translatable="false">25,000X</string>
+    <string name="progressive_jackpot" translatable="false">Progressive jackpot</string>
+    <string name="_509" translatable="false">509</string>
+    <string name="one" translatable="false">1</string>
+    <string name="two" translatable="false">2</string>
+    <string name="three" translatable="false">3</string>
+    <string name="ok" translatable="false">Ok</string>
+    <string name="_509_3888_1000" translatable="false">+509 3888 1000</string>
+    <string name="whatsapp" translatable="false">Whatsapp</string>
+    <string name="httpMMe" translatable="false">http://m.me/</string>
+    <string name="lisalottoht" translatable="false">\@lisalottoht</string>
+    <string name="facebook_messenger" translatable="false">Facebook Messenger</string>
+    <string name="customercare_lisa_ht" translatable="false">Customercare@lisa.ht</string>
+    <string name="lisa_ht" translatable="false">Lisa.ht</string>
+    <string name="_888" translatable="false">888</string>
+    <string name="centimes" translatable="false">00</string>
+    <string name="_G_" translatable="false">"%s G</string>
+    <string name="_htg_" translatable="false">"%s G</string>
+    <string name="_HTG" translatable="false">G</string>
+    <string name="_0_htg" translatable="false">0 G</string>
+    <string name="_14_32_21_12_2020" translatable="false">14:32 / 21.12.2020</string>
+    <string name="_100_htg" translatable="false">1 000 G</string>
+    <string name="devon_jones" translatable="false">Devon Jones</string>
+    <string name="_509_" translatable="false">+509-%s</string>
+    <string name="tel_50938881005" translatable="false">50938881005</string>
+    <string name="htg" translatable="false">G</string>
+    <string name="_100" translatable="false">100</string>
+    <string name="sogexpress" translatable="false">Sogexpress</string>
+    <string name="mon_cash" translatable="false">Mon cash</string>
+    <string name="mon_cash_lisa" translatable="false">Mon cash - Lisa</string>
+    <string name="lisa_mon_cash" translatable="false">Lisa - Mon cash</string>
+    <string name="qest_mark" translatable="false">\??</string>
+    <string name="qp" translatable="false">QP</string>
+    <string name="_6" translatable="false">6</string>
+    <string name="qest_mark_three" translatable="false">\???</string>
+    <string name="cmb" translatable="false">Cmb</string>
+    <string name="HTG_d" translatable="false">%d G</string>
+    <string name="_4" translatable="false">4</string>
+    <string name="xxx" translatable="false">XXX</string>
+    <string name="q" translatable="false">Q</string>
+    <string name="p" translatable="false">P</string>
+    <string name="dolor_sit_amet_" translatable="false">Dolor sit amet, consectetur adipiscing elit. Nisi, turpis leo ac non et.</string>
+
+    <string name="locale">ht</string>
+
+    <string name="gender">Sèks</string>
+    <string name="birthday">Dat ou fèt</string>
+    <string name="female">Fanm</string>
+    <string name="male">Gason</string>
+    <string name="location">Adrès</string>
+    <string name="email">Imèl</string>
+    <string name="social_media">Rezo sosyal</string>
+    <string name="facebook">Facebook</string>
+    <string name="instagram">Instagram</string>
+    <string name="choose_avatar">Chwazi yon imaj!</string>
+    <string name="save_changes">Anrejistre</string>
+    <string name="name">Non</string>
+    <string name="no_internet_connection">Erè koneksyon rezo</string>
+    <string name="try_again">Eseye anko</string>
+    <string name="get_started">Antre</string>
+    <string name="turn_on_notifications">Aktive son an</string>
+    <string name="no_thanks">Non, manfòm</string>
+    <string name="registration">Enskripsyon</string>
+    <string name="enter_your_mobile_number_we_will_send_n_you_otp_to_verify_later">Antre nimewo telefòn ou, nou pral voye ba ou yon kòd tanporè sou nimewo sa a</string>
+    <string name="phone_number_is_invalid">Nimewo telefon pa valid</string>
+    <string name="verification">Verifikasyon</string>
+    <string name="enter_confirmation_code_hold_tight_n_this_might_take_a_minute">Antre Kòd ou resevwa sou SMS</string>
+    <string name="re_send_code_in">Voye kòd la ankò nan\u0020</string>
+    <string name="code_is_invalid">Kòd pa valid</string>
+    <string name="re_send_code">Voye kòd la ankò</string>
+
+    <string name="i_am_agree_with_the_tearms_of_service">Mwen li epi mwen dakò ak Tèm itilizasyon yo</string>
+    <string name="i_am_agree_with_the_privacy_policy">Mwen li epi mwen dakò ak Règleman sou enfòmasyon prive</string>
+    <string name="i_am_agree_with_the_tearms_of_payment">Mwen dakò avèk Tèm pèman</string>
+    <string name="i_agree_with_the_terms_of_service">Mwen dakò avèk Kondisyon Sèvis la</string>
+    <string name="transaction_confirmation">Transfè a konfime avèk siksè!</string>
+
+    <string name="terms_of_service">Tèm itilizasyon yo</string>
+    <string name="terms_agreement">Tèm itilizasyon</string>
+    <string name="terms_of_payment">Tèm pèman</string>
+    <string name="privacy_policy">Règleman sou enfòmasyon prive</string>
+
+
+    <string name="create_a_pin_code">Kreye PIN LISA ou</string>
+    <string name="remember_me">Sonje\'m</string>
+    <string name="create_your_secured_pin_code_to_hold_n_your_account_safe">Kreye yon kod PIN sekirite pou pwoteje kont ou</string>
+    <string name="create_a_security_word">Kreye mo sekrè ou</string>
+    <string name="create_security_word">Antre mo ki gen yon siyifikasyon espeyal pou ou. Mo sa va pèmèt ou risèt PIN LISA ou.</string>
+    <string name="enter_security_word_max_28_char">Antre mo sekirite Maksimòm 28 lèt</string>
+    <string name="done">Fini</string>
+    <string name="it_s_too_short">Two kout</string>
+    <string name="invalid_pincode_you_have">Kòd PIN pa valid - Ou gen\u0020 </string>
+    <string name="enter_current_pin">Kòd PIN LISA</string>
+    <string name="existing_pin">PIN LISA valid</string>
+    <string name="skip">Sote</string>
+    <string name="next_draw">Pwochen Tiraj :</string>
+    <string name="choose_a_game_to_play">Chwazi jwet wap jwe</string>
+    <string name="hours">Èdtan</string>
+    <string name="minutes">Minit</string>
+    <string name="seconds">Segonn</string>
+    <string name="view_my_profile">Pwofil mwen</string>
+    <string name="my_tickets">Biyè\'m</string>
+    <string name="wallet_cash_out">Balans &amp; Touche lajan\'w</string>
+    <string name="settings">Paramèt</string>
+    <string name="winning_numbers">Rezilta Tiraj</string>
+    <string name="games_subscriptions">Abonman Otomatik:</string>
+    <string name="games_subscriptions_">Abonman Otomatik</string>
+    <string name="reference_program">Pwogram referans</string>
+    <string name="promotions">Pwomosyon</string>
+    <string name="message_center">Sant mesaj</string>
+    <string name="contact_us">Kontakte nou</string>
+    <string name="combo6">Konbo6</string>
+    <string name="combo">Konbo : %s</string>
+    <string name="current_selection_press_play_to_confirm">Seleksyon ou - Peze JWE pou konfime</string>
+    <string name="total_price">Total fich</string>
+    <string name="game_rules">Règ jwèt la</string>
+    <string name="recent_numbers">Dènye boul jwe</string>
+    <string name="play">JWE</string>
+    <string name="bet">Miz</string>
+    <string name="_1_option">Opsyon 1</string>
+    <string name="_2_option">Opsyon 2</string>
+    <string name="_3_option">Opsyon 3</string>
+    <string name="filter_by">Chwazi :</string>
+    <string name="win">Gayan</string>
+    <string name="closed">Pèdan</string>
+    <string name="pending">An atant</string>
+    <string name="not_accepted">Pa aksepte</string>
+    <string name="accepted">aksepte</string>
+    <string name="not_accepted_lower">pa aksepte</string>
+    <string name="combo_">Konbo</string>
+    <string name="transfer_to_a_friend">Voye lajan bay yon zanmi</string>
+    <string name="reload_money">Rechaje kont pou jwe</string>
+    <string name="cash_out">Touche lajan</string>
+    <string name="cash_out_">Touche lajan</string>
+    <string name="pop_locations">Pwen pèman</string>
+    <string name="transaction_history">Lis tranzaksyon</string>
+    <string name="enter_friend_s_number">Antre nimewo telefon\nzanmi w</string>
+    <string name="continue_">Kontinye</string>
+    <string name="enter_amount">Antre valè lajan</string>
+    <string name="confirm">Konfime</string>
+    <string name="enter_your_lisa_pin_to_transfer">Antre PIN ou pou voye lajan an bay zanmi ou</string>
+    <string name="enter_your_pin">Antre PIN ou</string>
+    <string name="enter_your_mon_cash_pin">Antre pin MonCash ou</string>
+    <string name="cashout_balance">Balans ou ka touche</string>
+    <string name="change_pin">Chanje Pin</string>
+    <string name="change_language">Chanje lang </string>
+    <string name="security_word">Mo sekirite</string>
+    <string name="notification">Mesaj</string>
+    <string name="enter_new_pin">Antre nouvo kòd PIN</string>
+    <string name="too_short">Two kout</string>
+    <string name="last_drawn_numbers">Dènye Rezilta Tiraj</string>
+    <string name="search_for_past_draws">Rezilta Tiraj pase</string>
+    <string name="jackpot">Djakpot</string>
+    <string name="_3_in_disorder">3 boul an dezod</string>
+    <string name="_2_in_disorder">2 boul an dezod</string>
+    <string name="_2_in_order">2 boul an lod</string>
+    <string name="_1_number">1 boul</string>
+    <string name="draw_option">Opsyon Tiraj #%s: %s</string>
+    <string name="next_jackpot">Pwochen djackpot</string>
+    <string name="_2nd_prize">2e prim</string>
+    <string name="_3rd_prize">3e prim</string>
+    <string name="_4th_prize">4e prim</string>
+    <string name="_5th_prize">5e prim</string>
+    <string name="no_subscription_registered">Ou poko gen biyè otomatik anrejistre</string>
+    <string name="select_game">Chwazi yon jwèt</string>
+    <string name="notifications">Notifikasyon</string>
+    <string name="yes">Wi</string>
+    <string name="no">Non</string>
+    <string name="create_new_lisa_pin">Kreye nouvo kòd PIN LISA ou</string>
+
+    <string name="no_messages_found">Bwat mesaj vid</string>
+    <string name="noon_draw">Tiraj Midi</string>
+    <string name="customer_service">Sèvis kliyan</string>
+    <string name="call_center">Sant Apèl</string>
+    <string name="web">Sit entènèt</string>
+    <string name="no_connection">Pa gen koneksyon!</string>
+    <string name="connect_to_the_network_and_come_back_to_us">Konekte nan rezo a epi tounen vin jwenn nou</string>
+    <string name="want_to_be_notified_when_you_win">Swiv biyè ou jwe, jwen rezilta tiraj epi resevwa yon alam chak fwa ou genyen!</string>
+    <string name="you_must_confirm_that_you_agree_to_the_n_terms_and_conditions_to_continue">Pou ou ka sèvi avèk aplikasyon LISA a, tanpri  konfime ou gen plis pase 18 lane epi konfime ou dakò ak tèm ak Kondisyon yo</string>
+    <string name="confirm_to_continue">Konfime kontinye</string>
+    <string name="enable_touch_id">Idantifikasyon dijital</string>
+    <string name="play_and_win_your_favorite_lottery_games">Jwe nan LISA pou \'w toujou soti gayan!</string>
+    <string name="biometric_title">Ouvri sesyon an</string>
+    <string name="biometric_subtitle">Login nan kont ou</string>
+    <string name="biometric_description">Mete dwèt ou sou bouton kay aparèy la pou verifye idantite ou</string>
+    <string name="biometric_negative_button_text">ANILE</string>
+    <string name="biometric_error_sdk_not_supported">Vèsyon SDK pa sipòte</string>
+    <string name="biometric_error_hardware_not_supported">Aparèy pa sipòte otantifikasyon byometrik</string>
+    <string name="biometric_error_fingerprint_not_available">Anprent pa anrejistre nan aparèy</string>
+    <string name="biometric_error_permission_not_granted">Pèmisyon pa akòde pa itilizatè</string>
+    <string name="biometric_failure">Login pa reyisi!</string>
+    <string name="biometric_cancelled">Otantifikasyon anile pa itilizatè</string>
+    <string name="biometric_success">Login siksè</string>
+    <string name="pin_codes_do_not_match">Kòd PIN pa matche ak</string>
+    <string name="attempts">\u0020esè</string>
+    <string name="enter_existing_pin">PIN LISA valid</string>
+    <string name="enter_existing_pin_message">Antre kòd PIN ou konn sèvi pou antre sou kont ou</string>
+    <string name="confirm_your_number">Konfime nimewo ou</string>
+    <string name="confirm_pin_code">Konfime nouvo kòd PIN</string>
+    <string name="fingerprint_authentification">Anprent Otantifikasyon</string>
+    <string name="fingerprint_verify">Èske ou vle verifye idantite ou ak anprent?</string>
+    <string name="enter_security_word">Antre mo sekirite</string>
+    <string name="ok_i_am_understand">Ok, mwen konprann</string>
+    <string name="next">Pwochen</string>
+    <string name="confirmation_code_is_invalid">Kòd konfimasyon an valab</string>
+    <string name="bonus">Bonis</string>
+    <string name="playable_funds">Balans pou jwe</string>
+    <string name="change_your_phone_number_in_0_30">Chanje nimewo telefòn ou nan\u0020</string>
+    <string name="enter_add_amount_transfer">Antre valè lajan</string>
+    <string name="friends_number_desc">Pataje plezi LISA ak zanmiw. Voye kob pou yo ka jwe!</string>
+    <string name="share_with">Pataje avèk</string>
+    <string name="transaction_balance">Balans disponib</string>
+    <string name="bonus_balance">Balans Bonis LISA</string>
+    <string name="exceeded_amount">Depase kantite lajan an</string>
+    <string name="transfer_funds">Transfere lajan</string>
+    <string name="reload_money_to_lisa">Rechaje kont LISA</string>
+    <string name="enter_your_mon_cash_number">Mete nimewo lajan kach Mon ou an</string>
+    <string name="enter_your_mon_cash_pin_to_transfer">Mete lajan kach Mon ou Kòd PIN pou jwenn aksè nan lajan kach.</string>
+    <string name="enter_confirmation_code">Antre kod konfimasyon an. Kenbe byen! Sa a ta ka pran yon minit.</string>
+    <string name="loaded_money">Chaje lajan</string>
+    <string name="title_activity_maps">Kat</string>
+    <string name="choose_way_to_cash_out">Chwazi opsyon pou touche</string>
+    <string name="cashless">Skripturo</string>
+    <string name="cash">Lajan Kach</string>
+    <string name="cash_out_balance">Lajan Kach soti Balans</string>
+    <string name="share_money_to">Pataje lajan ak</string>
+    <string name="send_money">Voye lajan</string>
+    <string name="wallet">%s bous</string>
+    <string name="click_here">Klike la a</string>
+    <string name="attempts_over">Tout pas yo itilize.\u0020</string>
+    <string name="forgot_pin">Mwen bliye pin mwen</string>
+    <string name="thanks">Mèsi</string>
+    <string name="transfer_successed">Peman ou te voye avèk siksè!</string>
+    <string name="transfer_successed_cashout">Transfè a fèt avèk siksè!</string>
+    <string name="need_help_pease_contact_us">Ou bezwen sipo?! Kontakte nou:</string>
+    <string name="pin_changed">Kòd PIN ou te chanje avèk siksè!</string>
+    <string name="enter_current_security">Mo sekirite ou</string>
+    <string name="enter_new_security">Nouvo mo sekirite</string>
+    <string name="current_security_different">Mo sekirite ou antre a diferan</string>
+    <string name="forgot_your_pin">Bliye PIN ou?</string>
+    <string name="error">Erè</string>
+    <string name="low_amount">Ba kantite lajan</string>
+    <string name="for_pin_reset_or_for_assistance_please_contact_us">Konplete tout pwofil, antre dat fèt ou pou nou ka pi byen sèviw e ba w plis avantaj</string>
+    <string name="incorrect_token_please_re_login">Kòrèk siy. Tanpri, re-konekte</string>
+    <string name="games_results">Rezilta jwèt yo</string>
+    <string name="games_results_ny">Rezilta jwèt yo NY</string>
+    <string name="games_results_fl">Rezilta jwèt yo FL</string>
+    <string name="games_results_ga">Rezilta jwèt yo GA</string>
+    <string name="city_not_found">Vil pa jwenn</string>
+    <string name="details">Detay</string>
+    <string name="_value">valè</string>
+    <string name="your_cash_out_code">Lajan kach ou soti kòd:</string>
+    <string name="left_s_min">Rete %s min</string>
+    <string name="close">Fèmen</string>
+    <string name="want_remove_message">Eske ou ta renmen efase mesaj sa?</string>
+    <string name="get_directions">Jwenn direksyon</string>
+    <string name="apply_filters">Aplike filtè</string>
+    <string name="select_your_game_section_and_bet_on_your_next_play">Ale nan seksyon Jwèt la epi mize sou pwochen biyè\'w!</string>
+    <string name="quick_pick">QP</string>
+    <string name="play_with_ussd">Jwe ak USSD!</string>
+    <string name="please_enter_3rd_combo6_combination_number">Antre 3e boul ou pou biyè KONBO a</string>
+    <string name="fill_required_fields">Tanpri ranpli tout kaz yo</string>
+    <string name="play_offline">Jwe ak kòd yo</string>
+    <string name="pin_code_identical">Kòd PIN ki idantik</string>
+    <string name="no_transactions_yet">Pa gen tranzaksyon ankò</string>
+    <string name="no_ticket_found">Pa gen biyè</string>
+    <string name="new_tickets_are_not">Nouvo tikè yo pa disponib ankò pou tiraj sa a</string>
+    <string name="invalid_number">Nimewo envalid</string>
+    <string name="here_is_a_list_of_your_subscriptions">Lis biyè otomatik ou</string>
+    <string name="here_is_a_list_of_your_messages">Poko gen nouvo mesaj.</string>
+    <string name="here_is_a_list_of_your_actions">Isit la se yon lis aksyon ou yo</string>
+    <string name="games_list">Jwèt lis</string>
+    <string name="finish">Fini</string>
+    <string name="evening_draw">Tiraj Aswè</string>
+    <string name="enter_your_numbers">Mete nimewo ou yo</string>
+    <string name="enter_numbers_and_bet">Boul ak Miz</string>
+    <string name="enter_numbers">Nimewo</string>
+    <string name="enter_bet">Mete parye</string>
+    <string name="cancel">Anile</string>
+    <string name="attempt">epi eseye ankò.</string>
+    <string name="are_you_sure_you_want_unsubscribe">Eske ou vle dezaktive biyè sa?</string>
+    <string name="check_your_internet_settings_nmake_sure_wi_fi">Verifye si koneksyon data aktive</string>
+    <string name="choose_ticket_first">Chwazi yon tikè an premye.</string>
+    <string name="choose_game_and_send_sms_code">Chwazi yon jwèt epi fè kòd la</string>
+    <string name="choose_your_language">Chwazi yon lang</string>
+    <string name="choose_options">Opsyon Tiraj</string>
+    <string name="subscribe">Abònman</string>
+    <string name="subscribe_numbers">- pa gen lajan ki disponib</string>
+    <string name="unsuccessful_transaction_no_funds_available">Tranzaksyon san siksè.</string>
+    <string name="add">AJOUTE</string>
+    <string name="click_add">AJOUTE</string>
+    <string name="filter">Filtè</string>
+    <string name="h">%sè</string>
+    <string name="s">%ss</string>
+    <string name="m">%sm</string>
+    <string name="opt">OPS</string>
+    <string name="ticket_not_accepted">Biye pa valide:\n%s</string>
+    <string name="purchased_with">Chaje sou</string>
+    <string name="choose_your_language_from_the_list">Chwazi yon lang nan lis sa a</string>
+    <string name="customize_your_account">Pèsonalize kont ou selon preferans ou yo</string>
+    <string name="sollicitudin">Antre kòd PIN ou konn sèvi pou antre sou kont ou</string>
+    <string name="win_">Ou genyen %sG</string>
+    <string name="the_existing_lisa_pin_is_a">PIN LISA valid ou se kòd 4 chif ou te gentan kreye sou selilè ou.</string>
+    <string name="get_code">Jwenn kòd</string>
+    <string name="numbers_and_bet_description">Antre 1 boul wap jwe a ak vale ou vle mize sou boul sa </string>
+    <string name="add_description">Peze sou AJOUTE pou biyè a ka monte sou fich ou</string>
+    <string name="verify_and_proceed">Verifye epi kontinye</string>
+    <string name="the_ticket_list_for_the_combo_combination">Men lis biyè konbo a bay</string>
+    <string name="boloto_games_description">Boloto se yon jwet kote wap chwazi jwe 3 boul pou ou ka genyen Djakpot la</string>
+    <string name="boloto_numbers_description">Antre 3 boul wap jwe yo</string>
+    <string name="subcription_description">Peze sou drapo a pou biye sa jwe otomatik nan chak tiraj</string>
+    <string name="combo6_description">Opsyon Konbo6 vire boul yo pou jwe 6 konbinezon jwèt posib</string>
+    <string name="qp_description">Quick Pick se yon opsyon kote se sistem nan kap chwazi boul yo pou ou</string>
+    <string name="subscription">Abònman</string>
+    <string name="subscription_description">Peze sou drapo a pou biye sa jwe otomatik nan chak tiraj</string>
+    <string name="games">Jwèt</string>
+    <string name="bolet_games_description">Bolet se yon jwet kote wap chwazi jwe 1 boul pou ou ka genyen 50X 20X 10X sa wap mize a</string>
+    <string name="maryaj_games_description">Maryaj se yon jwet kote wap chwazi jwe 2 boul pou ou ka genyen 1,000X sa wap mize a</string>
+    <string name="combo_description">Konbo se yon opsyon pou jwe diferan konbinezon diferan ki baze sou chif ou chwazi</string>
+    <string name="lotto3_games_description">Lotto3 se yon jwet kote wap chwazi jwe 3 chif pou ou ka genyen 500X sa wap mize a</string>
+    <string name="bolet_numbers_description">Antre 1 boul wap jwe a ak vale ou vle mize sou boul sa </string>
+    <string name="maryaj_numbers_description">Antre 2 boul wap jwe a ak vale ou vle mize sou boul sa </string>
+    <string name="lotto3_numbers_description">Antre 3 chif wap jwe a ak vale ou vle mize a</string>
+    <string name="lotto4_games_description">Lotto4 se yon jwet kote wap chwazi jwe 4 chif pou ou ka genyen 5,000X sa wap mize a</string>
+    <string name="lotto4_numbers_description">Antre 4 chif wap jwe a ak vale ou vle mize a</string>
+    <string name="lotto5_games_description">Lotto5 se yon jwet kote wap chwazi jwe 5 chif pou ou ka genyen 25,000X sa wap mize a</string>
+    <string name="lotto5jr_games_description">Lotto5P5 se yon jwet kote wap chwazi jwe 5 chif pou ou ka genyen Djakpot la</string>
+    <string name="royal5_games_description">ROYAL5 se yon jwet kote wap chwazi jwe 5 chif pou ou ka genyen Djakpot la</string>
+    <string name="draw_option_description">Chwazi opsyon tiraj ou vle jwe oswa tou le 3</string>
+    <string name="lotto5jr_numbers_description">Antre 5 chif wap jwe yo</string>
+    <string name="you_can_either_transfer_your_winnings_to_your_mon_cash_account">Ou gen opsyon pou voye lajan ou sou kont MonCash ou oswa tire lajan ou nan yon kabin SogeXpress ki bay sèvis LISA</string>
+    <string name="lotto5_numbers_description">Antre 5 chif wap jwe a ak vale ou vle mize a</string>
+    <string name="the_best_way_to_play">Pibon jan pou jwe</string>
+    <string name="terms_service_text">"Enfòmasyon sou aplikasyon sa a bay pa Lotto International S.A. Lè ou telechaje, oswa itilize epi sèvi ak aplikasyon LISA a, oswa nenpòt ki paj nan aplikasyon sa a, ou bay konsantman ou a pou avètisman sa a. Tout sa ki nan aplikasyon an, san limitasyon, tout done yo, enfòmasyon yo, tèks, grafik yo, lyen yo ak lòt materyèl yo, bay pou  itilizatè jwenn enfòmasyon yo e yo fèt pou itilize pou rezon jwèt aza.
+Aplikasyon an pibliye san okenn garanti, eksprime, ki pa eksprime oswa legal, ki gen ladan l, men ki pa limite a, okenn garanti ke aplikasyon an pral satisfè atant itilizatè, okenn garanti valè machann, kondisyon fizik pou yon rezon patikilye, ak libète fo kont, ak okenn garanti ke dokiman an pral konfòm, oswa nenpòt garanti ke aplikasyon an pap gen erè.
+LISA pa garanti ke aplikasyon an oswa kontni an ap reponn oswa satisfè egzijans ou yo. Nan okenn ka LISA pa responsab pou nenpòt domaj oswa pèt done ki soti nan itilizasyon de aplikasyon an, pou kontni an, kit sa gen yon rapò dirèk oswa endirèk, espesyal oswa konsekan, ki lakoz sitiasyon ki kive, ki ta baze sou yon garanti, kontra oswa lot antant, domaj yon moun oswa pwopriyete ta viktim nan itilize oswa nan sèvi ak aplikasyon an.
+&#169;2020
+Lotto International S.A
+Tout dwa rezève
+www.lisa.ht"</string>
+    <string name="terms_payment_text">"Ou se sèl responsab pou kenbe modpas ou ak lòt kalifikasyon login sekirite, ak pou tout sèvis acha yo mande nan lòt tranzaksyon ki fèt nan kont anrejistre ou sou entènèt. Nenpòt acha ak tranzaksyon ki fèt avèk sèvis la dwe jije demann lejitim nan men kliyan an ki te anrejistre kont li sou entènèt. Ou dwe imedyatman avize Lisa si enfòmasyon kont ou konpwomèt oswa yo gen yon rezon ki fè yo kwè li ka konpwomèt.
+LISA pa responsab pou pèt ki soti nan itilizasyon san otorizasyon enfòmasyon sou kont sou entènèt yon kliyan. Ou pral resevwa yon mesaj SMS / tès pou enfòme w sou enskripsyon ou pou itilize sèvis la ak konfimasyon pou chak acha ak tranzaksyon lajan te fè lè l sèvi avèk sèvis la.
+LISA pèmèt ou transfere ak touche lajan kach ak MonCash (lajan elektronik) ak SogeXpress (Kach).
+LISA pa responsab, ni li pa gen aksè nan limit kont de (2) antite sa yo.
+MonCash gen de (2) walèt: Mini Walèt (HTG7,500) ak Full Walèt (HTG75,000.00). Pou kantite tranzaksyon verifye aplikasyon MonCash oswa rele nan 202.
+SogeXpress gen dwa pou mande yon piès idantite bay nenpòt moun ki fè yon tranzaksyon nan youn nan pwen peman li yo. Pipiti ou ka touche se 50 goud.
+
+LISA pa garanti dèke sèvis la ap toujou stab – erè, oswa responsab koupi rezo a, oswa echèk nan aplikasyon wap sèvi a, oswa pou antretyen ekipman ki te deja pwograme, oswa ki gen rapò ak evènman ki depase kontwòl LISA tankou grèv, revòlt, manifestasyon, dife, inondasyon, eksplozyon, lagè, aksyon gouvènman an, kondisyon travay, tranblemanntè, katastwòf natirèl oswa entèripsyon nan sèvis entènèt nan yon zòn kote serveurs rezo yo lokalize.
+Lisa ka chanje oswa sispann nenpòt avantaj ki gen rapò ak Kont LISA a nan nenpòt ki lè. Lisa ka enpoze tou limit sou itilizasyon oswa aksè a sèten karakteristik nan sèvis la, san avètisman oswa responsablite.
+Ou dakò pou ou pa itilize nenpòt aparèy, lojisyèl pou entèfere oswa eseye entèfere ak bon jan travay nan sèvis la, oswa avèk itilizasyon nenpòt ki lòt moun nan sèvis la.
+Ou pa itilize idantite yon lòt moun oswa jwe ak enfòmasyon lòt moun pou ka sèvi ak sèvis la.
+Pou konfime nenpòt tranzaksyon lajan, ou gen pou bay yon konsantman ke ou te konprann kondisyon sèvis sa a. Ou pa ta dwe itilize sèvis la si ou pa dakò ak nenpòt nan tèm sa yo."
+</string>
+    <string name="privacy_policy_text" formatted="false">Lisa pran règleman sou done prive a o serye. Ou gen dwa konnen kisa nou fè ak enfòmasyon pèsonèl nou kolekte sou aplikasyon Lisa a pou ou ka fè bon chwa. Angajman nou sou done prive baze sou pwotokòl enfòmasyon prive pèsonèl itilizatè yo. Kominike sa a eksplike ki enfòmasyon nou kolekte, poukisa nou kolekte li ak ki jan nou itilize li.
+Pou amelyore eksperyans kliyan ou sou aplikasyon Lisa a, pou kreye yon entèraksyon endividyalize ant ou menm ak Lisa; sa a fèt avèk done analitik, enfòmasyon ki nan kont Lisa ou ki gen tranzaksyon pase yo, konpòtman pase yo ak an tan reyèl sou aplikasyon an, ak mem kalite enfòmasyon ki soti nan lòt jwè yo, pou nou kapab prezante ou ak kontni, ofri ou rekòmandasyon pwodwi, maketing ak piblisite ak lòt entèraksyon ke nou pèsonalize pou ou.
+Pa gen okenn enfòmasyon pèsonèl ki kolekte san konsantman davans ou. Nou kolekte enfòmasyon pèsonèl ou lè ou volontèman kominike avèk nou sou aplikasyon a, pa abònman nan youn nan sèvis nou, oswa pa lòt kalite mwayen. Nan pwogram ak fè miz a sou kont Lisa ou nou mande w pou enfòmasyon pèsonèl tankou non ou, dat ou fèt, sèks, preferans lang, adrès imel, nimewo telefòn, adrès fisik, kestyon sekirite ak lòt preferans itilizatè. Lè ou konekte avèk nou atravè chanèl medya sosyal, ou tou aksepte de règleman an plas yo pou itilize chanèl medya sosyal, tanpri revize règleman sou enfòmasyon prive nan chanèl ou itilize yo pou konekte avèk nou.
+Nou kenbe enfòmasyon ou, ki gen ladan enfòmasyon pèsonèl ou, pou valè tan ki rezonab ak nesesè pou bay ou sèvis, pou fè pwomosyon pwodwi ak sèvis nou yoe pou opere jwèt aza an akò ak obligasyon legal nou yo; li kapab itilize tou pou rezoud konfli ak / oswa ranfòse nenpòt akò nou genyen avèk itilizatè a.
+Lisa gen mezi sekirite an plas pou eseye pwoteje pou enfomasyon an pa pèdi, move itilizasyon ak chanjman nan done itilizatè ou an ak enfòmasyon pèsonèl anba kontwòl nou an. Lisa eseye kenbe enfòmasyon sa yo nan enstalasyon ki an sekirite, pwoteje kont aksè san otorizasyon, ak konsève pou valè tan ki rezonab ak nesesè.
+Nou rezève nou dwa pou modifye avi sou done prive sa a nenpòt ki lè, kidonk tanpri revize li souvan.</string>
+    <string name="sogexpress_description">Sonje pou toupre oswa nan Kabin SogeXpress la avan ou fè tranzaksyon an (wap gen 15mn)\nPipiti ou ka touche se 50Goud</string>
+    <string name="moncash_description">LISA ap peye frè retrè yo tout tranzaksyon ki plis pase 250 Goud</string>
+
+    <string name="ny_draw">Tiraj NY</string>
+    <string name="ga_draw">Tiraj GA</string>
+    <string name="fl_draw">Tiraj FL</string>
+    <string name="new_york_draw">Tiraj New York</string>
+    <string name="georgia_draw">Tiraj Georgia</string>
+    <string name="florida_draw">Tiraj Florida</string>
+    <string name="profile">Pwofil</string>
+    <string name="wallet_">Bous</string>
+    <string name="tickets_">Biyè</string>
+    <string name="last_draws">Rezilta Tiraj</string>
+    <string name="sign_out">Dekonekte</string>
+    <string name="are_you_sure_you_want_to_sign_out">Èske ou vle dekonekte?</string>
+    <string name="draw_results">Draw results</string>
+    <string name="ny">NY</string>
+    <string name="fl">FL</string>
+    <string name="ga" translatable="false">GA</string>
+    <string name="success_payment_message">Ou resevwa %1$sG ak MonCash ak tout BONIS 5\%% an\nKonfimasyon ID: %1$s</string>
+    <string name="payment_link_message">Ou mande pou voye %1$sG sou kont MonCash ou\nOu pwal resevwa yon SMS nan yon ti tan kap enfomew si transaksyon sa a aksepte</string>
+    <string name="pin_funds_message">SogeXpress:Demand pou w touche %1$sG la aksepte\nOu genyen 15 minit pou fini tranzaksyon\nA kob konfimasyon : %2$s
+</string>
+    <string name="funds_issued_message">SogeXpress: Demand konplete  %1$sG\n%2$s\nKonfimasyon ID: %3$s</string>
+    <string name="funds_returned_message">Tranzaksyon retrè a pa konplete\n%1$sG retounen nan kont ou\nKonfimasyon ID: %2$s</string>
+    <string name="moncash_transfer_message">Ou rechaje kont LISA ou a pou %1$sG\nKonfimasyon ID: %2$s</string>
+    <string name="last_name">Siyati</string>
+    <string name="funds_blocked_message">SogeXpress: Demand pou %1$sG\n%2$s\nKonfimasyon ID: %3$s</string>
+
+    <string name="ny_description">Peze sou ti bwat ki make NY pou jwe pour tiraj New York</string>
+    <string name="fl_description">Peze sou ti bwat ki make FL pou jwe pour tiraj Florida</string>
+    <string name="ga_description">Peze sou ti bwat ki make GA pou jwe pour tiraj Georgia</string>
+    <string name="get_a_gift">Plis avantaj!</string>
+    <string name="make_sure_to_enter_your_profile_to_get_surprise_on_your_birthday">Konplete tout pwofil, antre dat fèt ou pou nou ka pi byen sèviw e ba w plis avantaj</string>
+    <string name="fill_out_profile">Ranpli pwofil ou</string>
+    <string name="maybe_later">Yon lot lè</string>
+    <string name="profile_birthday_alert">Sonje sistèm nan ap toujou kenbe 1e dat ou te antre a</string>
+    <string name="your_operator_does_not_support_service">Sèvis la pa disponib sou rezo sa a.</string>
+
+    <string name="royal5_ticket_win_jackpot">ROYAL5\nTiraj %1$s %2$s\nOu genyen DJAKPOT la %3$sG!</string>
+    <string name="royal5_ticket_bought">ROYAL5: Biye %1$s %2$s\nTiraj %3$s %4$s\nID: %5$s\nBiye sa chaje sou kont:\nBonis Lisa %6$s\nLISA %7$s\nDigicel %8$s</string>
+    <string name="royal5_ticket_win">ROYAL5\nTiraj %1$s %2$s\nOu genyen %3$sG!</string>
+
+    <string name="boloto_ticket_bought">BOLOTO: Biye %1$s %2$s\nTiraj %3$s %4$s\nID: %5$s\nBiye sa chaje sou kont:\nBonis Lisa %6$s\nLISA %7$s\nDigicel %8$s</string>
+    <string name="boloto_ticket_win_jackpot">BOLOTO\nTiraj %1$s %2$s\nOu genyen DJAKPOT la %3$sG!</string>
+    <string name="boloto_ticket_win">BOLOTO\nTiraj %1$s %2$s\nOu genyen %3$sG!</string>
+    <string name="bolet_ticket_bought">BOLET: Biye %1$s %2$s\nTiraj %3$s %4$s\nID: %5$s\nBiye sa chaje sou kont:\nBonis Lisa %6$s\nLISA %7$s\nDigicel %8$s</string>
+    <string name="bolet_ticket_win">BOLET\nTiraj %1$s %2$s\nOu genyen %3$sG!</string>
+    <string name="mariage_ticket_bought">MARYAJ: Biye %1$s %2$s\nTiraj %3$s %4$s\nID: %5$s\nBiye sa chaje sou kont:\nBonis Lisa %6$s\nLISA %7$s\nDigicel %8$s</string>
+    <string name="mariage_ticket_win">MARYAJ\nTiraj %1$s %2$s\nOu genyen %3$sG!</string>
+    <string name="lotto3_ticket_bought">LOTTO3: Biye %1$s %2$s\nTiraj %3$s %4$s\nID: %5$s\nBiye sa chaje sou kont:\nBonis Lisa %6$s\nLISA %7$s\nDigicel %8$s</string>
+    <string name="lotto3_ticket_win">LOTTO3\nTiraj %1$s %2$s\nOu genyen %3$sG!</string>
+    <string name="lotto4_ticket_bought">LOTTO4: Biye %1$s %2$s\nTiraj %3$s %4$s\nID: %5$s\nBiye sa chaje sou kont:\nBonis Lisa %6$s\nLISA %7$s\nDigicel %8$s</string>
+    <string name="lotto4_ticket_win">LOTTO4\nTiraj %1$s %2$s\nOu genyen %3$sG!</string>
+    <string name="lotto5_ticket_bought">LOTTO5: Biye %1$s %2$s\nTiraj %3$s %4$s\nID: %5$s\nBiye sa chaje sou kont:\nBonis Lisa %6$s\nLISA %7$s\nDigicel %8$s</string>
+    <string name="lotto5_ticket_win">LOTTO5\nTiraj %1$s %2$s\nOu genyen %3$sG!</string>
+    <string name="lotto5jr_ticket_bought">LOTTO5P5: Biye %1$s %2$s\nTiraj %3$s %4$s\nID: %5$s\nBiye sa chaje sou kont:\nBonis Lisa %6$s\nLISA %7$s\nDigicel %8$s</string>
+    <string name="lotto5jr_ticket_win">LOTTO5P5\nTiraj %1$s %2$s\nOu genyen %3$sG!</string>
+    <string name="lotto5jr_ticket_win_jackpot">LOTTO5P5\nTiraj %1$s %2$s\nOu genyen DJAKPOT la %3$sG!</string>
+
+    <string name="fl_draw_is_not_available">Tiraj FL pa disponib kounye a </string>
+    <string name="ny_draw_is_not_available">Tiraj NY pa disponib kounye a </string>
+
+    <string name="cash_out_with_sogexpress">Retrè avèk SogeXpress</string>
+    <string name="refund_from_sogexpress">Montan retrè retounen nan kont ou</string>
+    <string name="reload_moncash_trans">Kont rechaje avèk MonCash</string>
+    <string name="account_recharged_by_lisa_user">Kont rechaje pa yon jwè LISA</string>
+    <string name="credits_transfered_to_lisa_user">Kredi transfere bay yon itilizatè LISA.</string>
+    <string name="reload_moncash_bonus">Kont rechaje avèk MonCash - 5% BONUS</string>
+    <string name="boloto_ticket_purchased">BOLOTO: Biyè achte</string>
+    <string name="bolet_ticket_purchased">BOLET: Biyè achte</string>
+    <string name="maryaj_ticket_purchased">MARYAJ: Biyè achte</string>
+    <string name="lotto3_ticket_purchased">LOTTO3: Biyè achte</string>
+    <string name="lotto4_ticket_purchased">LOTTO4: Biyè achte</string>
+    <string name="lotto5_ticket_purchased">LOTTO5: Biyè achte</string>
+    <string name="lotto5jr_ticket_purchased">LOTTO5P5: Biyè achte</string>
+    <string name="purchased_by_boloto_qp">BOLOTO: QP Biyè achte</string>
+    <string name="boloto_jackpot_win">BOLOTO: Djakpot Biyè gayan</string>
+    <string name="boloto_ticket_win_trans">BOLOTO: Biyè gayan</string>
+    <string name="bolet_ticket_win_trans">BOLET: Biyè gayan</string>
+    <string name="maryaj_ticket_win_trans">MARYAJ: Biyè gayan</string>
+    <string name="lotto3_ticket_win_trans">LOTTO3: Biyè gayan</string>
+    <string name="lotto4_ticket_win_trans">LOTTO4: Biyè gayan</string>
+    <string name="lotto5_ticket_win_trans">LOTTO5: Biyè gayan</string>
+    <string name="lotto5jr_ticket_win_trans">LOTTO5P5: Biyè gayan</string>
+    <string name="boloto_combo_ticket_purchase">BOLOTO: Konbo6 Biyè achte</string>
+    <string name="reload_acc_pappadap">Kont rechaje avèk ajan Pappadap</string>
+    <string name="reload_acc_pappadap_bonus">Kont rechaje avèk ajan Pappadap- bonus</string>
+
+    <string name="lotto5jr_last_drawn_numbers">LOTTO5P5: Rezilta Tiraj</string>
+    <string name="lotto3_last_drawn_numbers">LOTTO3: Rezilta Tiraj</string>
+    <string name="lotto4_last_drawn_numbers">LOTTO4: Rezilta Tiraj</string>
+    <string name="lotto5_last_drawn_numbers">LOTTO5: Rezilta Tiraj</string>
+    <string name="bolet_last_drawn_numbers">BOLET: Rezilta Tiraj</string>
+    <string name="credits_added_to_acc">BONIS LISA : kredi ajoute nan kont ou</string>
+    <string name="welcome_bonus">Bonis Byenvini</string>
+    <string name="transfer_has_been_done_success">Lajan an transfere sou kont MonCash ou</string>
+    <string name="game_description">Glise oswa tape pou ale sou yon lòt jwèt.</string>
+    <string name="information_requested_once">Enfomasyon sa ap gen pou mete yon sèl fwa pou konplete anrejistreman an.</string>
+    <string name="bet_limits_">Limit valè ou ka miz pou jwèt sa a se 1G rive %dG</string>
+    <string name="success_payment_message_bonus">Kont LISA ou rechaje ak MonCash pou yon total %1$sG : %2$s + BONIS 5%% - %3$sG\nKonfimasyon ID: %4$s</string>
+    <string name="moncash_cash_out">Ou mande pou voye %1$sG sou kont MonCash ou. Ou pwal resevwa yon SMS nan yon ti tan kap enfomew si transaksyon</string>
+    <string name="missing_or_invalid_date">Done yo enkonplè oswa pa valid</string>
+    <string name="please_wait_a_few_mins">Tanpri tann kèk minit epi eseye ankò</string>
+    <string name="vas_royal5">VAS - ROYAL5 LastDrawnNumbers</string>
+    <string name="royal5_ticket">ROYAL5 ticket</string>
+    <string name="royal5_string">ROYAL5 win</string>
+    <string name="royal5_same_ticket">VAS - ROYAL5 SameTicketQuery</string>
+    <string name="lotto5x_same_ticket">VAS - LOTTO5X SameTicketQuery</string>
+    <string name="boloto_last_drawn">VAS - BOLOTO LastDrawnNumbers</string>
+    <string name="boloto_same_ticket">VAS - BOLOTO SameTicketQuery</string>
+    <string name="royal5_cashback">ROYAL5 CashBack</string>
+    <string name="instaboul_ticket">INSTABOUL ticket</string>
+    <string name="instaboul_win">INSTABOUL win</string>
+    <string name="instaboul_last_drawn">VAS - INSTABOUL LastDrawnNumbers</string>
+    <string name="instaboul_cashback">INSTABOUL CashBack</string>
+    <string name="faq" translatable="false">FAQ</string>
+</resources>

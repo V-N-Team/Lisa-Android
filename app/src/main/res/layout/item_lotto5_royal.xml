@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game_list_boloto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_games_mask"
+    android:padding="-10dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-20dp"
+        android:layout_marginBottom="-20dp"
+        android:background="#ff9430"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ic_games_mask" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/game_list_boloto_image_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.09" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/game_list_boloto_image_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.27" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/game_list_boloto_image_bottom"
+        app:layout_constraintEnd_toStartOf="@+id/game_list_boloto_message_left"
+        app:layout_constraintStart_toEndOf="@+id/game_list_boloto_image_left"
+        app:layout_constraintTop_toBottomOf="@+id/game_list_boloto_image_top"
+        app:srcCompat="@drawable/ic_royal5_text" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/game_list_boloto_image_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.36" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/game_list_boloto_message_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.43" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/game_list_boloto_message_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.43" />
+
+    <TextView
+        android:id="@+id/game_list_boloto_message"
+        android:layout_width="93dp"
+        android:layout_height="28dp"
+        android:fontFamily="@font/montserrat_extra_bold"
+        android:paddingStart="@dimen/padding_small"
+        android:paddingLeft="@dimen/padding_small"
+        android:text="@string/jackpot"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_medium_large_19sp"
+        app:layout_constraintBottom_toTopOf="@+id/jackpot_card"
+        app:layout_constraintStart_toStartOf="@+id/jackpot_card" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/game_list_boloto_message_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/game_list_boloto_image_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.84" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/jackpot_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/bolotoJackpotBg"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/game_list_boloto_message_right"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/game_list_boloto_message_top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/padding_smaller"
+            android:paddingLeft="@dimen/padding_smaller">
+
+            <ht.lisa.app.ui.component.AutoResizeTextView
+                android:id="@+id/game_list_royal5_amount"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:autoSizeTextType="uniform" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="@dimen/margin_smaller_3dp"
+                android:layout_marginLeft="@dimen/margin_smaller_3dp"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingBottom="@dimen/padding_small"
+                android:text="+"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_medium_15sp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

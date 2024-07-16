@@ -1,0 +1,139 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+
+
+def versionMajor = 0
+def versionMinor = 121
+
+android {
+    signingConfigs {
+        release {
+            keyAlias 'lisalisa'
+            keyPassword 'lisalisa'
+            storeFile file('../keystore.jks')
+            storePassword 'lisalisa'
+        }
+    }
+    compileSdkVersion 33
+    buildToolsVersion "30.0.3"
+
+
+    defaultConfig {
+        applicationId "ht.lisa.app"
+        minSdkVersion 21
+        targetSdkVersion 33
+        multiDexEnabled true
+        versionCode versionMajor * 1000 + versionMinor
+        versionName "${versionMajor}.${versionMinor}"
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+
+
+        manifestPlaceholders = [
+                onesignal_app_id: 'ba19520f-527f-4410-812f-a8fa8f2b8963',
+                onesignal_google_project_number: 'REMOTE'
+        ]
+
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def file = output.outputFile
+            outputFileName = new File(file.name.replace(".apk", "-"
+                    + versionName
+                    + ".apk").replace("app", "lisa"))
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.android.support:design:31.0.0-alpha1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.android.support:support-annotations:28.0.0'
+    implementation "com.mikepenz:materialdrawer:6.1.2"
+    implementation 'com.tapadoo.android:alerter:5.1.2'
+
+    implementation "android.arch.lifecycle:extensions:1.1.1"
+
+    implementation 'com.google.android.gms:play-services-auth:21.2.0'
+
+    //Butterknife
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+
+    //Map
+    implementation 'com.google.maps:google-maps-services:0.2.4'
+    implementation 'com.google.android.gms:play-services-maps:19.0.0'
+    implementation 'org.slf4j:slf4j-nop:1.7.25'
+    implementation 'com.google.android.gms:play-services-location:21.3.0'
+
+    implementation 'net.cachapa.expandablelayout:expandablelayout:2.9.2'
+
+    implementation "androidx.viewpager2:viewpager2:1.0.0"
+    //Rx
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.18'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+
+    //Api
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.8.1'
+
+    //Testing
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+
+    //Biometric
+    implementation(group: 'com.an.biometric', name: 'biometric-auth', version: '0.1.0', ext: 'aar', classifier: '')
+
+    //Codec
+    implementation 'commons-codec:commons-codec:1.16.0'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+
+    //OneSignal
+    implementation 'com.onesignal:OneSignal:[4.0.0, 4.99.99]'
+
+    //CrashLytics
+    implementation 'com.google.firebase:firebase-analytics:18.0.2'
+    implementation 'com.google.firebase:firebase-crashlytics:17.3.1'
+
+    //EventBus
+    implementation 'org.greenrobot:eventbus:3.2.0'
+
+    implementation 'com.google.android.material:material:1.3.0'
+
+    implementation 'com.matthew-tamlin:sliding-intro-screen:3.2.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.google.code.gson:gson:2.10.1'
+}

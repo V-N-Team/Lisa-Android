@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_medium_smaller"
+    app:cardCornerRadius="12dp">
+
+    <ImageButton
+        android:id="@+id/draw_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="@dimen/margin_medium"
+        app:backgroundTint="@android:color/transparent"
+        app:srcCompat="@drawable/ic_menu_dots" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lotto_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium_smaller"
+            android:layout_marginEnd="@dimen/margin_medium_smaller"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/walletGrey"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/day_draw_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium_smaller"
+            android:layout_marginBottom="@dimen/margin_medium_smaller"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_size_medium_small" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium_smaller"
+            android:layout_marginEnd="@dimen/margin_medium_smaller">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_small"
+                app:srcCompat="@drawable/ic_sun" />
+
+            <LinearLayout
+                android:id="@+id/day_number_layout_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/margin_smaller_7dp"
+                android:layout_marginVertical="@dimen/margin_small"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/ic_lotto_day" />
+
+                    <TextView
+                        android:id="@+id/day_number_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="@dimen/text_size_smaller_11sp" />
+
+                </FrameLayout>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/shadow_loto" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/day_number_layout_2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/margin_smaller_7dp"
+                android:layout_marginVertical="@dimen/margin_small"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/ic_lotto_day" />
+
+
+                    <TextView
+                        android:id="@+id/day_number_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="@dimen/text_size_smaller_11sp" />
+                </FrameLayout>
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/shadow_loto" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/day_number_layout_3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/margin_smaller_7dp"
+                android:layout_marginVertical="@dimen/margin_small"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/ic_lotto_day" />
+
+                    <TextView
+                        android:id="@+id/day_number_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="@dimen/text_size_smaller_11sp" />
+                </FrameLayout>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/shadow_loto" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/evening_draw_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_medium"
+            android:layout_marginVertical="@dimen/margin_medium_smaller"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_size_medium_small" />
+
+        <LinearLayout
+            android:id="@+id/eveningLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium_smaller"
+            android:layout_marginEnd="@dimen/margin_medium_smaller">
+
+            <ImageView
+                android:id="@+id/evening_image"
+                android:layout_width="28dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_small"
+                app:srcCompat="@drawable/ic_evening_draw"
+                app:tint="@color/eveningColor" />
+
+            <LinearLayout
+                android:id="@+id/evening_number_layout_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/margin_smaller_7dp"
+                android:layout_marginVertical="@dimen/margin_small"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/ic_lotto_evening" />
+
+                    <TextView
+                        android:id="@+id/evening_number_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="@dimen/text_size_smaller_11sp" />
+
+                </FrameLayout>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/shadow_loto" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/evening_number_layout_2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/margin_smaller_7dp"
+                android:layout_marginVertical="@dimen/margin_small"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/ic_lotto_evening" />
+
+
+                    <TextView
+                        android:id="@+id/evening_number_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="@dimen/text_size_smaller_11sp" />
+                </FrameLayout>
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/shadow_loto" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/evening_number_layout_3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/margin_smaller_7dp"
+                android:layout_marginVertical="@dimen/margin_small"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/ic_lotto_evening" />
+
+                    <TextView
+                        android:id="@+id/evening_number_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="@dimen/text_size_smaller_11sp" />
+                </FrameLayout>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/shadow_loto" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/night_draw_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_medium"
+            android:layout_marginVertical="@dimen/margin_medium_smaller"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_size_medium_small" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_medium_smaller">
+
+            <ImageView
+                android:id="@+id/night_image"
+                android:layout_width="28dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_small"
+                app:srcCompat="@drawable/ic_moon" />
+
+            <LinearLayout
+                android:id="@+id/night_number_layout_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/margin_small"
+                android:layout_marginStart="@dimen/margin_small_8dp"
+                android:layout_marginLeft="@dimen/margin_small_8dp"
+                android:layout_marginEnd="@dimen/margin_smaller_7dp"
+                android:layout_marginRight="@dimen/margin_smaller_7dp"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/ic_night_lotto" />
+
+                    <TextView
+                        android:id="@+id/night_number_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="@dimen/text_size_smaller_11sp" />
+                </FrameLayout>
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/shadow_loto" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/night_number_layout_2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/margin_smaller_7dp"
+                android:layout_marginVertical="@dimen/margin_small"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/ic_night_lotto" />
+
+                    <TextView
+                        android:id="@+id/night_number_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="@dimen/text_size_smaller_11sp" />
+
+                </FrameLayout>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/shadow_loto" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/night_number_layout_3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/margin_smaller_7dp"
+                android:layout_marginVertical="@dimen/margin_small"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/ic_night_lotto" />
+
+                    <TextView
+                        android:id="@+id/night_number_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="@dimen/text_size_smaller_11sp" />
+                </FrameLayout>
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/shadow_loto" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

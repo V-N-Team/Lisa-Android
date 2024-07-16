@@ -1,0 +1,275 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ht.lisa.app.ui.registration.ChooseLanguageRegistrationFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/choose_language_back_arrow_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <ImageButton
+        android:id="@+id/back_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/ic_back_arrow"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/choose_language_left_button_guideline"
+        app:layout_constraintTop_toTopOf="@+id/choose_language_back_arrow_guideline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/choose_language_top_title_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.27" />
+
+    <TextView
+        android:id="@+id/choose_language_title"
+        style="@style/TitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_your_language"
+        android:textScaleX="1.05"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/choose_language_bottom_title_guideline"
+        app:layout_constraintEnd_toStartOf="@+id/choose_language_right_button_guideline"
+        app:layout_constraintStart_toEndOf="@+id/choose_language_left_button_guideline"
+        app:layout_constraintTop_toTopOf="@+id/choose_language_top_title_guideline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/choose_language_bottom_title_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/choose_language_top_message_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <TextView
+        android:id="@+id/choose_language_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/choose_your_language_from_the_list"
+        android:textSize="@dimen/text_size_medium_15sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/choose_language_bottom_message_guideline"
+        app:layout_constraintEnd_toStartOf="@+id/choose_language_right_button_guideline"
+        app:layout_constraintStart_toEndOf="@+id/choose_language_left_button_guideline"
+        app:layout_constraintTop_toTopOf="@+id/choose_language_top_message_guideline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/choose_language_bottom_message_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.39" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/choose_language_top_logo_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/choose_language_bottom_logo_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.53" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/choose_language_left_logo_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.28" />
+
+    <ImageView
+        android:id="@+id/choose_language_logo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/main_logo"
+        app:layout_constraintBottom_toBottomOf="@+id/choose_language_bottom_logo_guideline"
+        app:layout_constraintEnd_toStartOf="@+id/choose_language_right_logo_guideline"
+        app:layout_constraintStart_toStartOf="@+id/choose_language_left_logo_guideline"
+        app:layout_constraintTop_toTopOf="@+id/choose_language_top_logo_guideline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/choose_language_right_logo_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.73" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/choose_language_top_top_button_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.67" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/choose_language_left_button_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/choose_language_kreyol"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0.5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/choose_language_top_bottom_button_guideline"
+        app:layout_constraintEnd_toStartOf="@+id/choose_language_left_middle_button_guideline"
+        app:layout_constraintStart_toStartOf="@+id/choose_language_left_button_guideline"
+        app:layout_constraintTop_toTopOf="@+id/choose_language_top_top_button_guideline">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="@dimen/padding_small"
+                app:srcCompat="@drawable/ic_kreyol_flag" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:text="@string/kreyol"
+                android:textColor="@color/darkGrey" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/choose_language_left_middle_button_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.32" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/choose_language_left_middle_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.37" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/choose_language_french"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0.5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/choose_language_top_bottom_button_guideline"
+        app:layout_constraintEnd_toStartOf="@+id/choose_language_right_middle_guideline"
+        app:layout_constraintStart_toEndOf="@+id/choose_language_left_middle_guideline"
+        app:layout_constraintTop_toTopOf="@+id/choose_language_top_top_button_guideline">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="@dimen/padding_small"
+                app:srcCompat="@drawable/ic_france_flag" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:text="@string/french"
+                android:textColor="@color/darkGrey" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/choose_language_right_middle_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.63" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/choose_language_right_middle_button_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.68" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/choose_language_english"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0.5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/choose_language_top_bottom_button_guideline"
+        app:layout_constraintEnd_toStartOf="@+id/choose_language_right_button_guideline"
+        app:layout_constraintStart_toStartOf="@+id/choose_language_right_middle_button_guideline"
+        app:layout_constraintTop_toTopOf="@+id/choose_language_top_top_button_guideline">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="@dimen/padding_small"
+                app:srcCompat="@drawable/ic_english_flag" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:text="@string/english"
+                android:textColor="@color/darkGrey" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/choose_language_top_bottom_button_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.81" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/choose_language_right_button_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94" />
+</androidx.constraintlayout.widget.ConstraintLayout>

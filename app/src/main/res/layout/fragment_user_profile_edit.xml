@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/profile_edit_left_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/profile_edit_right_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/profile_edit_arrow_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="@+id/profile_edit_right_guideline"
+        app:layout_constraintStart_toStartOf="@+id/profile_edit_left_guideline"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/profile_edit_top_scroll_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.104" />
+
+            <LinearLayout
+                android:id="@+id/profile_edit_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_profile_bg"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/padding_medium_small"
+                app:layout_constraintTop_toTopOf="@+id/profile_edit_top_scroll_guideline">
+
+                <FrameLayout
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp">
+
+                    <ImageView
+                        android:id="@+id/profile_edit_main_logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/profile_logo_bg" />
+
+                    <ImageView
+                        android:id="@+id/profile_edit_avatar_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        android:paddingStart="@dimen/padding_smaller"
+                        android:paddingEnd="@dimen/padding_smaller"
+                        android:paddingRight="@dimen/padding_smaller"
+                        android:paddingBottom="@dimen/padding_smaller"
+                        app:srcCompat="@drawable/ic_photo_edit" />
+                </FrameLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_medium_smaller"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:text="@string/name"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_size_medium_15sp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/profile_edit_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:drawableEnd="@drawable/ic_edit"
+                        android:drawableRight="@drawable/ic_edit"
+                        android:hint="-"
+                        android:paddingVertical="@dimen/padding_small"
+                        android:textColor="@color/walletGrey"
+                        android:textSize="@dimen/text_size_medium" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/inactive" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_medium_smaller"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:text="@string/last_name"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_size_medium_15sp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/profile_edit_last_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:drawableEnd="@drawable/ic_edit"
+                        android:drawableRight="@drawable/ic_edit"
+                        android:hint="-"
+                        android:paddingVertical="@dimen/padding_small"
+                        android:textColor="@color/walletGrey"
+                        android:textSize="@dimen/text_size_medium" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/inactive" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_medium_smaller"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:text="@string/birthday"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_size_medium_15sp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/profile_edit_birthday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:paddingVertical="@dimen/padding_small"
+                        android:textColor="@color/walletGrey"
+                        android:textSize="@dimen/text_size_medium"
+                        app:drawableEndCompat="@drawable/ic_date" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/inactive" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_medium_smaller"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:text="@string/gender"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_size_medium_15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_small"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:layout_weight="1">
+
+                        <RadioButton
+                            android:id="@+id/profile_edit_male"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/gender_selector"
+                            android:padding="@dimen/padding_small"
+                            android:text="@string/male"
+                            android:textColor="@color/walletGrey"
+                            android:textSize="@dimen/text_size_medium" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_gravity="bottom"
+                            android:background="@color/inactive" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_small"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:layout_weight="1">
+
+                        <RadioButton
+                            android:id="@+id/profile_edit_female"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/gender_selector"
+                            android:padding="@dimen/padding_small"
+                            android:text="@string/female"
+                            android:textColor="@color/walletGrey"
+                            android:textSize="@dimen/text_size_medium" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_gravity="bottom"
+                            android:background="@color/inactive" />
+
+                    </FrameLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_medium_smaller"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:text="@string/location"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_size_medium_15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/location_error"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/city_not_found"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/text_size_smaller_11sp"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toTopOf="@+id/cash_out_balance_card_inner_top_guideline"
+                        app:layout_constraintStart_toEndOf="@+id/cash_out_balance_card_left_guideline" />
+
+                    <ht.lisa.app.ui.userprofile.InstantAutoComplete
+                        android:id="@+id/profile_edit_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:drawableEnd="@drawable/ic_marker"
+                        android:drawableRight="@drawable/ic_marker"
+                        android:hint="-"
+                        android:paddingVertical="@dimen/padding_small"
+                        android:textColor="@color/walletGrey"
+                        android:textSize="@dimen/text_size_medium" />
+
+                    <View
+                        android:id="@+id/location_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/inactive" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_medium_smaller"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:text="@string/email"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_size_medium_15sp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/profile_edit_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:drawableEnd="@drawable/ic_edit"
+                        android:drawableRight="@drawable/ic_edit"
+                        android:hint="-"
+                        android:paddingVertical="@dimen/padding_small"
+                        android:textColor="@color/walletGrey"
+                        android:textSize="@dimen/text_size_medium" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/inactive" />
+
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_medium_smaller"
+                    android:layout_marginBottom="@dimen/margin_small">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/social_media"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/text_size_medium_15sp" />
+
+                    <CheckBox
+                        android:id="@+id/social_media_chb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/checkbox_selector_rounded"
+                        android:button="@null" />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_small"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/profile_edit_facebook"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="-10dp"
+                            android:layout_marginLeft="-10dp"
+                            android:background="@color/white"
+                            android:digits="abcdefghijklmnopqrstuvwxyz1234567890."
+                            android:drawableStart="@drawable/ic_fb"
+                            android:drawableLeft="@drawable/ic_fb"
+                            android:drawablePadding="@dimen/padding_small"
+                            android:hint="@string/facebook"
+                            android:maxLines="1"
+                            android:padding="@dimen/padding_small"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:textColor="@color/walletGrey"
+                            android:textSize="@dimen/text_size_medium"
+                            app:autoSizeTextType="uniform" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_gravity="bottom"
+                            android:background="@color/inactive" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_small"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/profile_edit_insta"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:digits="abcdefghijklmnopqrstuvwxyz1234567890._"
+                            android:drawableStart="@drawable/ic_insta_grey"
+                            android:drawableLeft="@drawable/ic_insta_grey"
+                            android:drawablePadding="@dimen/padding_small"
+                            android:hint="@string/instagram"
+                            android:maxLines="1"
+                            android:paddingVertical="@dimen/padding_small"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:textColor="@color/walletGrey"
+                            android:textSize="@dimen/text_size_medium"
+                            app:autoSizeTextType="uniform" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_gravity="bottom"
+                            android:background="@color/inactive" />
+
+                    </FrameLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/profile_edit_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:background="@drawable/rounded_button_grey"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingVertical="@dimen/padding_medium_smaller"
+                    android:text="@string/save_changes"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_medium" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/defaultBg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_edit_layout" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/back_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toEndOf="@+id/profile_edit_left_guideline"
+        app:layout_constraintTop_toTopOf="@+id/profile_edit_arrow_guideline"
+        app:srcCompat="@drawable/ic_back_arrow" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

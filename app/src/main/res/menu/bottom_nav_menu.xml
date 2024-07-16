@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/user_profile"
+        android:icon="@drawable/ic_person"
+        android:title="@string/profile" />
+    <item
+        android:id="@+id/wallet"
+        android:icon="@drawable/ic_wallet"
+        android:title="@string/wallet_" />
+    <item
+        android:id="@+id/game_list"
+        android:title="" />
+    <item
+        android:id="@+id/tickets"
+        android:enabled="true"
+        android:icon="@drawable/ic_tickets"
+        android:title="@string/tickets_" />
+    <item
+        android:id="@+id/winning_numbers"
+        android:icon="@drawable/ic_last_draws"
+        android:title="@string/last_draws"/>
+</menu>

@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_large_small">
+
+            <ImageView
+                android:id="@+id/contact_us_icon"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="@dimen/margin_huge"
+                app:srcCompat="@drawable/ic_contact_us"
+                app:layout_constraintLeft_toRightOf="@id/left_contact_us_icon_gl"
+                app:layout_constraintRight_toLeftOf="@id/right_contact_us_icon_gl"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/left_contact_us_icon_gl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.3" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/right_contact_us_icon_gl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.7" />
+
+            <TextView
+                android:id="@+id/contact_us_text_first"
+                style="@style/TitleTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium_small"
+                android:text="@string/customer_service"
+                app:layout_constraintTop_toBottomOf="@id/contact_us_icon" />
+
+            <TextView
+                android:id="@+id/contact_us_text_second"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium_small"
+                android:gravity="center"
+                app:srcCompat="@drawable/ic_contact_us"
+                android:text="@string/need_help_pease_contact_us"
+                android:textSize="@dimen/text_size_medium_15sp"
+                app:layout_constraintTop_toBottomOf="@id/contact_us_text_first" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium_small"
+                app:cardCornerRadius="11dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintLeft_toRightOf="@id/start_vertical_gl"
+                app:layout_constraintRight_toLeftOf="@id/end_vertical_gl"
+                app:layout_constraintTop_toBottomOf="@id/contact_us_text_second">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/contact_us_call_center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/margin_medium_smaller"
+                            android:layout_marginLeft="@dimen/margin_medium_smaller"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:padding="@dimen/padding_smaller"
+                                app:srcCompat="@drawable/ic_call_center" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/contact_us_call_center_value"
+                                style="@style/MenuItemStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="@dimen/margin_medium_small"
+                                android:layout_marginBottom="@dimen/margin_small"
+                                android:gravity="start"
+                                android:text="@string/_888" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/contact_us_call_center_value"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginStart="@dimen/margin_medium_small"
+                                android:layout_marginLeft="@dimen/margin_medium_small"
+                                android:layout_marginBottom="@dimen/margin_medium_small"
+                                android:text="@string/call_center" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/margin_medium_small"
+                                android:layout_marginRight="@dimen/margin_medium_small"
+                                app:srcCompat="@drawable/ic_arrow_right" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginStart="@dimen/margin_medium_small"
+                                android:layout_marginLeft="@dimen/margin_medium_small"
+                                android:background="@color/walletStroke" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/contact_us_whats_app"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/margin_medium_smaller"
+                            android:layout_marginLeft="@dimen/margin_medium_smaller"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:padding="@dimen/padding_smaller"
+                                app:srcCompat="@drawable/ic_whats_up" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/contact_us_whats_app_value"
+                                style="@style/MenuItemStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="@dimen/margin_medium_small"
+                                android:layout_marginBottom="@dimen/margin_small"
+                                android:gravity="start"
+                                android:text="@string/_509_3888_1000" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/contact_us_whats_app_value"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginStart="@dimen/margin_medium_small"
+                                android:layout_marginLeft="@dimen/margin_medium_small"
+                                android:layout_marginBottom="@dimen/margin_medium_small"
+                                android:text="@string/whatsapp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/margin_medium_small"
+                                android:layout_marginRight="@dimen/margin_medium_small"
+                                app:srcCompat="@drawable/ic_arrow_right" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginStart="@dimen/margin_medium_small"
+                                android:layout_marginLeft="@dimen/margin_medium_small"
+                                android:background="@color/walletStroke" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/contact_us_facebook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/margin_medium_smaller"
+                            android:layout_marginLeft="@dimen/margin_medium_smaller"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:padding="@dimen/padding_smaller"
+                                app:srcCompat="@drawable/ic_facebook" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/contact_us_facebook_value"
+                                style="@style/MenuItemStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="@dimen/margin_medium_small"
+                                android:layout_marginBottom="@dimen/margin_small"
+                                android:gravity="start"
+                                android:text="@string/lisalottoht" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/contact_us_facebook_value"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginStart="@dimen/margin_medium_small"
+                                android:layout_marginLeft="@dimen/margin_medium_small"
+                                android:layout_marginBottom="@dimen/margin_medium_small"
+                                android:text="@string/facebook_messenger" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/margin_medium_small"
+                                android:layout_marginRight="@dimen/margin_medium_small"
+                                app:srcCompat="@drawable/ic_arrow_right" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginStart="@dimen/margin_medium_small"
+                                android:layout_marginLeft="@dimen/margin_medium_small"
+                                android:background="@color/walletStroke" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/contact_us_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/margin_medium_smaller"
+                            android:layout_marginLeft="@dimen/margin_medium_smaller"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:padding="@dimen/padding_smaller"
+                                app:srcCompat="@drawable/ic_email" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/contact_us_email_value"
+                                style="@style/MenuItemStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="@dimen/margin_medium_small"
+                                android:layout_marginBottom="@dimen/margin_small"
+                                android:gravity="start"
+                                android:text="@string/customercare_lisa_ht" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/contact_us_email_value"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginStart="@dimen/margin_medium_small"
+                                android:layout_marginLeft="@dimen/margin_medium_small"
+                                android:layout_marginBottom="@dimen/margin_medium_small"
+                                android:text="@string/email" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/margin_medium_small"
+                                android:layout_marginRight="@dimen/margin_medium_small"
+                                app:srcCompat="@drawable/ic_arrow_right" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginStart="@dimen/margin_medium_small"
+                                android:layout_marginLeft="@dimen/margin_medium_small"
+                                android:background="@color/walletStroke" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/contact_us_browser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/margin_medium_smaller"
+                            android:layout_marginLeft="@dimen/margin_medium_smaller"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:padding="@dimen/padding_smaller"
+                                app:srcCompat="@drawable/ic_browser" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/contact_us_browser_value"
+                                style="@style/MenuItemStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="@dimen/margin_medium_small"
+                                android:layout_marginBottom="@dimen/margin_small"
+                                android:gravity="start"
+                                android:text="@string/lisa_ht" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/contact_us_browser_value"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginStart="@dimen/margin_medium_small"
+                                android:layout_marginLeft="@dimen/margin_medium_small"
+                                android:layout_marginBottom="@dimen/margin_medium_small"
+                                android:text="@string/web" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/margin_medium_small"
+                                android:layout_marginRight="@dimen/margin_medium_small"
+                                app:srcCompat="@drawable/ic_arrow_right" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/start_vertical_gl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.06" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/end_vertical_gl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.94" />
+
+            <ImageButton
+                android:id="@+id/back_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/ic_back_arrow"
+                app:layout_constraintStart_toEndOf="@+id/start_vertical_gl"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

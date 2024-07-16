@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ticket_normal_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:paddingStart="@dimen/padding_medium_large"
+        android:paddingLeft="@dimen/padding_medium_large"
+        android:paddingEnd="@dimen/padding_medium_small"
+        android:paddingRight="@dimen/padding_medium_small">
+
+        <LinearLayout
+            android:id="@+id/lotto_ball_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_smaller_3dp"
+            android:layout_marginRight="@dimen/margin_smaller_3dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lotto_ball_1_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/margin_smaller_3dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="@dimen/text_size_smaller_11sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="10dp"
+                    android:layout_below="@id/lotto_ball_1_number"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/shadow_loto"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/lotto_ball_1_number" />
+
+                <ImageView
+                    android:id="@+id/quickpick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:srcCompat="@drawable/ic_quickpick_orange" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lotto_ball_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_smaller_3dp"
+            android:layout_marginVertical="@dimen/margin_small"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lotto_ball_2_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:textColor="@color/darkGrey"
+                android:textSize="@dimen/text_size_smaller_11sp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/shadow_loto" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lotto_ball_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_smaller_3dp"
+            android:layout_marginVertical="@dimen/margin_small"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lotto_ball_3_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:textColor="@color/darkGrey"
+                android:textSize="@dimen/text_size_smaller_11sp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/shadow_loto" />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ticket_options_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingBottom="@dimen/padding_smaller">
+
+            <TextView
+                android:id="@+id/ticket_options_opt_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:background="@drawable/opt_orange_bg"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:paddingVertical="1dp"
+                android:paddingStart="@dimen/padding_smaller_6dp"
+                android:paddingLeft="@dimen/padding_smaller_6dp"
+                android:paddingEnd="@dimen/padding_small"
+                android:paddingRight="@dimen/padding_small"
+                android:text="opt"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_smaller"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/buttonLightOrange"
+                app:cardCornerRadius="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/ticket_options_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:paddingHorizontal="4dp"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_smaller" />
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!--  <LinearLayout
+              android:id="@+id/ticket_cost_layout"
+              android:layout_gravity="center_vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingBottom="@dimen/padding_smaller"
+              android:layout_marginHorizontal="@dimen/margin_medium_smaller">
+
+              <TextView
+                  android:id="@+id/ticket_cost"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:fontFamily="@font/roboto_regular"
+                  android:text="15.00"
+                  android:textColor="@color/darkGrey"
+                  android:textSize="13sp" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="G"
+                  android:textColor="@color/darkGrey"
+                  android:textSize="@dimen/text_size_smaller" />
+          </LinearLayout>
+      -->
+
+
+        <LinearLayout
+            android:id="@+id/ticket_status_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="end|center_vertical">
+
+            <LinearLayout
+                android:id="@+id/ticket_win_amount_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:layout_marginRight="@dimen/margin_small">
+
+                <TextView
+                    android:id="@+id/ticket_win_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:paddingBottom="@dimen/padding_smaller"
+                    android:text="doindvind"
+                    android:textColor="@color/greenJackpotColor"
+                    android:textSize="@dimen/text_size_medium_small" />
+
+                <TextView
+                    android:id="@+id/ticket_win_amount_g"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/g_"
+                    android:textAllCaps="true"
+                    android:textColor="@color/greenJackpotColor"
+                    android:textSize="@dimen/text_size_small" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ticket_status_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:layout_marginRight="@dimen/margin_small"
+                android:paddingBottom="@dimen/padding_smaller"
+                app:srcCompat="@drawable/ic_accepted" />
+
+            <ImageButton
+                android:id="@+id/ticket_arrow_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:paddingBottom="@dimen/padding_smaller"
+                app:srcCompat="@drawable/ic_arrow_right" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/ticket_jackpot_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/ic_jackpot_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:paddingStart="@dimen/padding_medium_large"
+            android:paddingLeft="@dimen/padding_medium_large"
+            android:paddingEnd="@dimen/padding_medium_small"
+            android:paddingRight="@dimen/padding_medium_small">
+
+            <LinearLayout
+                android:id="@+id/lotto_jackpot_ball_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/margin_small"
+                android:layout_marginEnd="@dimen/margin_smaller_3dp"
+                android:layout_marginRight="@dimen/margin_smaller_3dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/lotto_jackpot_ball_1_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="@dimen/margin_smaller_3dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="@dimen/text_size_smaller_11sp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="10dp"
+                        android:layout_below="@id/lotto_jackpot_ball_1_number"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/shadow_loto"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/lotto_jackpot_ball_1_number" />
+
+                    <ImageView
+                        android:id="@+id/quickpick_jackpot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:srcCompat="@drawable/ic_quickpick_yellow" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lotto_jackpot_ball_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_smaller_3dp"
+                android:layout_marginVertical="@dimen/margin_small"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lotto_jackpot_ball_2_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="@dimen/text_size_smaller_11sp" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/shadow_loto" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lotto_jackpot_ball_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_smaller_3dp"
+                android:layout_marginVertical="@dimen/margin_small"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lotto_jackpot_ball_3_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="@dimen/text_size_smaller_11sp" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/shadow_loto" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="end|center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/margin_small"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:layout_weight="1"
+                    android:gravity="bottom|center_horizontal">
+
+                    <TextView
+                        android:id="@+id/ticket_jackpot_win_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_extra_bold"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/padding_small"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_big_21sp"
+                        app:drawableTopCompat="@drawable/ic_you_win_jackpot_text" />
+
+                    <!--  <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="2dp"
+                          android:layout_marginLeft="@dimen/margin_smaller"
+                          android:layout_marginTop="@dimen/margin_smaller"
+                          android:fontFamily="@font/montserrat_extra_bold"
+                          android:text="@string/g_"
+                          android:textAllCaps="true"
+                          android:textColor="@color/white"
+                          android:textSize="@dimen/text_size_medium_large_19sp" />-->
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:paddingTop="@dimen/padding_small"
+                    android:tint="@color/white"
+                    app:srcCompat="@drawable/ic_arrow_right" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

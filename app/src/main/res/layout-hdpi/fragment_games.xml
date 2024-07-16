@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultGameListBg"
+    android:paddingTop="@dimen/padding_medium">
+
+
+    <ImageButton
+        android:id="@+id/back_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintLeft_toLeftOf="@+id/games_main_left"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_back_grey" />
+
+    <LinearLayout
+        android:id="@+id/ny_draw_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end|center_vertical"
+        app:layout_constraintEnd_toEndOf="@+id/games_main_right"
+        app:layout_constraintStart_toEndOf="@+id/back_arrow"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ht.lisa.app.ui.component.AutoResizeTextView
+            android:id="@+id/ny_games_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/padding_small"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/margin_small"
+            android:textColor="@color/gamesDateColor"
+            android:textSize="@dimen/text_size_medium_small"
+            app:drawableStartCompat="@drawable/ic_grey_sun" />
+
+        <TextView
+            android:id="@+id/ny_games_next_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_smaller" />
+
+        <TextView
+            android:id="@+id/ny_games_next_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_smaller_3dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_smaller" />
+
+        <TextView
+            android:id="@+id/ny_games_next_sec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_smaller" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fl_draw_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_smaller"
+        android:gravity="end|center_vertical"
+        app:layout_constraintEnd_toEndOf="@+id/games_main_right"
+        app:layout_constraintStart_toEndOf="@+id/back_arrow"
+        app:layout_constraintTop_toBottomOf="@+id/ny_draw_layout">
+
+        <ht.lisa.app.ui.component.AutoResizeTextView
+            android:id="@+id/fl_games_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/padding_small"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/margin_small"
+            android:textColor="@color/gamesDateColor"
+            android:textSize="@dimen/text_size_medium_small"
+            app:drawableStartCompat="@drawable/ic_grey_moon" />
+
+        <TextView
+            android:id="@+id/fl_games_next_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_smaller" />
+
+        <TextView
+            android:id="@+id/fl_games_next_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_smaller_3dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_smaller" />
+
+        <TextView
+            android:id="@+id/fl_games_next_sec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_smaller" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ga_draw_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_smaller"
+        android:gravity="end|center_vertical"
+        app:layout_constraintEnd_toEndOf="@+id/games_main_right"
+        app:layout_constraintStart_toEndOf="@+id/back_arrow"
+        app:layout_constraintTop_toBottomOf="@+id/fl_draw_layout">
+
+        <ht.lisa.app.ui.component.AutoResizeTextView
+            android:id="@+id/ga_games_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/padding_small"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/margin_small"
+            android:textColor="@color/gamesDateColor"
+            android:textSize="@dimen/text_size_medium_small"
+            app:drawableStartCompat="@drawable/ic_grey_moon" />
+
+        <TextView
+            android:id="@+id/ga_games_next_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_smaller" />
+
+        <TextView
+            android:id="@+id/ga_games_next_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_smaller_3dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_smaller" />
+
+        <TextView
+            android:id="@+id/ga_games_next_sec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_smaller" />
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/games_main_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/games_main_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/games_play_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.89" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/game_selection_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium_small"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintLeft_toLeftOf="@id/games_main_left"
+        app:layout_constraintRight_toRightOf="@+id/games_main_right"
+        app:layout_constraintTop_toBottomOf="@id/ga_draw_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/games_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:background="@android:color/transparent" />
+
+                <ImageButton
+                    android:id="@+id/games_viewpager_arrow_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:tint="@color/white"
+                    app:backgroundTint="@android:color/transparent"
+                    app:srcCompat="@drawable/ic_arrow_left" />
+
+
+                <ImageButton
+                    android:id="@+id/games_viewpager_arrow_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:tint="@color/white"
+                    app:backgroundTint="@android:color/transparent"
+                    app:srcCompat="@drawable/ic_arrow_right" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/ticket_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/games_ticket_header_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/lotto5Selection"
+                    android:scaleType="fitXY"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ticket_bolet_bg" />
+
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/qp_gl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.015" />
+
+                <ImageView
+                    android:id="@+id/games_qp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_smaller_3dp"
+                    android:layout_marginLeft="@dimen/margin_smaller_3dp"
+                    app:srcCompat="@drawable/ic_quickpick_blue" />
+
+
+                <FrameLayout
+                    android:id="@+id/games_plus_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_smaller_3dp"
+                    android:layout_marginRight="@dimen/margin_smaller_3dp">
+
+                    <ImageView
+                        android:id="@+id/add_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_add_new" />
+
+                    <TextView
+                        android:id="@+id/add_button_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="@string/add"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_small"
+                        app:elevation="0dp" />
+
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toStartOf="@id/games_plus_button"
+                    android:layout_toLeftOf="@id/games_plus_button"
+                    android:layout_toEndOf="@+id/games_ticket_bet"
+                    android:layout_toRightOf="@+id/games_ticket_bet">
+
+                    <CheckBox
+                        android:id="@+id/games_combo_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:button="@null"
+                        android:checked="false"
+                        android:drawableEnd="@drawable/check_box_button_unselected"
+                        android:drawableRight="@drawable/check_box_button_unselected"
+                        android:drawablePadding="@dimen/padding_smaller"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:paddingVertical="@dimen/padding_smaller"
+                        android:text="@string/combo_"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_smaller_9sp" />
+                </FrameLayout>
+
+
+                <EditText
+                    android:id="@+id/games_first_number"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_smaller_2dp"
+                    android:layout_marginLeft="@dimen/margin_smaller_2dp"
+                    android:layout_toEndOf="@id/games_qp"
+                    android:layout_toRightOf="@id/games_qp"
+                    android:background="@drawable/empty_number"
+                    android:gravity="center"
+                    android:hint="@string/xx"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:nextFocusRight="@+id/games_second_number"
+                    android:textColor="@color/gamesGrey"
+                    android:textColorHint="@color/grey"
+                    android:textSize="@dimen/text_size_medium_small" />
+
+                <EditText
+                    android:id="@+id/games_second_number"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/games_first_number"
+                    android:layout_toRightOf="@id/games_first_number"
+                    android:background="@drawable/empty_number"
+                    android:gravity="center"
+                    android:hint="@string/xx"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:nextFocusRight="@id/games_third_number"
+                    android:textColor="@color/gamesGrey"
+                    android:textColorHint="@color/grey"
+                    android:textSize="@dimen/text_size_medium_small"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/games_third_number"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/games_second_number"
+                    android:layout_toRightOf="@id/games_second_number"
+                    android:background="@drawable/empty_number"
+                    android:gravity="center"
+                    android:hint="@string/xx"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textColor="@color/gamesGrey"
+                    android:textColorHint="@color/grey"
+                    android:textSize="@dimen/text_size_medium_small"
+                    android:visibility="gone" />
+
+
+                <EditText
+                    android:id="@+id/games_ticket_bet"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin_smaller_3dp"
+                    android:layout_marginLeft="@dimen/margin_smaller_3dp"
+                    android:layout_toEndOf="@id/games_third_number"
+                    android:layout_toRightOf="@id/games_third_number"
+                    android:background="@drawable/ticket_bet_bg"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:hint="@string/bet"
+                    android:inputType="numberDecimal"
+                    android:letterSpacing="0.06"
+                    android:maxLength="5"
+                    android:maxLines="1"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ticket_options_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lotto5Options">
+
+                <CheckBox
+                    android:id="@+id/games_ticket_option1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawablePadding="@dimen/padding_medium_smaller"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_smaller"
+                    android:text="@string/_1_option"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_medium_small"
+                    android:textStyle="bold"
+                    app:drawableEndCompat="@drawable/checkbox_white_selector"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/games_ticket_option_left"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+
+                <CheckBox
+                    android:id="@+id/games_ticket_option2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawablePadding="@dimen/padding_medium_smaller"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_smaller"
+                    android:text="@string/_2_option"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_medium_small"
+                    android:textStyle="bold"
+                    app:drawableEndCompat="@drawable/checkbox_white_selector"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/games_ticket_option_right"
+                    app:layout_constraintStart_toStartOf="@+id/games_ticket_option_left" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+
+                <CheckBox
+                    android:id="@+id/games_ticket_option3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawablePadding="@dimen/padding_medium_smaller"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_smaller"
+                    android:text="@string/_3_option"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_medium_small"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    app:drawableEndCompat="@drawable/checkbox_white_selector"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/games_ticket_option_right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/draw_type_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lotto5Options">
+
+                <FrameLayout
+                    android:id="@+id/ny_draw"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/day_gradient_bg"
+                    android:paddingVertical="@dimen/padding_smaller_6dp">
+
+                    <CheckBox
+                        android:id="@+id/ny_draw_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:button="@null"
+                        android:textSize="12sp"
+                        android:checked="true"
+                        android:clickable="false"
+                        android:drawablePadding="@dimen/padding_small"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="@string/ny_draw"
+                        android:textColor="@color/white"
+                        app:drawableEndCompat="@drawable/checkbox_white_selector"
+                        app:drawableStartCompat="@drawable/ic_sun_white" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_draw"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/night_gradient_bg"
+                    android:paddingVertical="@dimen/padding_smaller_6dp">
+
+                    <CheckBox
+                        android:id="@+id/fl_draw_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:button="@null"
+                        android:textSize="12sp"
+                        android:clickable="false"
+                        android:drawablePadding="@dimen/padding_small"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="@string/fl_draw"
+                        android:textColor="@color/white"
+                        app:drawableEndCompat="@drawable/checkbox_white_selector"
+                        app:drawableStartCompat="@drawable/ic_white_moon" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/ga_draw"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/night_gradient_bg"
+                    android:paddingVertical="@dimen/padding_smaller_6dp">
+
+                    <CheckBox
+                        android:id="@+id/ga_draw_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:button="@null"
+                        android:clickable="false"
+                        android:checked="false"
+                        android:textSize="12sp"
+                        android:drawablePadding="@dimen/padding_small"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="@string/ga_draw"
+                        android:textColor="@color/white"
+                        app:drawableEndCompat="@drawable/checkbox_white_selector"
+                        app:drawableStartCompat="@drawable/ic_evening_draw_14" />
+                </FrameLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <com.matthewtamlin.sliding_intro_screen_library.indicators.DotIndicator
+        android:id="@+id/games_tabs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/game_selection_card"
+        app:numberOfDots="8"
+        app:selectedDotColor="@color/actionButtonColor"
+        app:unselectedDotColor="@color/unselectedDotColor" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/games_play"
+        app:layout_constraintLeft_toLeftOf="@id/games_main_left"
+        app:layout_constraintRight_toRightOf="@id/games_main_right"
+        app:layout_constraintTop_toBottomOf="@+id/games_tabs">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tickets_card"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/tickets_layout_full"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toStartOf="parent"
+                    app:layout_constraintStart_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/games_ticket_header_bottom">
+
+                    <TextView
+                        android:id="@+id/games_current_selection_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:paddingVertical="@dimen/padding_smaller"
+                        android:text="@string/current_selection_press_play_to_confirm"
+                        android:textColor="@color/currentSelectionTextColor"
+                        android:textSize="@dimen/text_size_smaller" />
+
+                    <LinearLayout
+                        android:id="@+id/tickets_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <include
+                            android:id="@+id/empty_list_layout"
+                            layout="@layout/item_game_ticket_empty" />
+                    </LinearLayout>
+
+
+                    <View
+                        android:id="@+id/games_total_price_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginHorizontal="@dimen/margin_medium_small"
+                        android:layout_marginVertical="@dimen/margin_medium_small"
+                        android:background="@color/inactive" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/margin_medium">
+
+                        <TextView
+                            android:id="@+id/games_total_price_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_medium_small"
+                            android:layout_weight="1"
+                            android:text="@string/total_price"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_size_medium"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/games_total_price_value"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_medium_small"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:text="0 G"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_size_medium"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/games_rules"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/margin_medium"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:layout_marginRight="@dimen/margin_small"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toStartOf="@+id/center_gl"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tickets_card">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/game_rules_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:letterSpacing="0.1"
+                        android:maxLines="1"
+                        android:padding="@dimen/padding_small"
+                        android:text="@string/game_rules"
+                        app:autoSizeTextType="uniform"
+                        app:drawableEndCompat="@drawable/ic_arrow_down" />
+
+                    <FrameLayout
+                        android:id="@+id/game_rules_bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/white"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/recent_numbers"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/margin_medium"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginLeft="@dimen/margin_small"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/center_gl"
+                app:layout_constraintTop_toBottomOf="@+id/tickets_card">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/recent_numbers_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:padding="@dimen/padding_small"
+                        android:text="@string/recent_numbers"
+                        app:autoSizeTextType="uniform"
+                        app:drawableEndCompat="@drawable/ic_arrow_right_small" />
+
+                    <FrameLayout
+                        android:id="@+id/recent_numbers_bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/white"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_medium_smaller"
+                android:layout_marginTop="@dimen/margin_larger_48dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp"
+                app:layout_constraintTop_toTopOf="@+id/games_rules">
+
+                <net.cachapa.expandablelayout.ExpandableLayout
+                    android:id="@+id/expandable_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:el_duration="1000"
+                    app:el_expanded="false"
+                    app:el_parallax="0.5">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="@string/lorem_ipsum" />
+
+                </net.cachapa.expandablelayout.ExpandableLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/bottom_button_gl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="1.015" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/center_gl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/games_play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/games_play_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/margin_medium_small"
+            android:layout_marginVertical="@dimen/margin_small"
+            android:background="@drawable/ic_round_button_orange"
+            android:text="@string/play"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

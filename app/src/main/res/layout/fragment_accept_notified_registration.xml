@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ht.lisa.app.ui.registration.AcceptNotifiedRegistrationFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accept_notified_top_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.17" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/accept_notified_top_guideline"
+        app:srcCompat="@drawable/ic_notified" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accept_notified_top_middle_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.51" />
+
+    <TextView
+        style="@style/TitleTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMaxTextSize="@dimen/text_size_big_21sp"
+        android:text="@string/want_to_be_notified_when_you_win"
+        android:textScaleX="1.05"
+        app:layout_constraintBottom_toBottomOf="@+id/accept_notified_title_bot_guideline"
+        app:layout_constraintEnd_toStartOf="@+id/accept_notified_right_guideline"
+        app:layout_constraintStart_toStartOf="@+id/accept_notified_left_guideline"
+        app:layout_constraintTop_toTopOf="@+id/accept_notified_top_middle_guideline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accept_notified_title_bot_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.64" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accept_notified_bottom_middle_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.70" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/turn_on_bottom_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.78" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accept_notified_bottom_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.805" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/no_thanks_bottom_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.905" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accept_notified_left_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accept_notified_right_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accept_notified_left_white_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.045" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/accept_notified_right_white_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.955" />
+
+    <Button
+        android:id="@+id/accept_notified_turn_on_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_button_orange_2"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/turn_on_notifications"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_medium"
+        app:layout_constraintBottom_toBottomOf="@+id/turn_on_bottom_guideline"
+        app:layout_constraintEnd_toStartOf="@+id/accept_notified_right_guideline"
+        app:layout_constraintStart_toStartOf="@+id/accept_notified_left_guideline"
+        app:layout_constraintTop_toTopOf="@+id/accept_notified_bottom_middle_guideline" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_shadow"
+        android:padding="2dp"
+        app:layout_constraintBottom_toBottomOf="@id/no_thanks_bottom_guideline"
+        app:layout_constraintEnd_toStartOf="@+id/accept_notified_right_white_guideline"
+        app:layout_constraintStart_toStartOf="@+id/accept_notified_left_white_guideline"
+        app:layout_constraintTop_toTopOf="@+id/accept_notified_bottom_guideline">
+
+        <Button
+            android:id="@+id/accept_notified_no_thanks_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_button_white"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/no_thanks"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/text_size_medium" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_extra_bold"
+                android:paddingHorizontal="@dimen/margin_medium_small"
+                android:paddingTop="@dimen/padding_large_small"
+                android:paddingBottom="@dimen/padding_medium"
+                android:text="@string/games_subscriptions"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_big" />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/no_subscriptions_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                app:srcCompat="@drawable/ic_empty_subscribe_list" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:text="@string/no_subscription_registered"
+                android:textColor="@color/transactionText"
+                android:textSize="@dimen/text_size_medium_large" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="top|center"
+                android:text="@string/here_is_a_list_of_your_subscriptions"
+                android:textColor="@color/transactionText"
+                android:textSize="@dimen/text_size_medium_15sp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3">
+
+                <Button
+                    android:id="@+id/select_game"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginHorizontal="@dimen/margin_medium_small"
+                    android:fontFamily="@font/roboto_bold"
+                    android:gravity="center"
+                    android:paddingVertical="@dimen/padding_medium_small"
+                    android:text="@string/select_game"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/text_size_medium"
+                    app:backgroundTint="@color/buttonOrange" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/games_subscription_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/margin_medium_smaller"
+            android:layout_marginTop="@dimen/margin_small"
+            android:paddingBottom="80dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

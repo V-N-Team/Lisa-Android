@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultBg"
+    tools:context="ht.lisa.app.ui.registration.MobileRegistrationFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cash_out_choose_left_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cash_out_choose_right_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cash_out_choose_back_arrow_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <ImageButton
+        android:id="@+id/back_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/ic_back_arrow"
+        app:layout_constraintStart_toEndOf="@+id/cash_out_choose_left_guideline"
+        app:layout_constraintTop_toTopOf="@+id/cash_out_choose_back_arrow_guideline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cash_out_choose_logo_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.12" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/ic_cash_out_main"
+        app:layout_constraintBottom_toBottomOf="@+id/cash_out_choose_logo_bottom_guideline"
+        app:layout_constraintEnd_toStartOf="@+id/cash_out_choose_right_guideline"
+        app:layout_constraintStart_toEndOf="@+id/cash_out_choose_left_guideline"
+        app:layout_constraintTop_toTopOf="@+id/cash_out_choose_logo_guideline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cash_out_choose_logo_bottom_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.31" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cash_out_choose_title_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.38" />
+
+    <TextView
+        style="@style/TitleTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/choose_way_to_cash_out"
+        android:textScaleX="1.05"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toStartOf="@+id/cash_out_choose_right_guideline"
+        app:layout_constraintStart_toEndOf="@+id/cash_out_choose_left_guideline"
+        app:layout_constraintTop_toTopOf="@+id/cash_out_choose_title_guideline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cash_out_choose_text_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.44" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:maxLines="2"
+        app:autoSizeMaxTextSize="@dimen/text_size_medium_15sp"
+        android:text="@string/you_can_either_transfer_your_winnings_to_your_mon_cash_account"
+        android:textSize="@dimen/text_size_medium_15sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@id/subtitle_bottom_gl"
+        app:layout_constraintEnd_toStartOf="@+id/cash_out_choose_right_guideline"
+        app:layout_constraintStart_toEndOf="@+id/cash_out_choose_left_guideline"
+        app:layout_constraintTop_toTopOf="@+id/cash_out_choose_text_guideline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/subtitle_bottom_gl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.52" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cash_out_choose_card_left_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.47" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cash_out_choose_mon_cash"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0.5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cash_out_choose_card_bottom_guideline"
+        app:layout_constraintEnd_toEndOf="@+id/cash_out_choose_card_left_guideline"
+        app:layout_constraintStart_toStartOf="@+id/cash_out_choose_left_guideline"
+        app:layout_constraintTop_toTopOf="@+id/cash_out_choose_card_top_guideline">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bottom_orange_bg"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:padding="@dimen/padding_medium_smaller"
+                android:src="@drawable/mon_cash_main" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:text="@string/eMoney"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cash_out_choose_card_right_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.53" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cash_out_choose_sogexpress"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0.5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cash_out_choose_card_bottom_guideline"
+        app:layout_constraintEnd_toEndOf="@+id/cash_out_choose_right_guideline"
+        app:layout_constraintStart_toStartOf="@+id/cash_out_choose_card_right_guideline"
+        app:layout_constraintTop_toTopOf="@+id/cash_out_choose_card_top_guideline">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bottom_orange_bg"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:src="@drawable/sogexpress_main" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:text="@string/cash"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cash_out_choose_card_top_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.54" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/cash_out_choose_card_bottom_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+</androidx.constraintlayout.widget.ConstraintLayout>

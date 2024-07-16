@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="0dp"
+    app:layout_constraintBottom_toBottomOf="@+id/reload_money_funds_card_bottom_guideline"
+    app:layout_constraintEnd_toStartOf="@+id/reload_money_funds_right_guideline"
+    app:layout_constraintStart_toEndOf="@+id/reload_money_funds_left_guideline"
+    app:layout_constraintTop_toTopOf="@+id/reload_money_funds_card_top_guideline">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/amount_transfer_bg">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/reload_money_funds_card_left_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.07" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/reload_money_funds_card_right_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.93" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/reload_money_funds_card_inner_top_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.55" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/combo_"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_medium_large_19sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/reload_money_funds_card_inner_guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/reload_money_funds_card_inner_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.17" />
+
+        <ImageView
+            android:padding="5dp"
+            android:background="@drawable/bg_maryaj_round"
+            android:id="@+id/reload_money_funds_avatar"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:src="@drawable/maryaj_logo_white"
+            app:layout_constraintBottom_toBottomOf="@+id/reload_money_funds_bottom_avatar_guideline"
+            app:layout_constraintEnd_toStartOf="@+id/reload_money_funds_avatar_guideline"
+            app:layout_constraintStart_toEndOf="@+id/reload_money_funds_card_left_guideline"
+            app:layout_constraintTop_toTopOf="@+id/reload_money_funds_name_guideline" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/reload_money_funds_avatar_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.24" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/reload_money_funds_name_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.3" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/reload_money_funds_bottom_avatar_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.49" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/reload_money_funds_phone_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.40" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/please_enter_3rd_combo6_combination_number"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_size_medium_15sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/reload_money_funds_card_right_guideline"
+            app:layout_constraintBottom_toBottomOf="@+id/reload_money_funds_avatar"
+            app:layout_constraintStart_toEndOf="@+id/reload_money_funds_avatar"
+            app:layout_constraintTop_toTopOf="@+id/reload_money_funds_name_guideline" />
+
+        <TextView
+            android:id="@+id/maryaj_combo_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/invalid_number"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_size_smaller_11sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/reload_money_funds_card_inner_top_guideline"
+            app:layout_constraintStart_toEndOf="@+id/reload_money_funds_card_left_guideline" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/reload_money_funds_edit_phone"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/reload_money_funds_edittext_guideline"
+            app:layout_constraintEnd_toStartOf="@+id/reload_money_funds_card_right_guideline"
+            app:layout_constraintStart_toStartOf="@+id/reload_money_funds_card_left_guideline"
+            app:layout_constraintTop_toTopOf="@+id/reload_money_funds_card_inner_top_guideline">
+
+
+            <EditText
+                android:id="@+id/third_combination_number"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/rounded_button_white"
+                android:hint="@string/xx"
+                android:inputType="number"
+                android:maxLength="2"
+                android:paddingStart="@dimen/padding_medium_smaller"
+                android:paddingLeft="@dimen/padding_medium_smaller"
+                android:paddingEnd="32dp"
+                android:paddingRight="32dp"
+                android:textCursorDrawable="@drawable/grey_cursor"
+                android:textSize="@dimen/text_size_medium"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/reload_money_funds_view"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/reload_money_funds_edittext_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.67" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/reload_money_funds_card_middle_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.78" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/reload_money_funds_button_bottom_guideline"
+            app:layout_constraintEnd_toStartOf="@+id/reload_money_funds_card_right_guideline"
+            app:layout_constraintStart_toEndOf="@+id/reload_money_funds_card_left_guideline"
+            app:layout_constraintTop_toTopOf="@+id/reload_money_funds_card_middle_guideline">
+
+
+            <Button
+                android:id="@+id/combo_close"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_small"
+                android:layout_weight="1"
+                android:background="@drawable/button_orange_stroke_rounded_small_bg"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/cancel"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/text_size_medium" />
+
+
+            <Button
+                android:id="@+id/combo_confirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_orange_rounded_small_bg"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/confirm"
+                android:textSize="@dimen/text_size_medium"
+                app:backgroundTint="@color/buttonOrange" />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/reload_money_funds_button_bottom_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.93" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardCornerRadius="11dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/choose_avatar_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/margin_medium_smaller"
+            android:layout_marginEnd="@dimen/margin_medium_smaller"
+            android:layout_marginRight="@dimen/margin_medium_smaller"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/ic_close" />
+
+        <TextView
+            android:id="@+id/choose_avatar_text_first"
+            style="@style/TitleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_smaller"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:text="@string/choose_avatar"
+            android:textSize="@dimen/text_size_medium_large" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/choose_avatar_recycler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_medium_smaller" />
+
+        <Button
+            android:id="@+id/choose_avatar_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin_medium_smaller"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_medium_smaller"
+            android:layout_marginRight="@dimen/margin_medium_smaller"
+            android:layout_marginBottom="@dimen/margin_medium_smaller"
+            android:background="@drawable/rounded_button_orange_2"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/continue_"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_medium"
+            android:visibility="gone" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

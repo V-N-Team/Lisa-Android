@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/left_gl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/right_gl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/game_top_gl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.12" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/numbers_qp_top_gl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+
+    <LinearLayout
+        android:id="@+id/game_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/right_gl"
+        app:layout_constraintStart_toStartOf="@id/left_gl"
+        app:layout_constraintTop_toBottomOf="@+id/game_top_gl">
+
+        <ImageView
+            android:id="@+id/game_guide_main_game"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter" />
+
+        <LinearLayout
+            android:id="@+id/game_bubble_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bubble_bottom_middle"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_medium_smaller">
+
+            <TextView
+                android:id="@+id/game_guide_main_bottom_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/margin_small"
+                android:gravity="start"
+                android:text="@string/games"
+                android:textColor="@color/walletGrey"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/game_guide_games_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="@string/dolor_sit_amet_" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_medium_27dp"
+            android:layout_marginBottom="@dimen/margin_medium_smaller"
+            app:srcCompat="@drawable/ic_finger_swipe" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ticket_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_medium_smaller"
+        android:layout_marginTop="@dimen/margin_small"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ticket_boloto"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/right_gl"
+        app:layout_constraintStart_toStartOf="@id/left_gl"
+        app:layout_constraintTop_toBottomOf="@+id/numbers_qp_top_gl" />
+
+    <LinearLayout
+        android:id="@+id/numbers_qp_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/right_gl"
+        app:layout_constraintStart_toStartOf="@id/left_gl"
+        app:layout_constraintTop_toBottomOf="@+id/numbers_qp_top_gl">
+
+        <LinearLayout
+            android:id="@+id/numbers_qp_top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_smaller"
+            android:background="@drawable/bubble_top_left_end"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_medium_smaller">
+
+            <TextView
+                android:id="@+id/numbers_qp_top_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:gravity="start"
+                android:text="@string/qp"
+                android:textColor="@color/walletGrey"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/numbers_qp_top_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="@string/qp_description" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/numbers_qp_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter" />
+
+        <LinearLayout
+            android:id="@+id/numbers_qp_bot_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_smaller"
+            android:background="@drawable/bubble_bottom_left"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_medium_smaller">
+
+            <TextView
+                android:id="@+id/numbers_qp_bot_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/margin_small"
+                android:gravity="start"
+                android:text="@string/enter_numbers"
+                android:textColor="@color/walletGrey"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/numbers_qp_bot_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="@string/dolor_sit_amet_" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/draw_type_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/right_gl"
+        app:layout_constraintStart_toStartOf="@id/left_gl"
+        app:layout_constraintTop_toBottomOf="@+id/numbers_qp_top_gl">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_smaller"
+            android:background="@drawable/bubble_top_left"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_medium_smaller">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:gravity="start"
+                android:text="@string/new_york_draw"
+                android:textColor="@color/walletGrey"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="@string/ny_description" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/draw_type_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_draw_type_image" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_smaller"
+                android:layout_weight="1"
+                android:background="@drawable/bubble_bottom_right"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_medium_smaller">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/margin_small"
+                    android:gravity="start"
+                    android:text="@string/florida_draw"
+                    android:textColor="@color/walletGrey"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="@string/fl_description" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="@dimen/margin_smaller"
+                android:layout_weight="1"
+                android:background="@drawable/bubble_bottom_right"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_medium_smaller">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/margin_small"
+                    android:gravity="start"
+                    android:text="@string/georgia_draw"
+                    android:textColor="@color/walletGrey"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="@string/ga_description" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/subscribe_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/right_gl"
+        app:layout_constraintStart_toStartOf="@id/left_gl"
+        app:layout_constraintTop_toBottomOf="@+id/top_subscribe_gl">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/bubble_top_subscribe"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_medium_smaller">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:gravity="start"
+                android:text="@string/subscription"
+                android:textColor="@color/walletGrey"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="@string/subscription_description" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/subscribe_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-30dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/lotto5jr_subscribe" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_subscribe_gl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.34" />
+
+
+    <!--
+        <LinearLayout
+            android:id="@+id/draw_layout"
+            app:layout_constraintEnd_toEndOf="@+id/right_gl"
+            app:layout_constraintStart_toStartOf="@id/left_gl"
+            app:layout_constraintTop_toBottomOf="@+id/game_top_gl"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bubble_top_left_middle"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_medium_smaller">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:gravity="start"
+                    android:text="@string/new_york_draw"
+                    android:textColor="@color/walletGrey"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="@string/dolor_sit_amet_" />
+            </LinearLayout>
+
+            <ImageView
+                app:srcCompat="@drawable/ic_draw_guide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_smaller"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bubble_bottom_right"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_medium_smaller">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/margin_small"
+                    android:gravity="start"
+                    android:text="@string/florida_draw"
+                    android:textColor="@color/walletGrey"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="@string/dolor_sit_amet_" />
+            </LinearLayout>
+        </LinearLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

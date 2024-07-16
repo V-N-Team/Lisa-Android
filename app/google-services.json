@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "858305429786",
+    "firebase_url": "https://lisa-mobile-app.firebaseio.com",
+    "project_id": "lisa-mobile-app",
+    "storage_bucket": "lisa-mobile-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858305429786:android:425ea25da9671cba6feca3",
+        "android_client_info": {
+          "package_name": "ht.lisa.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "858305429786-l60tfkig5b812ne1s1bt4in1t2io2nqd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDb6Pm0RKmoTXh_xx_rrI7cAZfyre8Ez44"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "858305429786-l60tfkig5b812ne1s1bt4in1t2io2nqd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

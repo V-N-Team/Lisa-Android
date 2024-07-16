@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultBg"
+    tools:context=".ui.wallet.gamelist.GameListFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/game_list_main_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.06" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/game_list_main_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.94" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/game_list_main_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.04" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/game_list_main_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/game_list_draw_field"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/game_list_draw_field_bottom"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/yellow_orange_gradient_rounded_bot"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/game_list_next_draw_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:text="@string/next_draw"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_big"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toStartOf="@+id/game_list_hours_amount_layout"
+            app:layout_constraintStart_toStartOf="@+id/game_list_main_left"
+            app:layout_constraintTop_toTopOf="@+id/game_list_hours_amount_layout" />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/game_list_main_bottom"
+            app:layout_constraintEnd_toEndOf="@+id/game_list_next_draw_left"
+            app:layout_constraintStart_toStartOf="@+id/game_list_main_left"
+            app:layout_constraintTop_toBottomOf="@+id/game_list_next_draw_text">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/game_list_next_draw_icon"
+                android:layout_width="14dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/game_list_next_draw"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="start"
+                android:maxLines="2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_small"
+                app:autoSizeTextType="uniform" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/game_list_next_draw_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.44" />
+
+        <FrameLayout
+            android:id="@+id/game_list_hours_amount_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/next_draw_bg"
+            app:layout_constraintBottom_toTopOf="@+id/game_list_main_bottom"
+            app:layout_constraintStart_toStartOf="@+id/game_list_next_draw_left"
+            app:layout_constraintTop_toBottomOf="@+id/game_list_main_top">
+
+            <TextView
+                android:id="@+id/game_list_hours_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:paddingBottom="@dimen/padding_small_8dp"
+                android:text="@string/zero"
+                android:textColor="@color/nextDrawAmountColor"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:id="@+id/game_list_hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingBottom="5dp"
+                android:text="@string/hours"
+                android:textColor="@color/nextDrawTimeColor"
+                android:textSize="@dimen/text_size_smaller_9sp"
+                app:layout_constraintBottom_toBottomOf="@+id/game_list_main_bottom"
+                app:layout_constraintEnd_toEndOf="@+id/game_list_hours_amount"
+                app:layout_constraintStart_toStartOf="@+id/game_list_hours_amount" />
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/game_list_colon_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:text="@string/colon"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_big_21sp"
+            app:layout_constraintBottom_toTopOf="@+id/game_list_main_bottom"
+            app:layout_constraintEnd_toStartOf="@+id/game_list_minutes_amount_layout"
+            app:layout_constraintStart_toEndOf="@+id/game_list_hours_amount_layout"
+            app:layout_constraintTop_toBottomOf="@+id/game_list_main_top" />
+
+        <FrameLayout
+            android:id="@+id/game_list_minutes_amount_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/game_list_main_bottom"
+            app:layout_constraintEnd_toStartOf="@+id/game_list_colon_second"
+            app:layout_constraintStart_toEndOf="@+id/game_list_colon_first"
+            app:layout_constraintTop_toBottomOf="@+id/game_list_main_top">
+
+            <TextView
+                android:id="@+id/game_list_minutes_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/next_draw_bg"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding_small_8dp"
+                android:text="@string/zero"
+                android:textColor="@color/nextDrawAmountColor"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:id="@+id/game_list_minutes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingBottom="5dp"
+                android:text="@string/minutes"
+                android:textColor="@color/nextDrawTimeColor"
+                android:textSize="@dimen/text_size_smaller_9sp" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/game_list_colon_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:text="@string/colon"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_big_21sp"
+            app:layout_constraintBottom_toTopOf="@+id/game_list_main_bottom"
+            app:layout_constraintEnd_toStartOf="@+id/game_list_seconds_amount_layout"
+            app:layout_constraintStart_toEndOf="@+id/game_list_minutes_amount_layout"
+            app:layout_constraintTop_toBottomOf="@+id/game_list_main_top" />
+
+        <FrameLayout
+            android:id="@+id/game_list_seconds_amount_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/game_list_main_bottom"
+            app:layout_constraintEnd_toStartOf="@+id/game_list_main_right"
+            app:layout_constraintTop_toBottomOf="@+id/game_list_main_top">
+
+            <TextView
+                android:id="@+id/game_list_seconds_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/next_draw_bg"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding_small_8dp"
+                android:text="@string/zero"
+                android:textColor="@color/nextDrawAmountColor"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:id="@+id/game_list_seconds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingBottom="5dp"
+                android:text="@string/seconds"
+                android:textColor="@color/nextDrawTimeColor"
+                android:textSize="@dimen/text_size_smaller_9sp" />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/choose_a_game_to_play"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_size_medium_small"
+            app:layout_constraintBottom_toTopOf="@+id/item_game_boloto"
+            app:layout_constraintStart_toStartOf="@+id/game_list_main_left"
+            app:layout_constraintTop_toBottomOf="@+id/game_list_draw_field_bottom" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/game_list_draw_field_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.14" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/game_list_main_middle_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.48" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/game_list_main_middle_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.52" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/game_list_title_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.2" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/game_list_boloto_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.23" />
+
+        <include
+            android:id="@+id/item_game_boloto"
+            layout="@layout/item_game_boloto"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/game_list_boloto_bottom"
+            app:layout_constraintEnd_toStartOf="@+id/game_list_main_right"
+            app:layout_constraintStart_toEndOf="@+id/game_list_main_left"
+            app:layout_constraintTop_toBottomOf="@+id/game_list_boloto_top" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/game_list_boloto_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.4" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/game_list_bolet_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.42" />
+
+        <include
+            android:id="@+id/item_game_lotto5jr"
+            layout="@layout/item_game_lotto5jr"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/game_list_lotto5_bottom"
+            app:layout_constraintEnd_toStartOf="@+id/game_list_main_right"
+            app:layout_constraintStart_toEndOf="@+id/game_list_main_middle_right"
+            app:layout_constraintTop_toBottomOf="@+id/game_list_lotto5_top" />
+
+        <include
+            android:id="@+id/item_game_bolet"
+            layout="@layout/item_game_bolet"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/game_list_bolet_bottom"
+            app:layout_constraintEnd_toStartOf="@+id/game_list_main_middle_left"
+            app:layout_constraintStart_toEndOf="@+id/game_list_main_left"
+            app:layout_constraintTop_toBottomOf="@+id/game_list_bolet_top" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/game_list_bolet_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.54" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/game_list_mariaj_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.56" />
+
+        <include
+            android:id="@+id/item_game_mariaj"
+            layout="@layout/item_game_mariaj"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/game_list_bolet_bottom"
+            app:layout_constraintEnd_toStartOf="@+id/game_list_main_right"
+            app:layout_constraintStart_toEndOf="@+id/game_list_main_middle_right"
+            app:layout_constraintTop_toBottomOf="@+id/game_list_bolet_top" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/game_list_mariaj_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.68" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/game_list_lotto5_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.7" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/game_list_lotto5_royal_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.84" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/game_list_lotto5_royal_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.96" />
+
+        <include
+            android:id="@+id/item_game_lotto3"
+            layout="@layout/item_game_lotto3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/game_list_mariaj_bottom"
+            app:layout_constraintEnd_toStartOf="@+id/game_list_main_middle_left"
+            app:layout_constraintStart_toEndOf="@+id/game_list_main_left"
+            app:layout_constraintTop_toBottomOf="@+id/game_list_mariaj_top" />
+
+        <include
+            android:id="@+id/item_game_lotto4"
+            layout="@layout/item_game_lotto4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/game_list_mariaj_bottom"
+            app:layout_constraintEnd_toStartOf="@+id/game_list_main_right"
+            app:layout_constraintStart_toEndOf="@+id/game_list_main_middle_right"
+            app:layout_constraintTop_toBottomOf="@+id/game_list_mariaj_top" />
+
+        <include
+            android:id="@+id/item_game_lotto5"
+            layout="@layout/item_game_lotto5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/game_list_lotto5_bottom"
+            app:layout_constraintEnd_toStartOf="@+id/game_list_main_middle_left"
+            app:layout_constraintStart_toEndOf="@+id/game_list_main_left"
+            app:layout_constraintTop_toBottomOf="@+id/game_list_lotto5_top" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/game_list_lotto5_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.82" />
+
+        <include
+            android:id="@+id/item_game_lotto5_royal"
+            layout="@layout/item_game_lotto5_royal"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="@+id/game_list_lotto5_royal_top"
+            app:layout_constraintEnd_toStartOf="@+id/game_list_main_middle_left"
+            app:layout_constraintStart_toEndOf="@+id/game_list_main_left"
+            app:layout_constraintBottom_toBottomOf="@+id/game_list_lotto5_royal_bottom" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/game_list_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="1.2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/main_wallet_left_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.06" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/main_wallet_right_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.94" />
+
+            <ImageView
+                android:id="@+id/profile_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_marginBottom="@dimen/margin_small"
+                app:layout_constraintBottom_toTopOf="@+id/main_wallet_top_wallet_guideline"
+                app:layout_constraintStart_toStartOf="@+id/main_wallet_left_guideline"
+                app:srcCompat="@drawable/ic_profile"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_smaller"
+                android:layout_marginLeft="@dimen/margin_smaller"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/wallet"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_medium_small"
+                app:layout_constraintBottom_toBottomOf="@id/profile_icon"
+                app:layout_constraintStart_toEndOf="@+id/profile_icon"
+                app:layout_constraintTop_toTopOf="@id/profile_icon" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/main_wallet_top_wallet_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.07" />
+
+            <LinearLayout
+                android:id="@+id/wallet_layout"
+                android:layout_width="0dp"
+                android:layout_height="174dp"
+                android:background="@drawable/wallet_bg"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/padding_medium_small"
+                app:layout_constraintEnd_toStartOf="@+id/main_wallet_right_guideline"
+                app:layout_constraintStart_toEndOf="@+id/main_wallet_left_guideline"
+                app:layout_constraintTop_toBottomOf="@+id/main_wallet_top_wallet_guideline">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/wallet_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/montserrat_extra_bold"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_smaller"
+                        android:layout_marginLeft="@dimen/margin_smaller"
+                        android:fontFamily="@font/montserrat_extra_bold"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/padding_small_8dp"
+                        android:text="@string/_g"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_medium_large"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="start|center_vertical"
+                        android:text="@string/playable_funds"
+                        android:textColor="@color/walletGrey"
+                        android:textSize="@dimen/text_size_medium_small" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="end|center">
+
+                        <TextView
+                            android:id="@+id/wallet_playable_funds"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="end|center_vertical"
+                            android:text="0"
+                            android:textColor="@color/buttonOrange"
+                            android:textSize="@dimen/text_size_medium_small" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/margin_smaller_3dp"
+                            android:layout_marginLeft="@dimen/margin_smaller_3dp"
+                            android:paddingTop="@dimen/padding_smaller_3dp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="end|center_vertical"
+                            android:text="@string/_g"
+                            android:textColor="@color/buttonOrange"
+                            android:textSize="@dimen/text_size_smaller_9sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="start|center_vertical"
+                        android:text="@string/cashout_balance"
+                        android:textColor="@color/walletGrey"
+                        android:textSize="@dimen/text_size_medium_small" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="end|center">
+
+                        <TextView
+                            android:id="@+id/wallet_cashout_balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="end|center_vertical"
+                            android:text="0"
+                            android:textColor="@color/buttonOrange"
+                            android:textSize="@dimen/text_size_medium_small" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/margin_smaller_3dp"
+                            android:layout_marginLeft="@dimen/margin_smaller_3dp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="end|center_vertical"
+                            android:text="@string/_g"
+                            android:paddingTop="@dimen/padding_smaller_3dp"
+                            android:textColor="@color/buttonOrange"
+                            android:textSize="@dimen/text_size_smaller_9sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="start|center_vertical"
+                        android:text="@string/bonus_balance"
+                        android:textColor="@color/walletGrey"
+                        android:textSize="@dimen/text_size_medium_small" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="end|center">
+
+                        <TextView
+                            android:id="@+id/wallet_bonus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="end|center_vertical"
+                            android:text="0"
+                            android:textColor="@color/buttonOrange"
+                            android:textSize="@dimen/text_size_medium_small" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/margin_smaller_3dp"
+                            android:layout_marginLeft="@dimen/margin_smaller_3dp"
+                            android:paddingTop="@dimen/padding_smaller_3dp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="end|center_vertical"
+                            android:text="@string/_g"
+                            android:textColor="@color/buttonOrange"
+                            android:textSize="@dimen/text_size_smaller_9sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/main_wallet_top_menu_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.35" />
+
+            <RelativeLayout
+                android:id="@+id/cash_out_code_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_cash_out_bg"
+                android:orientation="vertical"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/main_wallet_top_menu_guideline">
+
+                <TextView
+                    android:id="@+id/cash_out_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_medium_smaller"
+                    android:gravity="start|top"
+                    android:paddingHorizontal="@dimen/padding_medium"
+                    android:text="@string/your_cash_out_code"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <TextView
+                    android:id="@+id/cash_out_code_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_medium_smaller"
+                    android:gravity="end|top"
+                    android:paddingHorizontal="@dimen/padding_medium"
+                    android:text="@string/your_cash_out_code"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <TextView
+                    android:id="@+id/cash_out_date_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cash_out_text"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:paddingHorizontal="@dimen/padding_medium"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/cash_out_time_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cash_out_code_text"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:gravity="end"
+                    android:paddingHorizontal="@dimen/padding_medium"
+                    android:text="@string/left_s_min"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/wallet_menu_layout"
+                android:layout_width="0dp"
+                android:layout_height="370dp"
+                android:background="@drawable/main_bottom_bg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cash_out_code_layout">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/wallet_menu_left_guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.06" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/wallet_menu_left_central_guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.19" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/wallet_menu_right_guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.94" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/top_menu_guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.05" />
+
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:padding="@dimen/padding_smaller"
+                    app:layout_constraintBottom_toBottomOf="@+id/transfer_menu_guideline"
+                    app:layout_constraintEnd_toEndOf="@+id/wallet_menu_left_central_guideline"
+                    app:layout_constraintStart_toStartOf="@+id/wallet_menu_left_guideline"
+                    app:layout_constraintTop_toTopOf="@+id/top_menu_guideline"
+                    app:srcCompat="@drawable/ic_transfer_friend" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/wallet_transfer_friend"
+                    style="@style/WalletMenuItemStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/transfer_to_a_friend"
+                    app:layout_constraintBottom_toBottomOf="@+id/transfer_menu_guideline"
+                    app:layout_constraintEnd_toStartOf="@+id/wallet_menu_right_guideline"
+                    app:layout_constraintStart_toStartOf="@+id/wallet_menu_left_central_guideline"
+                    app:layout_constraintTop_toTopOf="@+id/top_menu_guideline" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="@dimen/margin_medium_small"
+                    android:layout_marginLeft="@dimen/margin_medium_small"
+                    android:background="@color/walletStroke"
+                    app:layout_constraintEnd_toEndOf="@+id/wallet_menu_right_guideline"
+                    app:layout_constraintStart_toStartOf="@+id/wallet_menu_left_central_guideline"
+                    app:layout_constraintTop_toTopOf="@+id/transfer_menu_guideline" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/transfer_menu_guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.23" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:padding="@dimen/padding_smaller"
+                    app:layout_constraintBottom_toBottomOf="@+id/reload_menu_guideline"
+                    app:layout_constraintEnd_toEndOf="@+id/wallet_menu_left_central_guideline"
+                    app:layout_constraintStart_toStartOf="@+id/wallet_menu_left_guideline"
+                    app:layout_constraintTop_toTopOf="@+id/transfer_menu_guideline"
+                    app:srcCompat="@drawable/ic_reload_money" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/wallet_reload_money"
+                    style="@style/WalletMenuItemStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reload_money"
+                    app:layout_constraintBottom_toBottomOf="@+id/reload_menu_guideline"
+                    app:layout_constraintEnd_toStartOf="@+id/wallet_menu_right_guideline"
+                    app:layout_constraintStart_toStartOf="@+id/wallet_menu_left_central_guideline"
+                    app:layout_constraintTop_toTopOf="@+id/transfer_menu_guideline" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="@dimen/margin_medium_small"
+                    android:layout_marginLeft="@dimen/margin_medium_small"
+                    android:background="@color/walletStroke"
+                    app:layout_constraintEnd_toEndOf="@+id/wallet_menu_right_guideline"
+                    app:layout_constraintStart_toStartOf="@+id/wallet_menu_left_central_guideline"
+                    app:layout_constraintTop_toTopOf="@+id/reload_menu_guideline" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/reload_menu_guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.41" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:padding="@dimen/padding_smaller"
+                    app:layout_constraintBottom_toBottomOf="@+id/cashout_menu_guideline"
+                    app:layout_constraintEnd_toEndOf="@+id/wallet_menu_left_central_guideline"
+                    app:layout_constraintStart_toStartOf="@+id/wallet_menu_left_guideline"
+                    app:layout_constraintTop_toTopOf="@+id/reload_menu_guideline"
+                    app:srcCompat="@drawable/ic_cash_out" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/wallet_cash_out"
+                    style="@style/WalletMenuItemStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cash_out"
+                    app:layout_constraintBottom_toBottomOf="@+id/cashout_menu_guideline"
+                    app:layout_constraintEnd_toStartOf="@+id/wallet_menu_right_guideline"
+                    app:layout_constraintStart_toStartOf="@+id/wallet_menu_left_central_guideline"
+                    app:layout_constraintTop_toTopOf="@+id/reload_menu_guideline" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="@dimen/margin_medium_small"
+                    android:layout_marginLeft="@dimen/margin_medium_small"
+                    android:background="@color/walletStroke"
+                    app:layout_constraintEnd_toEndOf="@+id/wallet_menu_right_guideline"
+                    app:layout_constraintStart_toStartOf="@+id/wallet_menu_left_central_guideline"
+                    app:layout_constraintTop_toTopOf="@+id/cashout_menu_guideline" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/cashout_menu_guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.59" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:padding="@dimen/padding_smaller"
+                    app:layout_constraintBottom_toBottomOf="@+id/locations_menu_guideline"
+                    app:layout_constraintEnd_toEndOf="@+id/wallet_menu_left_central_guideline"
+                    app:layout_constraintStart_toStartOf="@+id/wallet_menu_left_guideline"
+                    app:layout_constraintTop_toTopOf="@+id/cashout_menu_guideline"
+                    app:srcCompat="@drawable/ic_pop_location" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/wallet_pop_locations"
+                    style="@style/WalletMenuItemStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pop_locations"
+                    app:layout_constraintBottom_toBottomOf="@+id/locations_menu_guideline"
+                    app:layout_constraintEnd_toStartOf="@+id/wallet_menu_right_guideline"
+                    app:layout_constraintStart_toStartOf="@+id/wallet_menu_left_central_guideline"
+                    app:layout_constraintTop_toTopOf="@+id/cashout_menu_guideline" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="@dimen/margin_medium_small"
+                    android:layout_marginLeft="@dimen/margin_medium_small"
+                    android:background="@color/walletStroke"
+                    app:layout_constraintEnd_toEndOf="@+id/wallet_menu_right_guideline"
+                    app:layout_constraintStart_toStartOf="@+id/wallet_menu_left_central_guideline"
+                    app:layout_constraintTop_toTopOf="@+id/locations_menu_guideline" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/locations_menu_guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.77" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:padding="@dimen/padding_smaller"
+                    app:layout_constraintBottom_toBottomOf="@+id/history_menu_guideline"
+                    app:layout_constraintEnd_toEndOf="@+id/wallet_menu_left_central_guideline"
+                    app:layout_constraintStart_toStartOf="@+id/wallet_menu_left_guideline"
+                    app:layout_constraintTop_toTopOf="@+id/locations_menu_guideline"
+                    app:srcCompat="@drawable/ic_transaction_history" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/wallet_transaction_history"
+                    style="@style/WalletMenuItemStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/transaction_history"
+                    app:layout_constraintBottom_toBottomOf="@+id/history_menu_guideline"
+                    app:layout_constraintEnd_toStartOf="@+id/wallet_menu_right_guideline"
+                    app:layout_constraintStart_toStartOf="@+id/wallet_menu_left_central_guideline"
+                    app:layout_constraintTop_toTopOf="@+id/locations_menu_guideline" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="@dimen/margin_medium_small"
+                    android:layout_marginLeft="@dimen/margin_medium_small"
+                    android:background="@color/walletStroke"
+                    app:layout_constraintEnd_toEndOf="@+id/wallet_menu_right_guideline"
+                    app:layout_constraintStart_toStartOf="@+id/wallet_menu_left_central_guideline"
+                    app:layout_constraintTop_toTopOf="@+id/history_menu_guideline" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/history_menu_guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.95" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="@color/defaultBg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wallet_menu_layout" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

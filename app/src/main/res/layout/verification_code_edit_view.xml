@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/verification_registration_edit_text_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_button_white"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingStart="@dimen/padding_smaller"
+        android:paddingEnd="@dimen/padding_smaller">
+
+        <EditText
+            android:id="@+id/verification_registration_edittext_1"
+            style="@style/EditTextVerificationStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:importantForAutofill="no"
+            android:maxLength="1"
+            tools:ignore="LabelFor" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="@color/inactiveBG" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingStart="@dimen/padding_smaller"
+        android:paddingEnd="@dimen/padding_smaller">
+
+        <EditText
+            android:id="@+id/verification_registration_edittext_2"
+            style="@style/EditTextVerificationStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:importantForAutofill="no"
+            android:maxLength="1"
+            tools:ignore="LabelFor" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="@color/inactiveBG" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingStart="@dimen/padding_smaller"
+        android:paddingEnd="@dimen/padding_smaller">
+
+        <EditText
+            android:id="@+id/verification_registration_edittext_3"
+            style="@style/EditTextVerificationStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:importantForAutofill="no"
+            android:maxLength="1"
+            tools:ignore="LabelFor" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="@color/inactiveBG" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingStart="@dimen/padding_smaller"
+        android:paddingEnd="@dimen/padding_smaller">
+
+        <EditText
+            android:id="@+id/verification_registration_edittext_4"
+            style="@style/EditTextVerificationStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:importantForAutofill="no"
+            android:maxLength="1"
+            tools:ignore="LabelFor" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="@color/inactiveBG" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingStart="@dimen/padding_smaller"
+        android:paddingEnd="@dimen/padding_smaller">
+
+        <EditText
+            android:id="@+id/verification_registration_edittext_5"
+            style="@style/EditTextVerificationStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:importantForAutofill="no"
+            android:maxLength="1"
+            tools:ignore="LabelFor" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="@color/inactiveBG" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingStart="@dimen/padding_smaller"
+        android:paddingEnd="@dimen/padding_smaller">
+
+        <EditText
+            android:id="@+id/verification_registration_edittext_6"
+            style="@style/EditTextVerificationStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:importantForAutofill="no"
+            android:maxLength="1"
+            tools:ignore="LabelFor" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="@color/inactiveBG" />
+    </FrameLayout>
+
+</LinearLayout>

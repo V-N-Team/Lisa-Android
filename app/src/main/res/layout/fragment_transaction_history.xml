@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="ht.lisa.app.ui.wallet.transactionhistory.TransactionHistoryFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/transaction_history_left_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/transaction_history_right_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/transaction_history_back_arrow_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/yellow_orange_gradient"
+        app:layout_constraintBottom_toBottomOf="@id/transaction_history_logo_guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/back_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toEndOf="@+id/transaction_history_left_guideline"
+        app:layout_constraintTop_toTopOf="@+id/transaction_history_back_arrow_guideline"
+        app:srcCompat="@drawable/ic_back_arrow_inverted" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/transaction_history_logo_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.11" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_logo_gl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/transaction_history_title_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/top_logo_gl"
+        app:srcCompat="@drawable/ic_white_logo" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/transaction_history_title_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.13" />
+
+    <TextView
+        style="@style/TitleOrangeTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_extra_bold"
+        android:text="@string/transaction_history"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/transaction_history_list_guideline"
+        app:layout_constraintTop_toTopOf="@+id/transaction_history_title_guideline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/transaction_history_list_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.21" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/transaction_history_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/transaction_history_right_guideline"
+        app:layout_constraintStart_toStartOf="@+id/transaction_history_left_guideline"
+        app:layout_constraintTop_toTopOf="@+id/transaction_history_list_guideline"
+        tools:itemCount="7"
+        tools:listitem="@layout/item_transaction_history" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/transaction_history_no_transactions_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/transaction_history_right_guideline"
+        app:layout_constraintStart_toStartOf="@+id/transaction_history_left_guideline"
+        app:layout_constraintTop_toTopOf="@+id/transaction_history_list_guideline">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/transaction_history_no_transactions_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.19" />
+
+        <ImageView
+            android:id="@+id/transaction_history_no_transactions_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/transaction_history_no_transactions_guideline"
+            app:srcCompat="@drawable/ic_transaction_circle_2" />
+
+        <TextView
+            android:id="@+id/transaction_history_no_transactions_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center_horizontal"
+            android:text="@string/no_transactions_yet"
+            android:textColor="@color/transactionText"
+            android:textSize="@dimen/text_size_medium_large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/transaction_history_no_transactions_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/here_is_a_list_of_your_actions"
+            android:textColor="@color/transactionText"
+            android:textSize="@dimen/text_size_medium_15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/transaction_history_no_transactions_title" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/margin_medium_smaller_13dp">
+
+    <TextView
+        android:id="@+id/games_ticket_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_extra_bold"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_smaller_11sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/games_ticket_name_bottom"
+        app:layout_constraintStart_toStartOf="@+id/item_game_ticket_main_left"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/games_ticket_name_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="13dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/games_ticket_name"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/item_game_ticket_main_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <ImageView
+        android:id="@+id/game_ticket_bookmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        app:layout_constraintBottom_toTopOf="@+id/games_ticket_bottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/games_ticket_name_bottom"
+        app:srcCompat="@drawable/ic_bookmark" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/item_game_ticket_main_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.93" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/game_ticket_left_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        app:layout_constraintBottom_toTopOf="@+id/games_ticket_bottom"
+        app:layout_constraintEnd_toEndOf="@+id/item_game_ticket_balls_end"
+        app:layout_constraintStart_toStartOf="@+id/item_game_ticket_main_left"
+        app:layout_constraintTop_toBottomOf="@+id/games_ticket_name_bottom">
+
+        <TextView
+            android:id="@+id/game_ticket_first_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="start"
+            android:textColor="@color/walletGrey"
+            android:textSize="@dimen/text_size_smaller"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/item_game_ticket_first_number"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/item_game_ticket_first_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.285" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/item_game_ticket_second_number_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.357" />
+
+        <TextView
+            android:id="@+id/game_ticket_second_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="start"
+            android:textColor="@color/walletGrey"
+            android:textSize="@dimen/text_size_smaller"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/item_game_ticket_second_number_left"
+            app:layout_constraintEnd_toStartOf="@+id/item_game_ticket_second_number_right"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/item_game_ticket_second_number_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.642" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/item_game_ticket_third_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.714" />
+
+        <TextView
+            android:id="@+id/game_ticket_third_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="start"
+            android:textColor="@color/walletGrey"
+            android:textSize="@dimen/text_size_smaller"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/item_game_ticket_third_number"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/item_game_ticket_balls_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.37" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/item_game_ticket_combo_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.43" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/game_ticket_cmb_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingBottom="@dimen/padding_smaller"
+        app:layout_constraintBottom_toTopOf="@+id/games_ticket_bottom"
+        app:layout_constraintEnd_toEndOf="@+id/item_game_ticket_combo_end"
+        app:layout_constraintStart_toStartOf="@+id/item_game_ticket_combo_start"
+        app:layout_constraintTop_toBottomOf="@+id/games_ticket_name_bottom">
+
+        <TextView
+            android:id="@+id/game_ticket_cmb_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/opt_orange_bg"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:paddingVertical="1dp"
+            android:paddingStart="@dimen/padding_smaller_6dp"
+            android:paddingLeft="@dimen/padding_smaller_6dp"
+            android:paddingEnd="@dimen/padding_small"
+            android:paddingRight="@dimen/padding_small"
+            android:text="@string/cmb"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_smaller"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/game_ticket_cmb_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/buttonLightOrange"
+            app:cardCornerRadius="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/game_ticket_cmb_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:paddingHorizontal="4dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_smaller" />
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/item_game_ticket_combo_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.56" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/item_game_ticket_cost_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.62" />
+
+    <TextView
+        android:id="@+id/game_ticket_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginHorizontal="16dp"
+        android:text=""
+        android:textColor="@color/darkGrey"
+        app:layout_constraintBottom_toTopOf="@+id/games_ticket_bottom"
+        app:layout_constraintEnd_toEndOf="@+id/item_game_ticket_cost_end"
+        app:layout_constraintStart_toStartOf="@+id/item_game_ticket_cost_start"
+        app:layout_constraintTop_toBottomOf="@+id/games_ticket_name_bottom" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/item_game_ticket_cost_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/item_game_ticket_edit_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <ImageButton
+        android:id="@+id/game_ticket_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/games_ticket_bottom"
+        app:layout_constraintEnd_toEndOf="@+id/item_game_ticket_edit_end"
+        app:layout_constraintStart_toStartOf="@+id/item_game_ticket_edit_start"
+        app:layout_constraintTop_toBottomOf="@+id/games_ticket_name_bottom"
+        app:srcCompat="@drawable/ic_edit" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/item_game_ticket_edit_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.84" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/item_game_ticket_delete_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <ImageButton
+        android:id="@+id/game_ticket_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/games_ticket_bottom"
+        app:layout_constraintEnd_toEndOf="@+id/item_game_ticket_delete_end"
+        app:layout_constraintStart_toStartOf="@+id/item_game_ticket_delete_start"
+        app:layout_constraintTop_toBottomOf="@+id/games_ticket_name_bottom"
+        app:srcCompat="@drawable/ic_trash" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/item_game_ticket_delete_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.93" />
+
+    <View
+        android:id="@+id/games_ticket_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="13dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

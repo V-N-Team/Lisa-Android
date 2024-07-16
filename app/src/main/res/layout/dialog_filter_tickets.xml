@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/margin_medium_small"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="8dp"
+    app:cardUseCompatPadding="true">
+
+    <ImageButton
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        app:backgroundTint="@android:color/transparent"
+        app:srcCompat="@drawable/ic_close" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_medium_small"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/filter_by"
+            android:textColor="@color/buttonOrange"
+            android:textSize="@dimen/text_size_big" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium_smaller">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/filter_by_boloto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/margin_smaller_6dp"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_medium_small"
+                    android:button="@drawable/checkbox_selector"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingHorizontal="@dimen/padding_small_12dp"
+                    android:text="@string/boloto"
+                    android:textAllCaps="true"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="@dimen/text_size_medium_small" />
+
+                <CheckBox
+                    android:id="@+id/filter_by_lotto5_5g"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/margin_smaller_6dp"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_medium_small"
+                    android:button="@drawable/checkbox_selector"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingHorizontal="@dimen/padding_small_12dp"
+                    android:text="@string/lotto5_5g"
+                    android:textAllCaps="true"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="@dimen/text_size_medium_small" />
+
+                <CheckBox
+                    android:id="@+id/filter_by_borlet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/margin_smaller_6dp"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_medium_small"
+                    android:button="@drawable/checkbox_selector"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingHorizontal="@dimen/padding_small_12dp"
+                    android:text="@string/borlet"
+                    android:textAllCaps="true"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="@dimen/text_size_medium_small" />
+
+                <CheckBox
+                    android:id="@+id/filter_by_maryage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/margin_smaller_6dp"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_medium_small"
+                    android:button="@drawable/checkbox_selector"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingHorizontal="@dimen/padding_small_12dp"
+                    android:text="@string/maryage"
+                    android:textAllCaps="true"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="@dimen/text_size_medium_small" />
+
+                <CheckBox
+                    android:id="@+id/filter_by_lotto3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/margin_smaller_6dp"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_medium_small"
+                    android:button="@drawable/checkbox_selector"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingHorizontal="@dimen/padding_small_12dp"
+                    android:text="@string/lotto3"
+                    android:textAllCaps="true"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="@dimen/text_size_medium_small" />
+
+                <CheckBox
+                    android:id="@+id/filter_by_lotto4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/margin_smaller_6dp"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_medium_small"
+                    android:button="@drawable/checkbox_selector"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingHorizontal="@dimen/padding_small_12dp"
+                    android:text="@string/lotto4"
+                    android:textAllCaps="true"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="@dimen/text_size_medium_small" />
+
+                <CheckBox
+                    android:id="@+id/filter_by_lotto5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/margin_smaller_6dp"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_medium_small"
+                    android:button="@drawable/checkbox_selector"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingHorizontal="@dimen/padding_small_12dp"
+                    android:text="@string/lotto5"
+                    android:textAllCaps="true"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="@dimen/text_size_medium_small" />
+
+                <CheckBox
+                    android:id="@+id/filter_by_lotto5_royal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/margin_smaller_6dp"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_medium_small"
+                    android:button="@drawable/checkbox_selector"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingHorizontal="@dimen/padding_small_12dp"
+                    android:text="@string/lotto5_royal"
+                    android:textAllCaps="true"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="@dimen/text_size_medium_small" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/filter_by_win"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/margin_smaller_6dp"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_medium_small"
+                    android:button="@drawable/checkbox_selector"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingHorizontal="@dimen/padding_small_12dp"
+                    android:text="@string/win"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="@dimen/text_size_medium_small" />
+
+                <CheckBox
+                    android:id="@+id/filter_by_closed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/margin_smaller_6dp"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_medium_small"
+                    android:button="@drawable/checkbox_selector"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingHorizontal="@dimen/padding_small_12dp"
+                    android:text="@string/closed"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="@dimen/text_size_medium_small" />
+
+                <CheckBox
+                    android:id="@+id/filter_by_pending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/margin_smaller_6dp"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_medium_small"
+                    android:button="@drawable/checkbox_selector"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingHorizontal="@dimen/padding_small_12dp"
+                    android:text="@string/pending"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="@dimen/text_size_medium_small" />
+
+                <CheckBox
+                    android:id="@+id/filter_by_not_accepted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/margin_smaller_6dp"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:layout_marginLeft="@dimen/margin_medium_small"
+                    android:button="@drawable/checkbox_selector"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingHorizontal="@dimen/padding_small_12dp"
+                    android:text="@string/not_accepted"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="@dimen/text_size_medium_small" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/filter_apply_filters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_medium_small"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="@dimen/margin_medium_small"
+            android:fontFamily="@font/roboto_bold"
+            android:paddingVertical="18dp"
+            android:text="@string/apply_filters"
+            android:textSize="@dimen/text_size_medium"
+            app:backgroundTint="@color/buttonOrange" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

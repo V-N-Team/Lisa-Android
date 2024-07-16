@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="ht.lisa.app.ui.registration.MobileRegistrationFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/terms_agreement_left_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/terms_agreement_right_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/terms_agreement_back_arrow_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <ImageButton
+        android:id="@+id/back_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toEndOf="@+id/terms_agreement_left_guideline"
+        app:layout_constraintTop_toTopOf="@+id/terms_agreement_back_arrow_guideline"
+        app:srcCompat="@drawable/ic_back_arrow" />
+
+    <ImageButton
+        android:id="@+id/back_arrow_invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:clickable="false"
+        android:visibility="invisible"
+        app:layout_constraintRight_toRightOf="@+id/terms_agreement_right_guideline"
+        app:layout_constraintTop_toTopOf="@+id/terms_agreement_back_arrow_guideline"
+        app:srcCompat="@drawable/ic_back_arrow" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/terms_agreement_title_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.13" />
+
+    <TextView
+        android:id="@+id/terms_agreement_title"
+        style="@style/TitleTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="@string/terms_of_service"
+        android:textColor="@color/buttonOrange"
+        app:autoSizeMaxTextSize="@dimen/text_size_big_21sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintLeft_toRightOf="@id/back_arrow"
+        app:layout_constraintRight_toLeftOf="@+id/back_arrow_invisible"
+        app:layout_constraintTop_toTopOf="@+id/back_arrow" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/terms_bottom_gl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.97" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingHorizontal="@dimen/padding_medium_small"
+        app:layout_constraintBottom_toBottomOf="@+id/terms_bottom_gl"
+        app:layout_constraintTop_toBottomOf="@+id/terms_agreement_title_guideline">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/terms_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/darkGrey"
+            android:textSize="@dimen/text_size_medium_small" />
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_bottom_bg"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium_large"
+        app:srcCompat="@drawable/ic_play_sssd" />
+
+    <TextView
+        android:id="@+id/play_offline_title"
+        style="@style/TitleTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium_large"
+        android:gravity="center"
+        android:text="@string/play_with_ussd" />
+
+    <TextView
+        android:id="@+id/play_offline_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium_large"
+        android:gravity="center"
+        android:text="@string/choose_game_and_send_sms_code"
+        android:textSize="@dimen/text_size_medium_15sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/play_offline_layout"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="@dimen/margin_medium_large">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/wallet_menu_left_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.06" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/wallet_menu_left_central_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.19" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/wallet_menu_right_central_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.6" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/wallet_menu_right_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.99" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/top_menu_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/inactiveBG"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:id="@+id/offline_boloto"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:paddingStart="@dimen/padding_medium_small"
+            android:paddingLeft="@dimen/padding_medium_small"
+            app:layout_constraintBottom_toBottomOf="@+id/transfer_menu_guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.15"
+                android:padding="2dp"
+                app:srcCompat="@drawable/ic_boloto_text" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/wallet_transfer_friend"
+                style="@style/MenuItemStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/boloto_caps"
+                app:layout_constraintBottom_toBottomOf="@+id/transfer_menu_guideline"
+                app:layout_constraintEnd_toStartOf="@+id/wallet_menu_right_guideline"
+                app:layout_constraintStart_toStartOf="@+id/wallet_menu_left_central_guideline"
+                app:layout_constraintTop_toTopOf="@+id/top_menu_guideline" />
+
+            <TextView
+                style="@style/WalletMenuItemStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:text="@string/boloto_offline" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/inactiveBG"
+            app:layout_constraintTop_toTopOf="@+id/transfer_menu_guideline" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/transfer_menu_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.142" />
+
+        <LinearLayout
+            android:id="@+id/offline_bolet"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:paddingStart="@dimen/padding_medium_small"
+            android:paddingLeft="@dimen/padding_medium_small"
+            app:layout_constraintBottom_toBottomOf="@+id/reload_menu_guideline"
+            app:layout_constraintTop_toTopOf="@+id/transfer_menu_guideline">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.15"
+                android:padding="2dp"
+                app:srcCompat="@drawable/ic_bolet_text" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/MenuItemStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/bolet_caps"
+                app:layout_constraintBottom_toBottomOf="@+id/reload_menu_guideline"
+                app:layout_constraintEnd_toStartOf="@+id/wallet_menu_right_guideline"
+                app:layout_constraintStart_toStartOf="@+id/wallet_menu_left_central_guideline"
+                app:layout_constraintTop_toTopOf="@+id/transfer_menu_guideline" />
+
+            <TextView
+                style="@style/WalletMenuItemStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:text="@string/bolet_offline"
+                app:layout_constraintBottom_toBottomOf="@+id/reload_menu_guideline"
+                app:layout_constraintLeft_toLeftOf="@+id/wallet_menu_right_central_guideline"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/transfer_menu_guideline" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/inactiveBG"
+            app:layout_constraintTop_toTopOf="@+id/reload_menu_guideline" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/reload_menu_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.284" />
+
+        <LinearLayout
+            android:id="@+id/offline_maryaj"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:paddingStart="@dimen/padding_medium_small"
+            android:paddingLeft="@dimen/padding_medium_small"
+            app:layout_constraintBottom_toBottomOf="@+id/cashout_menu_guideline"
+            app:layout_constraintTop_toTopOf="@+id/reload_menu_guideline">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.15"
+                android:padding="2dp"
+                app:srcCompat="@drawable/ic_maryaj_text" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/MenuItemStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/maryaj_caps"
+                app:layout_constraintBottom_toBottomOf="@+id/reload_menu_guideline"
+                app:layout_constraintEnd_toStartOf="@+id/wallet_menu_right_guideline"
+                app:layout_constraintStart_toStartOf="@+id/wallet_menu_left_central_guideline"
+                app:layout_constraintTop_toTopOf="@+id/transfer_menu_guideline" />
+
+            <TextView
+                style="@style/WalletMenuItemStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:text="@string/maryaj_offline"
+                app:layout_constraintBottom_toBottomOf="@+id/reload_menu_guideline"
+                app:layout_constraintLeft_toLeftOf="@+id/wallet_menu_right_central_guideline"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/transfer_menu_guideline" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/inactiveBG"
+            app:layout_constraintTop_toTopOf="@+id/cashout_menu_guideline" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/cashout_menu_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.426" />
+
+
+        <LinearLayout
+            android:id="@+id/offline_lotto3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:paddingStart="@dimen/padding_medium_small"
+            android:paddingLeft="@dimen/padding_medium_small"
+            app:layout_constraintBottom_toBottomOf="@+id/locations_menu_guideline"
+            app:layout_constraintTop_toTopOf="@+id/cashout_menu_guideline">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.15"
+                android:padding="2dp"
+                app:srcCompat="@drawable/ic_lotto3_text" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/MenuItemStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/lotto3_caps"
+                app:layout_constraintBottom_toBottomOf="@+id/reload_menu_guideline"
+                app:layout_constraintEnd_toStartOf="@+id/wallet_menu_right_guideline"
+                app:layout_constraintStart_toStartOf="@+id/wallet_menu_left_central_guideline"
+                app:layout_constraintTop_toTopOf="@+id/transfer_menu_guideline" />
+
+            <TextView
+                style="@style/WalletMenuItemStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:text="@string/lotto3_offline"
+                app:layout_constraintBottom_toBottomOf="@+id/reload_menu_guideline"
+                app:layout_constraintLeft_toLeftOf="@+id/wallet_menu_right_central_guideline"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/transfer_menu_guideline" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/inactiveBG"
+            app:layout_constraintTop_toTopOf="@+id/locations_menu_guideline" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/locations_menu_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.568" />
+
+
+        <LinearLayout
+            android:id="@+id/offline_lotto4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:paddingStart="@dimen/padding_medium_small"
+            android:paddingLeft="@dimen/padding_medium_small"
+            app:layout_constraintBottom_toBottomOf="@+id/history_menu_guideline"
+            app:layout_constraintTop_toTopOf="@+id/locations_menu_guideline">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.15"
+                android:padding="2dp"
+                app:srcCompat="@drawable/ic_lotto4_text" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/MenuItemStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/lotto4_caps"
+                app:layout_constraintBottom_toBottomOf="@+id/reload_menu_guideline"
+                app:layout_constraintEnd_toStartOf="@+id/wallet_menu_right_guideline"
+                app:layout_constraintStart_toStartOf="@+id/wallet_menu_left_central_guideline"
+                app:layout_constraintTop_toTopOf="@+id/transfer_menu_guideline" />
+
+            <TextView
+                style="@style/WalletMenuItemStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:text="@string/lotto4_offline"
+                app:layout_constraintBottom_toBottomOf="@+id/reload_menu_guideline"
+                app:layout_constraintLeft_toLeftOf="@+id/wallet_menu_right_central_guideline"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/transfer_menu_guideline" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/inactiveBG"
+            app:layout_constraintTop_toTopOf="@+id/history_menu_guideline" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/history_menu_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.71" />
+
+        <LinearLayout
+            android:id="@+id/offline_lotto5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:paddingStart="@dimen/padding_medium_small"
+            android:paddingLeft="@dimen/padding_medium_small"
+            app:layout_constraintBottom_toBottomOf="@+id/lotto5_gl"
+            app:layout_constraintTop_toTopOf="@+id/history_menu_guideline">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.15"
+                android:padding="2dp"
+                app:srcCompat="@drawable/ic_lotto5_text" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/MenuItemStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/lotto5_caps"
+                app:layout_constraintBottom_toBottomOf="@+id/reload_menu_guideline"
+                app:layout_constraintEnd_toStartOf="@+id/wallet_menu_right_guideline"
+                app:layout_constraintStart_toStartOf="@+id/wallet_menu_left_central_guideline"
+                app:layout_constraintTop_toTopOf="@+id/transfer_menu_guideline" />
+
+            <TextView
+                style="@style/WalletMenuItemStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:text="@string/lotto5_offline"
+                app:layout_constraintBottom_toBottomOf="@+id/reload_menu_guideline"
+                app:layout_constraintLeft_toLeftOf="@+id/wallet_menu_right_central_guideline"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/transfer_menu_guideline" />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/lotto5_gl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.852" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/inactiveBG"
+            app:layout_constraintTop_toTopOf="@+id/lotto5_gl" />
+
+
+        <LinearLayout
+            android:id="@+id/offline_lotto5jr"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:paddingStart="@dimen/padding_medium_small"
+            android:paddingLeft="@dimen/padding_medium_small"
+            app:layout_constraintBottom_toBottomOf="@+id/lotto5jr_gl"
+            app:layout_constraintTop_toTopOf="@+id/lotto5_gl">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.15"
+                android:padding="2dp"
+                app:srcCompat="@drawable/ic_lotto5jr_text" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/MenuItemStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/lotto5_5g_caps"
+                app:layout_constraintBottom_toBottomOf="@+id/reload_menu_guideline"
+                app:layout_constraintEnd_toStartOf="@+id/wallet_menu_right_guideline"
+                app:layout_constraintStart_toStartOf="@+id/wallet_menu_left_central_guideline"
+                app:layout_constraintTop_toTopOf="@+id/transfer_menu_guideline" />
+
+            <TextView
+                style="@style/WalletMenuItemStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:text="@string/lotto5jr_offline"
+                app:layout_constraintBottom_toBottomOf="@+id/reload_menu_guideline"
+                app:layout_constraintLeft_toLeftOf="@+id/wallet_menu_right_central_guideline"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/transfer_menu_guideline" />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/lotto5jr_gl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.994" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

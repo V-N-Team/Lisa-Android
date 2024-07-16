@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/padding_medium_smaller"
+    app:cardCornerRadius="12dp">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/mariage_left_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/margin_medium" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/mariage_middle_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.26" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/mariage_middle_end_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.53" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/mariage_right_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.91" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_small"
+        app:srcCompat="@drawable/ic_sun"
+        app:layout_constraintStart_toStartOf="@id/mariage_left_guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/day_mariage_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toEndOf="@id/mariage_middle_end_guideline"
+        app:layout_constraintStart_toStartOf="@id/mariage_middle_guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/day_mariage_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toEndOf="@id/mariage_middle_end_guideline"
+        app:layout_constraintStart_toStartOf="@id/mariage_middle_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/day_mariage_1" />
+
+    <TextView
+        android:id="@+id/day_mariage_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toEndOf="@id/mariage_middle_end_guideline"
+        app:layout_constraintStart_toStartOf="@id/mariage_middle_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/day_mariage_2" />
+
+    <TextView
+        android:id="@+id/day_mariage_4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toEndOf="@id/mariage_right_guideline"
+        app:layout_constraintStart_toStartOf="@id/mariage_middle_end_guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/day_mariage_5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toEndOf="@id/mariage_right_guideline"
+        app:layout_constraintStart_toStartOf="@id/mariage_middle_end_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/day_mariage_1" />
+
+    <TextView
+        android:id="@+id/day_mariage_6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toEndOf="@id/mariage_right_guideline"
+        app:layout_constraintStart_toStartOf="@id/mariage_middle_end_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/day_mariage_2" />
+
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/night_values_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="night_image_maryage" />
+
+    <ImageView
+        android:id="@+id/evening_image_maryage"
+        android:layout_width="28dp"
+        app:tint="@color/eveningColor"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_small"
+        app:srcCompat="@drawable/ic_evening_draw"
+        app:layout_constraintStart_toStartOf="@id/mariage_left_guideline"
+        app:layout_constraintTop_toTopOf="@+id/evening_mariage_1" />
+
+    <TextView
+        android:id="@+id/evening_mariage_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium_large"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toEndOf="@id/mariage_middle_end_guideline"
+        app:layout_constraintStart_toStartOf="@id/mariage_middle_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/day_mariage_3" />
+
+    <TextView
+        android:id="@+id/evening_mariage_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toEndOf="@id/mariage_middle_end_guideline"
+        app:layout_constraintStart_toStartOf="@id/mariage_middle_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/evening_mariage_1" />
+
+    <TextView
+        android:id="@+id/evening_mariage_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toEndOf="@id/mariage_middle_end_guideline"
+        app:layout_constraintStart_toStartOf="@id/mariage_middle_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/evening_mariage_2" />
+
+    <TextView
+        android:id="@+id/evening_mariage_4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toEndOf="@id/mariage_right_guideline"
+        app:layout_constraintStart_toStartOf="@id/mariage_middle_end_guideline"
+        app:layout_constraintTop_toTopOf="@+id/evening_mariage_1" />
+
+    <TextView
+        android:id="@+id/evening_mariage_5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toEndOf="@id/mariage_right_guideline"
+        app:layout_constraintStart_toStartOf="@id/mariage_middle_end_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/evening_mariage_1" />
+
+    <TextView
+        android:id="@+id/evening_mariage_6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toEndOf="@id/mariage_right_guideline"
+        app:layout_constraintStart_toStartOf="@id/mariage_middle_end_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/evening_mariage_2" />
+
+
+    <ImageView
+        android:id="@+id/night_image_maryage"
+        android:layout_width="28dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_small"
+        app:layout_constraintStart_toStartOf="@id/mariage_left_guideline"
+        app:layout_constraintTop_toTopOf="@+id/night_mariage_1"
+        app:srcCompat="@drawable/ic_moon" />
+
+    <TextView
+        android:id="@+id/night_mariage_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium_large"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toEndOf="@id/mariage_middle_end_guideline"
+        app:layout_constraintStart_toStartOf="@id/mariage_middle_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/evening_mariage_3" />
+
+    <TextView
+        android:id="@+id/night_mariage_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toEndOf="@id/mariage_middle_end_guideline"
+        app:layout_constraintStart_toStartOf="@id/mariage_middle_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/night_mariage_1" />
+
+    <TextView
+        android:id="@+id/night_mariage_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toEndOf="@id/mariage_middle_end_guideline"
+        app:layout_constraintStart_toStartOf="@id/mariage_middle_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/night_mariage_2" />
+
+    <TextView
+        android:id="@+id/night_mariage_4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toEndOf="@id/mariage_right_guideline"
+        app:layout_constraintStart_toStartOf="@id/mariage_middle_end_guideline"
+        app:layout_constraintTop_toTopOf="@+id/night_mariage_1" />
+
+    <TextView
+        android:id="@+id/night_mariage_5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toEndOf="@id/mariage_right_guideline"
+        app:layout_constraintStart_toStartOf="@id/mariage_middle_end_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/night_mariage_1" />
+
+    <TextView
+        android:id="@+id/night_mariage_6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/darkGrey"
+        android:textSize="@dimen/text_size_medium_small"
+        app:layout_constraintEnd_toEndOf="@id/mariage_right_guideline"
+        app:layout_constraintStart_toStartOf="@id/mariage_middle_end_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/night_mariage_2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

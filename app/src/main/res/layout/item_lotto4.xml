@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/game_list_lotto4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="-10dp">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="-10dp"
+        android:background="#00AEEF"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ic_lotto4_mask" />
+</androidx.constraintlayout.widget.ConstraintLayout>

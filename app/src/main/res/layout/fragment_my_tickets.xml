@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/my_tickets_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="@id/my_tickets_bottom_guideline"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/my_tickets_bg"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_medium_small"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:gravity="center"
+                            android:text="@string/my_tickets"
+                            android:textColor="@color/white"
+                            android:textSize="27sp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_medium"
+                            android:layout_marginBottom="@dimen/margin_medium_small_21dp"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/my_tickets_date"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_medium_small"
+                                android:layout_marginLeft="@dimen/margin_medium_small"
+                                android:layout_marginEnd="@dimen/margin_small"
+                                android:layout_marginRight="@dimen/margin_small"
+                                android:layout_weight="1"
+                                android:background="@drawable/filter_bg"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:gravity="center"
+                                android:paddingHorizontal="@dimen/padding_medium_small"
+                                android:paddingVertical="6dp"
+                                android:text="22.22.20"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_medium_small"
+                                app:drawableEndCompat="@drawable/ic_calendar" />
+
+                            <TextView
+                                android:id="@+id/my_tickets_filter"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_small"
+                                android:layout_marginLeft="@dimen/margin_small"
+                                android:layout_marginEnd="@dimen/margin_medium_small"
+                                android:layout_marginRight="@dimen/margin_medium_small"
+                                android:layout_weight="1"
+                                android:background="@drawable/filter_bg"
+                                android:drawablePadding="@dimen/padding_small"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:gravity="center_horizontal"
+                                android:paddingHorizontal="@dimen/padding_medium_small"
+                                android:paddingVertical="6dp"
+                                android:text="@string/filter"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_medium_small"
+                                app:drawableEndCompat="@drawable/ic_filter" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/my_tickets_no_ticket_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/margin_small"
+                            android:layout_weight="0.5"
+                            app:srcCompat="@drawable/ic_no_tickets" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.1"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:gravity="center"
+                            android:text="@string/no_ticket_found"
+                            android:textColor="@color/transactionText"
+                            android:textSize="@dimen/text_size_medium_large" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/margin_medium_small"
+                            android:layout_weight="0.1"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:gravity="center_horizontal"
+                            android:text="@string/select_your_game_section_and_bet_on_your_next_play"
+                            android:textColor="@color/transactionText"
+                            android:textSize="@dimen/text_size_medium_15sp" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3">
+
+                            <Button
+                                android:id="@+id/select_game"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="@dimen/margin_medium_small"
+                                android:fontFamily="@font/roboto_bold"
+                                android:gravity="center"
+                                android:paddingVertical="@dimen/padding_medium_smaller"
+                                android:text="@string/select_game"
+                                android:textAllCaps="true"
+                                android:textSize="@dimen/text_size_medium"
+                                app:backgroundTint="@color/buttonOrange" />
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/my_tickets_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:paddingBottom="70dp"
+                        android:visibility="gone">
+
+                        <include
+                            android:id="@+id/boloto_layout"
+                            layout="@layout/layout_boloto" />
+
+                        <include
+                            android:id="@+id/borlet_layout"
+                            layout="@layout/layout_borlet" />
+
+                        <include
+                            android:id="@+id/maryage_layout"
+                            layout="@layout/layout_maryage" />
+
+                        <include
+                            android:id="@+id/lotto3_layout"
+                            layout="@layout/layout_lotto3" />
+
+                        <include
+                            android:id="@+id/lotto4_layout"
+                            layout="@layout/layout_lotto4" />
+
+                        <include
+                            android:id="@+id/lotto5_layout"
+                            layout="@layout/layout_lotto5" />
+
+                        <include
+                            android:id="@+id/lotto5_5g_layout"
+                            layout="@layout/layout_lotto5_5g" />
+
+                        <include
+                            android:id="@+id/lotto5_royal_layout"
+                            layout="@layout/layout_lotto5_royal" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/my_tickets_bottom_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.94" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

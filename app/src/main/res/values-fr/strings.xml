@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="locale">fr</string>
+
+    <string name="gender">Genre</string>
+    <string name="birthday">Anniversaire</string>
+    <string name="female">Femme</string>
+    <string name="male">Homme</string>
+
+    <string name="ny_draw">Tirage NY</string>
+    <string name="fl_draw">Tirage FL</string>
+    <string name="ga_draw">Tirage GA</string>
+    <string name="location">Adresse</string>
+    <string name="email">Email</string>
+    <string name="social_media">Réseaux Sociaux</string>
+    <string name="facebook">Facebook</string>
+    <string name="instagram">Instagram</string>
+    <string name="choose_avatar">Choisissez un avatar!</string>
+    <string name="save_changes">Sauvegarder</string>
+    <string name="name">Prenom</string>
+    <string name="no_internet_connection">Erreur de connexion réseau</string>
+    <string name="try_again">Essayez à nouveau</string>
+    <string name="get_started">Commencer</string>
+    <string name="turn_on_notifications">Activez les notifications</string>
+    <string name="no_thanks">Non, merci</string>
+    <string name="registration">Enregistrement</string>
+    <string name="enter_your_mobile_number_we_will_send_n_you_otp_to_verify_later">"Entrez votre numéro de téléphone, nous vous enverrons un mot de passe unique sur ce numéro "</string>
+    <string name="phone_number_is_invalid">Numéro de téléphone invalide</string>
+    <string name="verification">Vérification</string>
+    <string name="enter_confirmation_code_hold_tight_n_this_might_take_a_minute">Entrez le code reçu par SMS</string>
+    <string name="re_send_code_in">Cliquez ici pour Renvoyer Code \u0020</string>
+    <string name="code_is_invalid">Code invalide</string>
+    <string name="re_send_code">Renvoyer Code</string>
+    <string name="transaction_confirmation">Votre compte LISA a été rechargé avec succès! </string>
+
+    <string name="i_am_agree_with_the_tearms_of_service">J\'ai lu et j\'accepte les Conditions d\'utilisation</string>
+    <string name="i_am_agree_with_the_privacy_policy">J\'ai lu et j\'accepte la Politique de confidentialité</string>
+    <string name="i_am_agree_with_the_tearms_of_payment">J\'accepte les Modalités de paiement</string>
+    <string name="i_agree_with_the_terms_of_service">J\'accepte les Conditions d\'utilisation</string>
+
+    <string name="terms_of_service">Conditions d\'utilisation</string>
+    <string name="terms_agreement">Termes d\'utilisation</string>
+    <string name="terms_of_payment">Modalités de paiement</string>
+    <string name="privacy_policy">Politique de confidentialité</string>
+
+    <string name="create_a_pin_code">Créer votre PIN LISA</string>
+    <string name="remember_me">Mémoriser</string>
+    <string name="create_your_secured_pin_code_to_hold_n_your_account_safe">Créer votre code PIN sécuritaire pour protéger votre compte</string>
+    <string name="create_a_security_word">Créer votre mot de sécurité</string>
+    <string name="create_security_word">Entrez un mot avec une signification spéciale. Ce mot vous permettra de récupérer votre PIN LISA</string>
+    <string name="enter_security_word_max_28_char">Entrez le mot de sécurité Max 28 car.</string>
+    <string name="done">Terminer</string>
+    <string name="it_s_too_short">Trop court</string>
+    <string name="invalid_pincode_you_have">Code PIN invalide - Vous avez\u0020</string>
+    <string name="enter_current_pin">PIN LISA actuel</string>
+    <string name="existing_pin">PIN LISA actuel</string>
+    <string name="skip">Sauter</string>
+    <string name="next_draw">Prochain Tirage :</string>
+    <string name="choose_a_game_to_play">Choisissez votre jeu</string>
+    <string name="hours">Heures</string>
+    <string name="minutes">Minutes</string>
+    <string name="seconds">Secondes</string>
+    <string name="view_my_profile">Mon profil</string>
+    <string name="my_tickets">Mes Billets</string>
+    <string name="wallet_cash_out">Portefeuille &amp; Retrait</string>
+    <string name="settings">Paramètres</string>
+    <string name="winning_numbers">Numéros gagnants</string>
+    <string name="games_subscriptions">Souscription Automatique:</string>
+    <string name="games_subscriptions_">Souscription Automatique</string>
+    <string name="reference_program">Programme de référence</string>
+    <string name="promotions">Promotion</string>
+    <string name="message_center">Centre de Message</string>
+    <string name="contact_us">Contactez nous</string>
+    <string name="combo6">Combo6</string>
+    <string name="combo">Combo : %s</string>
+    <string name="combo_">Combo</string>
+    <string name="current_selection_press_play_to_confirm">Sélection actuelle - Cliquez JOUEZ pour confirmer</string>
+    <string name="total_price">Total</string>
+    <string name="game_rules">Règles du jeu</string>
+    <string name="recent_numbers">Derniers numéro joués</string>
+    <string name="play">JOUER</string>
+    <string name="bet">Mise</string>
+    <string name="_1_option">Option 1</string>
+    <string name="_3_option">Option 3</string>
+    <string name="_2_option">Option 2</string>
+    <string name="filter_by">Filtrer par:</string>
+    <string name="win">Gagnant</string>
+    <string name="closed">Perdant</string>а
+    <string name="pending">En attente</string>
+    <string name="not_accepted">Pas accepté</string>
+    <string name="not_accepted_lower">pas accepté</string>
+    <string name="accepted">accepté</string>
+    <string name="transfer_to_a_friend">Transférer à un ami</string>
+    <string name="reload_money">Recharger votre portefeuille de jeu</string>
+    <string name="cash_out">Effectuer un retrait</string>
+    <string name="cash_out_">Effectuer un retrait</string>
+    <string name="pop_locations">Carte d\'agents payeurs</string>
+    <string name="transaction_history">Historique de transaction</string>
+    <string name="enter_friend_s_number">Le numéro de téléphone du récipiendaire</string>
+    <string name="continue_">Continuer</string>
+    <string name="friends_number_desc">Partagez l\'expérience LISA en transférant des fonds à vos amis!</string>
+    <string name="enter_amount">Entrer Montant</string>
+    <string name="confirm">Confirmer</string>
+    <string name="enter_your_lisa_pin_to_transfer">"Entrez votre PIN pour transferer le montant à votre ami "</string>
+    <string name="enter_your_pin">Entrez votre PIN</string>
+    <string name="enter_your_mon_cash_pin">"Entrez votre PIN Mon Cash "</string>
+    <string name="cashout_balance">Balance monnayable</string>
+    <string name="change_pin">Modifiez Pin</string>
+    <string name="change_language">Modifiez langue</string>
+    <string name="security_word">Mot de sécurité </string>
+    <string name="notification">Notification</string>
+    <string name="enter_new_pin">Entrez un nouveau code PIN</string>
+    <string name="too_short">Trop court</string>
+    <string name="last_drawn_numbers">Derniers Numéros tirés</string>
+    <string name="search_for_past_draws">Recherche de  tirages passés</string>
+    <string name="jackpot">Jackpot</string>
+    <string name="_3_in_disorder">3 boules en desordre</string>
+    <string name="_2_in_disorder">2 boules en ordre</string>
+    <string name="_2_in_order">2 boules en ordre</string>
+    <string name="_1_number">1 boule</string>
+    <string name="draw_option">Option Tirage #%s: %s</string>
+    <string name="next_jackpot">Prochain Jackpot</string>
+    <string name="_2nd_prize">2e prime</string>
+    <string name="_3rd_prize">3e prime</string>
+    <string name="_4th_prize">4e prime</string>
+    <string name="_5th_prize">5e prime</string>
+    <string name="no_subscription_registered">Aucune souscription enregistrée</string>
+    <string name="select_game">Choisissez un jeu</string>
+    <string name="notifications">Notifications</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="no_messages_found">Boite de message</string>
+    <string name="noon_draw">Tirage du Midi</string>
+    <string name="customer_service">Service à la Clientèle</string>
+    <string name="call_center">Centre d\'Appel</string>
+    <string name="web">Site web</string>
+    <string name="no_connection">Pas de connection!</string>
+    <string name="connect_to_the_network_and_come_back_to_us">Connectez-vous au réseau et revenez nous voir</string>
+    <string name="want_to_be_notified_when_you_win">Suivez le statut de vos billets, obtenez les résultats de tirage et recevez des alertes lorsque vous gagnez!</string>
+    <string name="you_must_confirm_that_you_agree_to_the_n_terms_and_conditions_to_continue">Pour utiliser l\'application LISA, veuillez confirmer que vous avez 18 ans +, et  acceptez les conditions générales</string>
+
+    <string name="confirm_to_continue">Confirmer pour continuer</string>
+    <string name="enable_touch_id">Reconnaissance digitale</string>
+    <string name="play_and_win_your_favorite_lottery_games">Jouer avec LISA fait de vous un gagnant!</string>
+    <string name="biometric_title">S\'identifier</string>
+    <string name="biometric_subtitle">Login nan kont ou</string>
+    <string name="biometric_description">Placez votre doigt sur le bouton d\'accueil de l\'appareil pour vérifier votre identité</string>
+    <string name="biometric_negative_button_text">ANNULER</string>
+    <string name="biometric_error_sdk_not_supported">Version SDK non prise en charge</string>
+    <string name="biometric_error_hardware_not_supported">L\'appareil ne prend pas en charge l\'authentification biométrique</string>
+    <string name="biometric_error_fingerprint_not_available">L\'empreinte digitale n\'est pas enregistrée dans l\'appareil</string>
+    <string name="biometric_error_permission_not_granted">L\'autorisation n\'est pas accordée par l\'utilisateur</string>
+    <string name="biometric_failure">Connexion échouée!</string>
+    <string name="biometric_cancelled">Authentification annulée par l\'utilisateur</string>
+    <string name="biometric_success">Connexion réussie</string>
+    <string name="pin_codes_do_not_match">Les codes PIN ne correspondent pas</string>
+    <string name="attempts">\u0020tentatives</string>
+    <string name="enter_existing_pin">PIN LISA actuel</string>
+    <string name="enter_existing_pin_message">Entrez votre code PIN LISA existant pour accéder en toute sécurité à votre compte</string>
+    <string name="confirm_your_number">Confirmez votre numéro</string>
+    <string name="confirm_pin_code">Confirmer le nouveau code PIN</string>
+    <string name="fingerprint_authentification">Authentification d\'empreintes digitales</string>
+    <string name="fingerprint_verify">Voulez-vous vérifier votre identité avec une empreinte digitale?</string>
+    <string name="enter_security_word">Entrez le mot de sécurité</string>
+    <string name="ok_i_am_understand">Ok, je comprends</string>
+    <string name="next">Suivant</string>
+    <string name="confirmation_code_is_invalid">Le code de confirmation n\'est pas valide</string>
+    <string name="bonus">Prime</string>
+    <string name="playable_funds">Balance jouable</string>
+    <string name="bonus_balance">Balance Bonus LISA</string>
+    <string name="change_your_phone_number_in_0_30">Chanje nimewo telefòn ou nan \u0020</string>
+    <string name="enter_add_amount_transfer">Entrer Montant</string>
+    <string name="share_with">Pataje avèk</string>
+    <string name="transaction_balance">Balance disponible</string>
+    <string name="exceeded_amount">Montant dépassé</string>
+    <string name="transfer_funds">Transfert de fonds</string>
+    <string name="reload_money_to_lisa">Rechargez votre compte LISA</string>
+    <string name="enter_your_mon_cash_number">Entrez votre numéro Mon cash</string>
+    <string name="enter_your_mon_cash_pin_to_transfer">Entrez votre Mon cash Code PIN pour accéder au retrait.</string>
+    <string name="enter_confirmation_code">Entrer le code de confirmation. Tiens bon! Cela peut prendre une minute.</string>
+    <string name="loaded_money">Argent chargé</string>
+    <string name="title_activity_maps">Carte</string>
+    <string name="choose_way_to_cash_out">Choisissez votre Option de retrait</string>
+    <string name="cashless">Sans numéraire</string>
+    <string name="cash">En espèces</string>
+    <string name="cash_out_balance">Solde d\'encaissement</string>
+    <string name="share_money_to">Partager de l\'argent avec</string>
+    <string name="send_money">Envoyer de l\'argent</string>
+    <string name="wallet">%s portefeuille</string>
+    <string name="click_here">Cliquez ici pour</string>
+    <string name="attempts_over">Tentatives épuisées.\u0020</string>
+    <string name="forgot_pin">J\'ai oublié mon pin</string>
+    <string name="thanks">Merci</string>
+    <string name="create_new_lisa_pin">Créez votre nouveau code PIN LISA</string>
+    <string name="transfer_successed">Votre paiement a été envoyé avec succès!</string>
+    <string name="transfer_successed_cashout">Le transfert a été effectué avec succès!</string>
+    <string name="need_help_pease_contact_us">Besoin d\'assistance?! Contactez nous :</string>
+    <string name="pin_changed">Votre code PIN a été modifié avec succès!</string>
+    <string name="enter_current_security">Mot de sécurité actuel</string>
+    <string name="enter_new_security">Nouveau mot de sécurité</string>
+    <string name="current_security_different">Le mot sécurité actuel est différent</string>
+    <string name="forgot_your_pin">Vous avez oublié votre épingle?</string>
+    <string name="error">Erreur</string>
+    <string name="low_amount">Faible montant</string>
+    <string name="for_pin_reset_or_for_assistance_please_contact_us">Pour réinitialiser votre PIN ou pour assistance contactez nous</string>
+    <string name="incorrect_token_please_re_login">Jeton incorrect. Veuillez vous reconnecter</string>
+    <string name="games_results">Résultats des jeux</string>
+    <string name="games_results_ny">Résultats des jeux NY</string>
+    <string name="games_results_fl">Résultats des jeux FL</string>
+    <string name="games_results_ga">Résultats des jeux GA</string>
+    <string name="city_not_found">Ville introuvable</string>
+    <string name="details">Détails</string>
+    <string name="_value">valeur</string>
+    <string name="your_cash_out_code">Votre code de retrait:</string>
+    <string name="left_s_min">Reste %s min</string>
+    <string name="close">Proche</string>
+    <string name="want_remove_message">Souhaitez-vous supprimer ce message?</string>
+    <string name="get_directions">Obtenir des directions</string>
+    <string name="apply_filters">Appliquer les filtres</string>
+    <string name="select_your_game_section_and_bet_on_your_next_play">Visitez la section des Jeux et misez sur votre prochain billet!</string>
+    <string name="quick_pick">QP</string>
+    <string name="play_with_ussd">Jouez via USSD!</string>
+    <string name="please_enter_3rd_combo6_combination_number">Entrez le 3e numéro pour compléter votre combinaison Combo</string>
+    <string name="fill_required_fields">Veuillez remplir tous les champs nécessaires</string>
+    <string name="play_offline">Jouez hors-ligne</string>
+    <string name="pin_code_identical">Le code PIN est identique</string>
+    <string name="no_transactions_yet">Aucune transaction pour le moment</string>
+    <string name="no_ticket_found">Aucun billets</string>
+    <string name="new_tickets_are_not">Les nouveaux billets ne sont plus disponibles pour ce tirage</string>
+    <string name="invalid_number">Numéro invalide</string>
+    <string name="here_is_a_list_of_your_subscriptions">Liste de vos souscriptions</string>
+    <string name="here_is_a_list_of_your_messages">Pas de nouveau message.</string>
+    <string name="here_is_a_list_of_your_actions">Voici une liste de vos actions</string>
+    <string name="games_list">Liste des jeux</string>
+    <string name="finish">Terminer</string>
+    <string name="evening_draw">Tirage du Soir</string>
+    <string name="enter_your_numbers">Entrez vos numéros</string>
+    <string name="enter_numbers_and_bet">Sélection et Mise</string>
+    <string name="numbers_and_bet_description">Entrez 1 boule et la mise pour laquelle vous voulez jouer</string>
+    <string name="enter_numbers">Sélection</string>
+    <string name="enter_bet">Entrez le pari</string>
+    <string name="cancel">Annuler</string>
+    <string name="attempt">et essayez à nouveau.</string>
+    <string name="are_you_sure_you_want_unsubscribe">Voulez-vous annuler cet abonnement automatique?</string>
+    <string name="check_your_internet_settings_nmake_sure_wi_fi">Assurez vous que la fonction data soit activée</string>
+    <string name="choose_ticket_first">Choisissez d\'abord un billet.</string>
+    <string name="choose_game_and_send_sms_code">Choisissez un jeu et composez le code</string>
+    <string name="choose_your_language">Choisissez une langue</string>
+    <string name="choose_options">Option Tirage</string>
+    <string name="subscribe">Souscrire</string>
+    <string name="subscribe_numbers">- pas de fonds disponibles</string>
+    <string name="unsuccessful_transaction_no_funds_available">Échec de la transaction.</string>
+    <string name="add">AJOUTER</string>
+    <string name="click_add">AJOUTER</string>
+    <string name="filter">Filtre</string>
+    <string name="h">%sh</string>
+    <string name="m">%sm</string>
+    <string name="s">%ss</string>
+    <string name="opt">OPT</string>
+    <string name="ticket_not_accepted">Billet non accepté :\n%s</string>
+    <string name="purchased_with">Chargé sur</string>
+    <string name="choose_your_language_from_the_list">Sélectionnez une langue de la liste ci-dessous</string>
+    <string name="customize_your_account">Personnalisez votre compte selon vos préférences</string>
+    <string name="sollicitudin">Entrez votre code PIN LISA existant pour accéder en toute sécurité à votre compte</string>
+    <string name="win_">Vous avez gagné %sG</string>
+    <string name="the_existing_lisa_pin_is_a">Le PIN LISA actuel représente le code de 4 chiffres déjà créé à partir d\'un code sur votre cellulaire.</string>
+    <string name="get_code">Obtenir Code</string>
+    <string name="verify_and_proceed">Vérifier et continuer</string>
+    <string name="the_ticket_list_for_the_combo_combination">La liste de billet pour la combinaison combo</string>
+    <string name="boloto_games_description">Pour jouer Boloto choisissez 3 boules pour courir la chance de gagner le Jackpot</string>
+    <string name="boloto_numbers_description">Entrez les 3 boules que vous voulez jouer</string>
+    <string name="combo6_description">L\'option Combo6 procède à la selection de 6 combinaisons de jeu possible</string>
+    <string name="subcription_description">Cliquez sur le signet pour activer une souscription automatique pour votre billet </string>
+    <string name="qp_description">QuickPick est une option où le système choisi au hasard les numéros pour vous</string>
+    <string name="add_description">Cliquez sur AJOUTER pour mettre votre billet dans votre sélection</string>
+    <string name="subscription">Souscription</string>
+    <string name="subscription_description">Cliquez sur le signet pour activer une souscription automatique pour votre billet </string>
+    <string name="games">Jeux</string>
+
+    <string name="bolet_games_description">Pour jouer Bolet choisissez 1 boule pour courir la chance de gagner 50X 20X 10X votre mise</string>
+    <string name="maryaj_games_description">Pour jouer Maryaj choisissez 2 boules pour courir la chance de gagner 1,000X votre mise</string>
+    <string name="combo_description">Combo est une option pour jouer différentes combinaisons en fonction des numéros sélectionnés</string>
+    <string name="lotto3_games_description">Pour jouer Lotto3 choisissez 3 chiffres pour courir la chance de gagner 500X votre mise</string>
+    <string name="bolet_numbers_description">Entrez 1 boule et la mise pour laquelle vous voulez jouer</string>
+    <string name="maryaj_numbers_description">Entrez 2 boules et la mise pour laquelle vous voulez jouer</string>
+    <string name="lotto3_numbers_description">Entrez les 3 chiffres et la mise pour laquelle vous voulez jouer</string>
+    <string name="lotto4_games_description">Pour jouer Lotto4 choisissez 4 chiffres pour courir la chance de gagner 5,000X votre mise</string>
+    <string name="lotto4_numbers_description">Entrez les 4 chiffres et la mise pour laquelle vous voulez jouer</string>
+    <string name="lotto5_games_description">Pour jouer Lotto5 choisissez 5 chiffres pour courir la chance de gagner 25,000X votre mise</string>
+    <string name="draw_option_description">Choisissez une option de tirage ou les 3</string>
+    <string name="lotto5jr_games_description">Pour jouer Lotto5P5 choisissez 5 chiffres pour courir la chance de gagner le jackpot</string>
+    <string name="royal5_games_description">Pour jouer ROYAl5 choisissez 5 chiffres pour courir la chance de gagner le jackpot</string>
+    <string name="lotto5jr_numbers_description">Entrez les 5 chiffres que vous voulez jouer</string>
+    <string name="you_can_either_transfer_your_winnings_to_your_mon_cash_account">Vous avez la possibilité de transférer vos gains sur votre compte Mon Cash, ou de récupérer votre argent dans une Cabine Sogexpress desservant les clients LISA</string>
+    <string name="lotto5_numbers_description">Entrez les 5 chiffres et la mise pour laquelle vous voulez jouer</string>
+    <string name="the_best_way_to_play">La meilleure façon de jouer</string>
+    <string name="terms_service_text">"Les informations sur cette application sont fournies par Lotto international S.A. En téléchargeant, en accédant ou en utilisant l'application de LISA ou toute page de cette application, vous indiquez votre consentement à cette clause de non-responsabilité. Le contenu de cette application, y compris, sans limitation, toutes les données, informations, textes, graphiques, liens et autres matériaux sont fournis à titre d'information à nos utilisateurs et sont destinés à être utilisés à des fins de jeu.
+L'application est fournie telle quelle sans aucune garantie de quelque nature que ce soit, expresse, implicite ou légale, y compris, mais sans s'y limiter, aucune garantie que l'application sera conforme aux spécifications, aucune garantie implicite de qualité marchande, d'adéquation à un usage particulier, et la liberté de contrefaçon, et aucune garantie que la documentation sera conforme à l'application ou aucune garantie que l'application sera sans erreur.
+LISA ne garantit pas que l'application ou le contenu répondra ou satisfera à vos exigences. En aucun cas LISA ne pourra être tenue responsable des dommages ou pertes de données résultant de votre utilisation de l'application ou de son contenu, y compris, mais sans s'y limiter, les dommages directs, indirects, spéciaux ou consécutifs, résultant de, ou de quelque manière que ce soit liée à cette demande, qu'elle soit ou non fondée sur une garantie, un contrat ou autre, que le dommage ait été ou non subi par des personnes ou des biens ou autrement et si la perte a été subie ou non des résultats de, ou l'utilisation de l’application ou des services fournis ci-dessous.
+&#169;2020
+Lotto International S.A
+Tous les droits sont réservés
+www.lisa.ht"</string>
+
+    <string name="terms_payment_text">"Vous êtes le seul responsable de la protection/divulgation de votre mot de passe et de vos autres informations de connexion, ainsi que de tous les services d'activation d'achats demandés dans d'autres transactions effectuées via votre compte en ligne enregistré. Tout achat et transaction de portefeuille effectué à l'aide du service sera considéré comme une demande légitime du client auquel le compte en ligne est enregistré. Vous devez immédiatement informer LISA si vos informations de compte sont compromises ou si elles ont une raison de croire qu'elles sont compromises.
+LISA n'est pas responsable des pertes résultant de l'utilisation non autorisée des informations de compte en ligne d'un client. Vous recevrez un SMS / message de test vous informant de votre inscription pour utiliser le service et la confirmation de chaque achat et transaction de portefeuille effectuée à l'aide du service.
+Votre portefeuille LISA vous permet de transférer et d'encaisser vos fonds en partenariat avec MonCash (Monnaie Electronique) et SogeXpress (Cash).
+LISA n'est pas responsable ni n'a accès au marché des limites et spécifications des comptes par ces deux (2) entités.
+MonCash a deux (2) portefeuilles: Mini Wallet (HTG7,500) et Full Wallet (HTG75,000.00). Pour le nombre de transactions permises par type de compte, vérifiez l'application MonCash ou appelez le 202.
+SogeXpress a le droit de demander une pièce d'identité à toute personne effectuant une transaction dans l'un de ses points de paiement. Le montant minimum que requiert SogeXpress pour le retrait est de 50 gourdes.
+
+LISA  ne représente ou ne garantit pas que votre accès au service sera ininterrompu - sans erreur ou utilisable à tout moment ou pendant tout temps d'arrêt causé par des pannes de réseaux ou serveurs Internet publics, causés par des défaillances de vos applications, équipements, systèmes ou services d'accès local, pour des opérations de maintenance planifiées ou liées à des événements indépendants de la volonté de LISA tels que grèves, émeutes, insurrection, incendies, inondations, explosions, action gouvernementale de guerre, conditions de travail, tremblements de terre, catastrophes naturelles ou interruptions des services Internet dans une zone où se trouvent les serveurs réseau.
+LISA peut modifier, suspendre ou interrompre tout avantage lié au portefeuille LISA à tout moment. LISA peut également imposer des limites sur l'utilisation ou l'accès à certaines fonctionnalités ou parties du service, en tout cas, et ce, sans préavis ni responsabilité pour elle.
+Vous vous engagez à ne pas utiliser d'appareil, de logiciel ou de routine pour interférer ou tenter d'interférer avec le bon fonctionnement du service ou avec l'utilisation d'une autre personne du service.
+Vous ne pouvez pas déclarer que vous êtes quelqu'un d'autre ou usurper l'identité d'une autre personne ou entité ou manipuler des informations afin d'utiliser le service.
+Pour effectuer toute transaction de portefeuille, vous devrez donner votre accord pour avoir compris les termes de ce service. Vous ne devez pas utiliser le service si vous n'acceptez une ou plusieures de ces conditions."
+</string>
+    <string name="privacy_policy_text" formatted="false">Lisa prend votre droit à la confidentialité au sérieux. Vous avez le droit de savoir ce que nous faisons de vos informations personnelles collectées sur l\'application Lisa afin que vous puissiez faire des choix éclairés. Notre engagement en matière de confidentialité est basé sur le protocole de confidentialité personnelle. Cet avis de confidentialité explique quelle information nous recueillons, pourquoi nous les avons collectées et comment nous les utilisons.
+Pour améliorer votre expérience client sur les plateformes de Lisa en créant une interaction individualisée entre vous et Lisa; cela se fait en utilisant l\'analyse des données, les informations contenues sur votre compte Lisa, y compris les transactions passées, votre comportement passé et en temps réel sur l\'application, et tous types d\'informations similaires provenant d\'autres joueurs, pour sélectionner et vous fournir du contenu, des offres, des recommandations de produits, marketing, publicité et autres interactions qui vous sont personnalisées.
+Aucune information personnelle n\'est collectée sans votre consentement préalable. Nous recueillons vos informations personnelles lorsque vous communiquez volontairement avec nous via l\'application, en souscrivant à un service ou par d\'autres moyens similaires. Dans le cadre de la configuration et / ou du maintien d\'un compte chez nous, nous vous demanderons des informations personnelles telles que votre nom, date de naissance, sexe, préférence de langue, adresse e-mail, numéro de téléphone, adresse physique, question de sécurité et autres préférences de l\'utilisateur. Lorsque vous vous connectez avec nous via les canaux de médias sociaux, vous êtes également soumis aux politiques en place pour l\'utilisation de ces canaux de médias sociaux, veuillez consulter les politiques de confidentialité des canaux que vous utilisez pour vous connecter avec nous.
+Nous conserverons vos informations, y compris vos informations personnelles, aussi longtemps que nécessaire pour vous fournir des services, promouvoir nos produits et services et exploiter une entreprise de jeux conformément à nos obligations légales; il peut également être utilisé pour résoudre des litiges et / ou appliquer tout accord que nous avons avec l\'utilisateur.
+Lisa a mis en place des mesures de sécurité pour tenter de vous protéger contre la perte, l\'utilisation abusive et l\'altération de vos données d\'utilisateur et des informations personnelles sous notre contrôle. Lisa tente de conserver ces informations dans des installations sécurisées, protégées contre tout accès non autorisé et conservées aussi longtemps que cela est raisonnablement nécessaire.
+Nous nous réservons le droit de modifier cet avis de confidentialité à tout moment, veuillez donc le consulter fréquemment.
+</string>
+    <string name="sogexpress_description">Assurez vous d\'être proche ou à l\'intérieur d\'une cabine SogeXpress avant d\'entamer la transaction (validitié de requête : 15mn)\nMontant minimum pour retrait 50Gourdes</string>
+    <string name="moncash_description">LISA couvre les frais de retrait pour toute transaction de 250 Gourdes et plus</string>
+
+    <string name="new_york_draw">Tirage New York</string>
+    <string name="florida_draw">Tirage Floride</string>
+    <string name="georgia_draw">Tirage Georgia</string>
+    <string name="profile">Profil</string>
+    <string name="wallet_">Portefeuille</string>
+    <string name="tickets_">Billets</string>
+    <string name="last_draws">Résultats Tirage</string>
+    <string name="sign_out">Déconnexion</string>
+    <string name="are_you_sure_you_want_to_sign_out">Êtes-vous certain de vouloir vous déconnecter?</string>
+    <string name="draw_results">Draw results</string>
+    <string name="ny">NY</string>
+    <string name="fl">FL</string>
+    <string name="success_payment_message">Votre compte LISA a ete recharge pour %1$sG de votre MonCash incluant le 5\%% de BONIS\nConfirmation ID: %2$s</string>
+    <string name="payment_link_message">Vous voulez transférer %1$sG sur votre compte MonCash\nVous recevrez sous peu un SMS confirmant votre transaction</string>
+    <string name="pin_funds_message">SogeXpress: Votre demande pour encaisser %1$sG est confirmée\nVous avez 15 minutes pour finaliser le processus\nNuméro de confirmation: %2$s
+</string>
+    <string name="funds_issued_message">SogeXpress: Transaction complétée %1$sG\n%2$s\nConfirmation ID: %3$s</string>
+    <string name="funds_returned_message">La transaction de retrait n\'a pas été effectuée\n%1$sG a été retourné à votre compte\nConfirmation ID: %2$s</string>
+
+    <string name="funds_blocked_message">SogeXpress: Requête pour %1$sG\n%2$s\nConfirmation ID: %3$s</string>
+
+
+    <string name="moncash_transfer_message">Vous avez recharge avec succes votre compte LISA de %1$sG\nConfirmation ID: %2$s</string>
+    <string name="last_name">Nom de famille</string>
+    <string name="ny_description">Pour le tirage de New York cliquez sur la boite tirage NY</string>
+    <string name="fl_description">Pour le tirage de Floride cliquez sur la boite tirage FL</string>
+    <string name="ga_description">Pour le tirage de Georgia cliquez sur la boite tirage GA</string>
+    <string name="get_a_gift">Plus d\'avantages!</string>
+    <string name="make_sure_to_enter_your_profile_to_get_surprise_on_your_birthday">Complétez votre profil, partagez votre date d\'anniversaire afin que nous puissions mieux vous servir et vous offrir plus d\'avantages</string>
+    <string name="fill_out_profile">Remplissez votre profil</string>
+    <string name="maybe_later">Plus tard</string>
+    <string name="profile_birthday_alert">Noter que le système sauvegarde uniquement la 1ere entrée</string>
+    <string name="your_operator_does_not_support_service">Le service n’est pas opérationel sur ce réseau.</string>
+
+    <string name="royal5_ticket_win_jackpot">ROYAL5\nTirage %1$s %2$s\nVous avez gagne le JACKPOT %3$sG!</string>
+    <string name="royal5_ticket_bought">ROYAL5: Billet %1$s %2$s\nTirage %3$s du %4$s\nID: %5$s\nBillet charge sur cpte:\nBonis Lisa %6$s\nLISA %7$s\nDigicel %8$s</string>
+    <string name="royal5_ticket_win">ROYAL5\nTirage %1$s %2$s\nVous avez gagne %3$sG!</string>
+
+    <string name="boloto_ticket_bought">BOLOTO: Billet %1$s %2$s\nTirage %3$s du %4$s\nID: %5$s\nBillet charge sur cpte:\nBonis Lisa %6$s\nLISA %6$s\nDigicel %8$s</string>
+    <string name="boloto_ticket_win_jackpot">BOLOTO\nTirage %1$s %2$s\nVous avez gagne le JACKPOT %3$sG!</string>
+    <string name="boloto_ticket_win">BOLOTO\nTirage %1$s %2$s\nVous avez gagne %3$sG!</string>
+    <string name="bolet_ticket_bought">BOLET: Billet %1$s %2$s\nTirage %3$s du %4$s\nID: %5$s\nBillet charge sur cpte:\nBonis Lisa %6$s\nLISA %7$s\nDigicel %8$s</string>
+    <string name="bolet_ticket_win">BOLET\nTirage %1$s %2$s\nVous avez gagne %3$sG!</string>
+    <string name="mariage_ticket_bought">MARYAJ: Billet %1$s %2$s\nTirage %3$s du %4$s\nID: %5$s\nBillet charge sur cpte:\nBonis Lisa %6$s\nLISA %7$s\nDigicel %8$s</string>
+    <string name="mariage_ticket_win">MARYAJ\nTirage %1$s %2$s\nVous avez gagne %3$sG!</string>
+    <string name="lotto3_ticket_bought">LOTTO3: Billet %1$s %2$s\nTirage %3$s du %4$s\nID: %5$s\nBillet charge sur cpte:\nBonis Lisa %6$s\nLISA %7$s\nDigicel %8$s</string>
+    <string name="lotto3_ticket_win">LOTTO3\nTirage %1$s %2$s\nVous avez gagne %3$sG!</string>
+    <string name="lotto4_ticket_bought">LOTTO4: Billet %1$s %2$s\nTirage %3$s du %4$s\nID: %5$s\nBillet charge sur cpte:\nBonis Lisa %6$s\nLISA %7$s\nDigicel %8$s</string>
+    <string name="lotto4_ticket_win">LOTTO4\nTirage %1$s %2$s\nVous avez gagne %3$sG!</string>
+    <string name="lotto5_ticket_bought">LOTTO5: Billet %1$s %2$s\nTirage %3$s du %4$s\nID: %5$s\nBillet charge sur cpte:\nBonis Lisa %6$s\nLISA %7$s\nDigicel %8$s</string>
+    <string name="lotto5_ticket_win">LOTTO5\nTirage %1$s %2$s\nVous avez gagne %3$sG!</string>
+    <string name="lotto5jr_ticket_bought">LOTTO5P5: Billet %1$s %2$s\nTirage %3$s du %4$s\nID: %5$s\nBillet charge sur cpte:\nBonis Lisa %6$s\nLISA %7$s\nDigicel %8$s</string>
+    <string name="lotto5jr_ticket_win">LOTTO5P5\nTirage %1$s %2$s\nVous avez gagne %3$sG!</string>
+    <string name="lotto5jr_ticket_win_jackpot">LOTTO5P5\nTirage %1$s %2$s\nVous avez gagne le JACKPOT %3$sG!</string>
+
+    <string name="fl_draw_is_not_available">Le tirage de FL n\'est pas disponible actuellement</string>
+    <string name="ny_draw_is_not_available">Le tirage de NY n\'est pas disponible actuellement </string>
+
+    <string name="cash_out_with_sogexpress">Retrait avec SogeXpress</string>
+    <string name="refund_from_sogexpress">Montant de retrait retourné sur votre compte</string>
+    <string name="reload_moncash_trans">Compte rechargé avec MonCash</string>
+    <string name="account_recharged_by_lisa_user">Compte rechargé par un joueur LISA</string>
+    <string name="credits_transfered_to_lisa_user">Crédit transféré à un utilisateur LISA.</string>
+    <string name="reload_moncash_bonus">Compte rechargé avec MonCash - 5% BONUS</string>
+    <string name="boloto_ticket_purchased">BOLOTO:  Billet acheté</string>
+    <string name="bolet_ticket_purchased">BOLET:  Billet acheté</string>
+    <string name="maryaj_ticket_purchased">MARYAJ:  Billet acheté</string>
+    <string name="lotto3_ticket_purchased">LOTTO3:  Billet acheté</string>
+    <string name="lotto4_ticket_purchased">LOTTO4:  Billet acheté</string>
+    <string name="lotto5_ticket_purchased">LOTTO5:  Billet acheté</string>
+    <string name="lotto5jr_ticket_purchased">LOTTO5P5:  Billet acheté</string>
+    <string name="purchased_by_boloto_qp">BOLOTO: QP Billet acheté</string>
+    <string name="boloto_jackpot_win">BOLOTO:  Jackpot Billet gagnant</string>
+    <string name="boloto_ticket_win_trans">BOLOTO:  Billet gagnant</string>
+    <string name="bolet_ticket_win_trans">BOLET:  Billet gagnant</string>
+    <string name="maryaj_ticket_win_trans">MARYAJ:  Billet gagnant</string>
+    <string name="lotto3_ticket_win_trans">LOTTO3:  Billet gagnant</string>
+    <string name="lotto4_ticket_win_trans">LOTTO4:  Billet gagnant</string>
+    <string name="lotto5_ticket_win_trans">LOTTO5:  Billet gagnant</string>
+    <string name="lotto5jr_ticket_win_trans">LOTTO5P5:  Billet gagnant</string>
+    <string name="boloto_combo_ticket_purchase">BOLOTO: Combo6 Billet acheté</string>
+    <string name="reload_acc_pappadap">Compte rechargé avec un agent Pappadap</string>
+    <string name="reload_acc_pappadap_bonus">Compte rechargé avec un agent Pappadap- bonus</string>
+
+    <string name="lotto5jr_last_drawn_numbers">LOTTO5P5: Numéros gagnants</string>
+    <string name="lotto3_last_drawn_numbers">LOTTO3: Numéros gagnants</string>
+    <string name="lotto4_last_drawn_numbers">LOTTO4: Numéros gagnants</string>
+    <string name="lotto5_last_drawn_numbers">LOTTO5: Numéros gagnants</string>
+    <string name="bolet_last_drawn_numbers">BOLET: Numéros gagnants</string>
+    <string name="credits_added_to_acc">BONIS LISA : crédits ajoutés à votre compte</string>
+    <string name="welcome_bonus">Bonus de Bienvenue</string>
+    <string name="transfer_has_been_done_success">Fonds transférés sur votre compte MonCash</string>
+    <string name="game_description">Glisser ou taper pour accéder au prochain jeu.</string>
+    <string name="information_requested_once">Information requise une fois pour compléter votre inscription unique.</string>
+    <string name="bet_limits_">Les limites de mise pour ce jeu sont de 1G à %dG</string>
+    <string name="success_payment_message_bonus">Votre compte LISA a ete recharge par MonCash pour %1$sG : %2$s + 5%% BONIS %3$sG\nConfirmation ID: %4$s</string>
+    <string name="moncash_cash_out">Vous voulez transférer %1$sG sur votre compte MonCash. Vous recevrez sous peu un SMS confirmant votre transaction</string>
+    <string name="missing_or_invalid_date">Données incomplètes ou incorrectes</string>
+    <string name="please_wait_a_few_mins">Patienter quelques minutes avant de réessayer</string>
+</resources>

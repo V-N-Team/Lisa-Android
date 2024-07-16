@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="day_night_ball_size">42dp</dimen>
+    <dimen name="margin_smaller">5dp</dimen>
+    <dimen name="margin_small">10dp</dimen>
+    <dimen name="margin_medium_smaller">15dp</dimen>
+    <dimen name="margin_medium_small">20dp</dimen>
+    <dimen name="margin_medium">25dp</dimen>
+    <dimen name="margin_medium_27dp">27dp</dimen>
+    <dimen name="margin_medium_large">30dp</dimen>
+    <dimen name="margin_medium_larger">35dp</dimen>
+    <dimen name="margin_large_small">40dp</dimen>
+    <dimen name="margin_large">45dp</dimen>
+    <dimen name="margin_larger">50dp</dimen>
+    <dimen name="margin_huge">60dp</dimen>
+
+    <dimen name="margin_smaller_7dp">7dp</dimen>
+    <dimen name="margin_smaller_3dp">3dp</dimen>
+    <dimen name="margin_smaller_2dp">2dp</dimen>
+    <dimen name="margin_smaller_6dp">6dp</dimen>
+    <dimen name="margin_small_9dp">9dp</dimen>
+    <dimen name="margin_small_8dp">8dp</dimen>
+    <dimen name="margin_medium_large_28dp">28dp</dimen>
+    <dimen name="margin_medium_smaller_16dp">16dp</dimen>
+    <dimen name="margin_medium_smaller_13dp">13dp</dimen>
+    <dimen name="margin_medium_small_21dp">21dp</dimen>
+
+    <dimen name="padding_smaller">5dp</dimen>
+    <dimen name="padding_small">10dp</dimen>
+    <dimen name="padding_medium_smaller">15dp</dimen>
+    <dimen name="padding_medium_small">20dp</dimen>
+    <dimen name="padding_medium_small_18sp">18dp</dimen>
+    <dimen name="padding_medium_small_21dp">21dp</dimen>
+    <dimen name="padding_medium">25dp</dimen>
+    <dimen name="padding_medium_large">30dp</dimen>
+    <dimen name="padding_medium_larger">35dp</dimen>
+    <dimen name="padding_large_small">40dp</dimen>
+    <dimen name="padding_large">45dp</dimen>
+    <dimen name="padding_larger">50dp</dimen>
+
+    <dimen name="padding_small_8dp">8dp</dimen>
+    <dimen name="padding_smaller_6dp">8dp</dimen>
+    <dimen name="padding_small_12dp">12dp</dimen>
+
+
+    <dimen name="text_size_smaller_9sp">9sp</dimen>
+    <dimen name="text_size_smaller">10sp</dimen>
+    <dimen name="text_size_smaller_11sp">11sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium_small">14sp</dimen>
+    <dimen name="text_size_medium_15sp">15sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_medium_17sp">17sp</dimen>
+    <dimen name="text_size_medium_large">18sp</dimen>
+    <dimen name="text_size_medium_large_19sp">19sp</dimen>
+    <dimen name="text_size_big">20sp</dimen>
+    <dimen name="text_size_big_21sp">21sp</dimen>
+    <dimen name="text_size_bigger">22sp</dimen>
+    <dimen name="text_size_large">24sp</dimen>
+    <dimen name="text_size_larger">26sp</dimen>
+    <dimen name="margin_medium_smaller_14dp">14dp</dimen>
+    <dimen name="padding_smaller_3dp">3dp</dimen>
+    <dimen name="padding_smaller_4dp">4dp</dimen>
+    <dimen name="padding_huge_60dp">60dp</dimen>
+    <dimen name="margin_larger_48dp">48dp</dimen>
+
+    <dimen name="radius_small">5dp</dimen>
+
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">9sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">9sp</dimen>
+<!--
+    <dimen name="design_bottom_navigation_icon_size" tools:override="true">19dp</dimen>
+    <dimen name="design_bottom_navigation_active_icon_size" tools:override="true">19dp</dimen>-->
+</resources>

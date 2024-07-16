@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/game_guide_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.matthewtamlin.sliding_intro_screen_library.indicators.DotIndicator
+        android:id="@+id/game_guide_tabs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/game_guide_tabs_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:selectedDotColor="@color/actionButtonColor"
+        app:unselectedDotColor="@color/unselectedDotColor" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/game_guide_tabs_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.84" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/game_guide_buttons_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.88" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bottom_game_guide_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_guide_buttons_top">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/buttons_top_gl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.2" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/buttons_bot_gl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.8" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/buttons_mid_gl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/skip_left_gl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.13" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/next_right_gl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.87" />
+
+        <Button
+            android:id="@+id/game_guide_button_skip"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/margin_smaller_7dp"
+            android:layout_marginRight="@dimen/margin_smaller_7dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_orange_stroke_rounded_small_bg"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/skip"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/text_size_medium"
+            app:layout_constraintLeft_toLeftOf="@id/skip_left_gl"
+            app:layout_constraintBottom_toBottomOf="@id/buttons_bot_gl"
+            app:layout_constraintRight_toRightOf="@id/buttons_mid_gl"
+            app:layout_constraintTop_toTopOf="@id/buttons_top_gl" />
+
+        <Button
+            android:id="@+id/game_guide_button_next"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_orange_rounded_small_bg"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/next"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_medium"
+            app:layout_constraintRight_toRightOf="@id/next_right_gl"
+            app:layout_constraintBottom_toBottomOf="@id/buttons_bot_gl"
+            app:layout_constraintLeft_toLeftOf="@id/buttons_mid_gl"
+            app:layout_constraintTop_toTopOf="@id/buttons_top_gl" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
